@@ -1,6 +1,13 @@
 # TESTNET 3 CHALLENGES
 
-intro text
+After two successful testnets in 2020 and our mainnet launch within sight, we are happy to announce the launch of Concordium Testnet 3 and to invite testers, developers, and users all over the world to compete to earn up to 1 million GTU. 
+
+## Rationale
+
+Concordium Testnet 3 is a collaborative era intended to stress-test the network, encourage participation from all over the world, and help testers, developers, and users get ready to participate in Concordium. 
+The Incentivized Testnet 3 will start on Oct. the 6th 2020 and will end 6 weeks later.  
+During this period, node operators, developers, and community members can receive rewards (up to 0,1% of the mainnet supply, meaning 1,000,000 GTU) for helping to secure, sustain, and grow Concordium Network and the ecosystem. 
+
 
 ## Rules of Engagement
 Concordium does not intend to collect and store any other user data of its challenge contributors than what is strictly necessary to pay out their rewards on the mainnet once it is launch. Concordium only stores the GitHub user name and the earned total reward amount of its contributors.
