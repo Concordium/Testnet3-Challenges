@@ -5,8 +5,10 @@ After two successful testnets in 2020 and our mainnet launch within sight, we ar
 ## Rationale
 
 Concordium Testnet 3 is a collaborative era intended to stress-test the network, encourage participation from all over the world, and help testers, developers, and users get ready to participate in Concordium. 
-Concordium Testnet 3 will be released on Oct. the 6th, 2020. 
+
+Concordium Testnet 3 will be released on Oct. the 6th, 2020.
 The Incentivized Testnet 3 will be launched on Oct. the 15th 2020 and will end 6 weeks later.  
+
 During this period, node operators, developers, and community members can receive rewards (up to 0,1% of the mainnet supply, meaning 1,000,000 GTU) for helping to secure, sustain, and grow Concordium Network and the ecosystem. 
 
 
