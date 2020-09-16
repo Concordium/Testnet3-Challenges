@@ -59,3 +59,4 @@ If you encounter a problem, please check already reported issues in [Project Bug
 ## Disclaimer
 
 ## License
+[Open source License](https://github.com/Concordium/Testnet3-Challenges/blob/main/LICENSE) 
