@@ -40,6 +40,7 @@ The challenges can be viewed in [Project Challenges](https://github.com/Concordi
 ## Submission Process
 - [Fork the Tesnet3-Challenges repo.](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 - Navigate to [Projects](https://github.com/Concordium/Testnet3-Challenges/projects), choose the Challenges project and pick the mission you would like to participate in.
+- Go back to [Code](https://github.com/Concordium/Testnet3-Challenges), choose the file related to your Mission (e.g. you have chose to accept the B1 Challenge, pick then the Bakers' file)
 - [Create or upload your submission content.](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github)
 - [Make a signed commit.](docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
 - [Create a pull request.](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests)
