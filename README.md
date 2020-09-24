@@ -38,7 +38,7 @@ The challenges can be viewed in [Project Challenges](https://github.com/Concordi
 - Each mission has a max total reward. Rewards are paid out after the first-come-first-serve principal. When the max total reward is reached, Concordium will close the respective challenges and won’t approve any more related submissions.
 
 ## Submission Process
-- [Fork a repo.](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Fork the Tesnet3-Challenges repo.](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 - Navigate to [Projects](https://github.com/Concordium/Testnet3-Challenges/projects), choose the Challenges project and pick the mission you would like to participate in.
 - [Create or upload your submission content.](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github)
 - [Make a signed commit.](docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
@@ -53,7 +53,8 @@ If you encounter a problem, please check already reported issues in [Project Bug
 - General Github.com help documentation can be found [here](https://docs.github.com/en/github).
 
 ## Contact
-- Twitter, telegram, ...
+- Discuss with the Concordium Core Team and Testners on [Telegram](https://t.me/concordium_official) and on [Discord](https://discord.com/invite/xWmQ5tp)
+- Get informed about Concordium Testnets on [Twitter](https://twitter.com/concordiumnet) and subscribe to the [Concordium Community Newsletter](https://concordium.substack.com)
 - You can reach the Concordium Service Desk via [testnet@concordium.com](mailto:testnet@concordium.com).
 
 ## Disclaimer
