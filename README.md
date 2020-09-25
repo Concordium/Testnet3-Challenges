@@ -1,6 +1,6 @@
 # TESTNET 3 CHALLENGES
 
-After two successful testnets in 2020 and our mainnet launch within sight, we are happy to announce the launch of Concordium Testnet 3 and to invite testers, developers, and users all over the world to compete to earn up to 1 million GTU. 
+After two successful testnets in 2020 and our mainnet launch within sight, we are happy to announce the launch of Concordium Testnet 3 and to invite testers, developers, and users all over the world to compete to earn up to 10 million GTU. 
 
 ## Rationale
 
