@@ -47,7 +47,7 @@ The challenges can be viewed in [Project Challenges](https://github.com/Concordi
 - Concordium approves correct and signed submissions and merges them to the main branch on the initial repo.
 
 ## Bugs and Improvements
-If you encounter a problem, please check already reported issues in [Project Bugs & Improvements](https://github.com/Concordium/Testnet3-Challenges/projects/2) and known issues under [Troubleshooting](https://developers.concordium.com/testnet/docs/troubleshooting) first. To submit a bug report, please go to [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) and provide a short description, steps to reproduce, platform and OS, expected result and actual result. We also welcome suggestions for improvements.
+If you encounter a problem, please check already reported issues on GitHub in [Project Bugs & Improvements](https://github.com/Concordium/Testnet3-Challenges/projects/2) and known issues on the Concordium webside under [Troubleshooting](https://developers.concordium.com/testnet/docs/troubleshooting). To submit a bug report, please go to [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) and provide a short description, steps to reproduce, platform and OS, expected result and actual result. We also welcome suggestions for improvements.
 
 ## Documentation and Help
 - Concordium testnet information, step-by-step guides, and troubleshooting can be found [here](https://developers.concordium.com/testnet).
