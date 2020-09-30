@@ -1,6 +1,6 @@
 # TESTNET 3 CHALLENGES
 
-After two successful testnets in 2020 and our mainnet launch within sight, we are happy to announce the launch of Concordium Testnet 3 and to invite testers, developers, and users all over the world to compete to earn up to 1 million GTU. 
+After two successful testnets in 2020 and our mainnet launch within sight, we are happy to announce the launch of Concordium Testnet 3 and to invite testers, developers, and users all over the world to compete to earn up to 10 million GTU. 
 
 ## Rationale
 
@@ -9,7 +9,7 @@ Concordium Testnet 3 is a collaborative era intended to stress-test the network,
 Concordium Testnet 3 will be released on Oct. the 6th, 2020.
 The Incentivized Testnet 3 will be launched on Oct. the 15th 2020 and will end 6 weeks later.  
 
-During this period, node operators, developers, and community members can receive rewards (up to 0,1% of the mainnet supply, meaning 1,000,000 GTU) for helping to secure, sustain, and grow Concordium Network and the ecosystem. 
+During this period, node operators, developers, and community members can receive rewards (up to 0,1% of the mainnet supply, meaning 10,000,000 GTU) for helping to secure, sustain, and grow Concordium Network and the ecosystem. 
 
 
 ## Rules of Engagement
@@ -39,15 +39,15 @@ The challenges can be viewed in [Project Challenges](https://github.com/Concordi
 
 ## Submission Process
 - [Fork the Tesnet3-Challenges repo.](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
-- Navigate to [Projects](https://github.com/Concordium/Testnet3-Challenges/projects), choose the Challenges project and pick the mission you would like to participate in.
-- Go back to [Code](https://github.com/Concordium/Testnet3-Challenges), choose the file related to your Mission (e.g. you have chose to accept the B1 Challenge, pick then the Bakers' file)
-- [Create or upload your submission content.](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github)
+- Navigate to [Projects](https://github.com/Concordium/Testnet3-Challenges/projects), choose the Challenges project and pick the mission you would like to participate in. Scope and submission content for each challenge are described in its respective card.
+- Go back to [Code](https://github.com/Concordium/Testnet3-Challenges), choose the folder and subfolder related to your challenge (e.g. you have chosen to accept the (B1)  Challenge, then navigate to folder Bakers and subfolder B1).
+- [Create or upload your submission content.](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github). Use the submission template, if applicable.
 - [Make a signed commit.](docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
 - [Create a pull request.](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests)
 - Concordium approves correct and signed submissions and merges them to the main branch on the initial repo.
 
 ## Bugs and Improvements
-If you encounter a problem, please check already reported issues in [Project Bugs & Improvements](https://github.com/Concordium/Testnet3-Challenges/projects/2) and known issues under [Troubleshooting](https://developers.concordium.com/testnet/docs/troubleshooting) first. To submit a bug report, please go to [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) and provide a short description, steps to reproduce, platform and OS, expected result and actual result. We also welcome suggestions for improvements.
+If you encounter a problem, please check already reported issues on GitHub in [Project Bugs & Improvements](https://github.com/Concordium/Testnet3-Challenges/projects/2) and known issues on the Concordium webside under [Troubleshooting](https://developers.concordium.com/testnet/docs/troubleshooting). To submit a bug report, please go to [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) and provide a short description, steps to reproduce, platform and OS, expected result and actual result. We also welcome suggestions for improvements.
 
 ## Documentation and Help
 - Concordium testnet information, step-by-step guides, and troubleshooting can be found [here](https://developers.concordium.com/testnet).
