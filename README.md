@@ -13,7 +13,7 @@ During this period, node operators, developers, and community members can receiv
 
 
 ## Rules of Engagement
-Concordium does not intend to collect and store any other user data of its challenge contributors than what is strictly necessary to pay out their rewards on the mainnet once it is launch. Concordium only stores the GitHub user name and the earned total reward amount of its contributors.
+Concordium does not intend to collect and store any other user data of its challenge contributors than what is strictly necessary to pay out their rewards on the mainnet once it is launched. Concordium only stores the GitHub user name and the earned total reward amount of its contributors.
 
 The following rules of engagements are required:
 
