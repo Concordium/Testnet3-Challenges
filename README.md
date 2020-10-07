@@ -6,8 +6,8 @@ After two successful testnets in 2020 and our mainnet launch within sight, we ar
 
 Concordium Testnet 3 is a collaborative era intended to stress-test the network, encourage participation from all over the world, and help testers, developers, and users get ready to participate in Concordium. 
 
-Concordium Testnet 3 will be released on Oct. the 6th, 2020.
-The Incentivized Testnet 3 will be launched on Oct. the 15th 2020 and will end 6 weeks later.  
+Concordium Testnet 3 will be released on October 6, 2020.
+The Incentivized Testnet 3 will be launched on October 15, 2020 and will end 6 weeks later.
 
 During this period, node operators, developers, and community members can receive rewards (up to 0,1% of the mainnet supply, meaning 10,000,000 GTU) for helping to secure, sustain, and grow Concordium Network and the ecosystem. 
 
@@ -22,7 +22,7 @@ The following rules of engagements are required:
 - The GitHub user name should not be changed until the rewards are paid out
 - After the launch of the mainnet, a contributor should create a mainnet account and send a signed submission of the account address in repository Testnet3-RewardClaim.
 
-To sign your submissions, you must use the GitHub build-in commit signature meachanism using GPG. If a commit has a signature that cannot be verified by GitHub, i.e. marked unverified or not marked at all, it does not constitute a valid submission for Concordium. Please see [GitHub - Commit Signature](docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) for more information.
+To sign your submissions, you must use the GitHub build-in commit signature meachanism using GPG. If a commit has a signature that cannot be verified by GitHub, i.e. marked unverified or not marked at all, it does not constitute a valid submission for Concordium. Please see [GitHub - Commit Signature](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) for more information.
 
 **This approach enables Concordium to trace the GitHub user name to earned rewards on Testnet3-Challenges and to a mainnet account on Testnet3-RewardClaim.** 
 
@@ -35,14 +35,14 @@ The challenges can be viewed in [Project Challenges](https://github.com/Concordi
 - Concordium accepts one approved submission per challenge per contributor. 
 - Each challenge has a GTU amount tag, which is rewarded, if Concordium approves the submission.
 - Rejected submissions can be modified and resubmitted.
-- Each mission has a max total reward. Rewards are paid out after the first-come-first-serve principal. When the max total reward is reached, Concordium will close the respective challenges and won’t approve any more related submissions.
+- Each mission has a max total reward. Rewards are paid out after the first-come-first-serve principle. When the max total reward is reached, Concordium will close the respective challenges and won’t approve any more related submissions.
 
 ## Submission Process
 - [Fork the Tesnet3-Challenges repo.](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 - Navigate to [Projects](https://github.com/Concordium/Testnet3-Challenges/projects), choose the Challenges project and pick the mission you would like to participate in. Scope and submission content for each challenge are described in its respective card.
 - Go back to [Code](https://github.com/Concordium/Testnet3-Challenges), choose the folder and subfolder related to your challenge (e.g. you have chosen to accept the (B1)  Challenge, then navigate to folder Bakers and subfolder B1).
 - [Create or upload your submission content.](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github). Use the submission template, if applicable.
-- [Make a signed commit.](docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
+- [Make a signed commit.](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
 - [Create a pull request.](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests)
 - Concordium approves correct and signed submissions and merges them to the main branch on the initial repo.
 
@@ -54,7 +54,7 @@ If you encounter a problem, please check already reported issues on GitHub in [P
 - General Github.com help documentation can be found [here](https://docs.github.com/en/github).
 
 ## Contact
-- Discuss with the Concordium Core Team and Testners on [Telegram](https://t.me/concordium_official) and on [Discord](https://discord.com/invite/xWmQ5tp)
+- Discuss with the Concordium Core Team and Testers on [Telegram](https://t.me/concordium_official) and on [Discord](https://discord.com/invite/xWmQ5tp)
 - Get informed about Concordium Testnets on [Twitter](https://twitter.com/concordiumnet) and subscribe to the [Concordium Community Newsletter](https://concordium.substack.com)
 - You can reach the Concordium Service Desk via [testnet@concordium.com](mailto:testnet@concordium.com).
 
