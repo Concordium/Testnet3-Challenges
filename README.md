@@ -28,10 +28,10 @@ This approach enables Concordium to trace the GitHub user name to earned rewards
 
 Note that in one challenge, i.e. challenge (ID2) in mission Identities, a contributor must use a valid real-life identity to issue a Concordium identity. Concordium will only check the identity attributes made public in the submission. The Concordium identity will be erased when testnet3 is taken down.
 
-## Mission and Challenges
-The challenges can be viewed in [Project Challenges](https://github.com/Concordium/Testnet3-Challenges/projects/1).
+## Missions and Challenges
+The missions and challenges can be viewed in [Project Challenges](https://github.com/Concordium/Testnet3-Challenges/projects/1).
 
-## Reward distribution
+## Reward Distribution
 - Concordium accepts one approved submission per challenge per contributor. 
 - Each challenge has a GTU amount tag, which is rewarded, if Concordium approves the submission.
 - Rejected submissions can be modified and resubmitted.
