@@ -24,7 +24,7 @@ The following rules of engagements are required:
 
 To sign your submissions, you must use the GitHub build-in commit signature meachanism using GPG. If a commit has a signature that cannot be verified by GitHub, i.e. marked unverified or not marked at all, it does not constitute a valid submission for Concordium. Please see [GitHub - Commit Signature](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) for more information.
 
-**This approach enables Concordium to trace the GitHub user name to earned rewards on Testnet3-Challenges and to a mainnet account on Testnet3-RewardClaim.** 
+This approach enables Concordium to trace the GitHub user name to earned rewards on Testnet3-Challenges and to a mainnet account on Testnet3-RewardClaim.
 
 Note that in one challenge, i.e. challenge (ID2) in mission Identities, a contributor must use a valid real-life identity to issue a Concordium identity. Concordium will only check the identity attributes made public in the submission. The Concordium identity will be erased when testnet3 is taken down.
 
