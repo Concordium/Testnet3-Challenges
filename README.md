@@ -59,7 +59,7 @@ If you encounter a problem, please check already reported issues on GitHub in [P
 - You can reach the Concordium Service Desk via [testnet@concordium.com](mailto:testnet@concordium.com).
 
 ## Disclaimer
-By participating in this Testnet, you agree to the Concordium Testnet 3 [Terms](https://github.com/Concordium/Testnet3-Challenges/blob/main/Concordium Incentivized Testnet Program Terms and Conditions.pdf).
+By participating in this Testnet, you agree to the Concordium Testnet 3 [Terms](https://github.com/Concordium/Testnet3-Challenges/blob/main/Concordium_Incentivized_Testnet_Program_Terms_and_Conditions.pdf).
 
 ## License
 [Open source License](https://github.com/Concordium/Testnet3-Challenges/blob/main/LICENSE) 
