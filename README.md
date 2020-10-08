@@ -11,7 +11,6 @@ The Incentivized Testnet 3 will be launched on October 15, 2020 and will end 6 w
 
 During this period, node operators, developers, and community members can receive rewards (up to 0,1% of the mainnet supply, meaning 10,000,000 GTU) for helping to secure, sustain, and grow Concordium Network and the ecosystem. 
 
-
 ## Rules of Engagement
 Concordium does not intend to collect and store any other user data of its challenge contributors than what is strictly necessary to pay out their rewards on the mainnet once it is launched. Concordium only stores the GitHub user name and the earned total reward amount of its contributors.
 
@@ -29,7 +28,7 @@ This approach enables Concordium to trace the GitHub user name to earned rewards
 Note that in one challenge, i.e. challenge (ID2) in mission Identities, a contributor must use a valid real-life identity to issue a Concordium identity. Concordium will only check the identity attributes made public in the submission. The Concordium identity will be erased when testnet3 is taken down.
 
 ## Missions and Challenges
-The missions and challenges can be viewed in [Project Challenges](https://github.com/Concordium/Testnet3-Challenges/projects/1).
+The missions and challenges can be viewed in [Project Challenges](https://github.com/Concordium/Testnet3-Challenges/projects/1). Please note that they intentionally only provide a minimum description of mission and submission content. For detailed step-to-step guides, troubleshooting and faqs, we expect the contributors to consult [Documentation and Help](https://github.com/Concordium/Testnet3-Challenges#documentation-and-help).
 
 ## Reward Distribution
 - Concordium accepts one approved submission per challenge per contributor. 
