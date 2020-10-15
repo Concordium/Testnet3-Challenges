@@ -18,7 +18,7 @@ The following rules of engagements are required:
 
 - A contributor, who wants to submit a challenge result in repository Testnet3-Challenges, must be a registered user on GitHub.
 - All submissions must be signed with GitHub build-in commit signature mechanism using GPG.
-- The GitHub user name should not be changed until the rewards are paid out
+- The GitHub user name should not be changed until the rewards are paid out on mainnet.
 - After the launch of the mainnet, a contributor should create a mainnet account and send a signed submission of the account address in repository Testnet3-RewardClaim.
 
 To sign your submissions, you must use the GitHub build-in commit signature meachanism using GPG. If a commit has a signature that cannot be verified by GitHub, i.e. marked unverified or not marked at all, it does not constitute a valid submission for Concordium. Please see [GitHub - Commit Signature](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) for more information.
