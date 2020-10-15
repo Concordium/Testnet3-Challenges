@@ -39,14 +39,14 @@ The missions and challenges can be viewed in [Project Challenges](https://github
 ## Submission Process
 - [Fork the Tesnet3-Challenges repo.](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 - Navigate to [Projects](https://github.com/Concordium/Testnet3-Challenges/projects), choose the Challenges project and pick the mission you would like to participate in. Scope and submission content for each challenge are described in its respective card.
-- Go back to [Code](https://github.com/Concordium/Testnet3-Challenges), choose the folder and subfolder related to your challenge (e.g. you have chosen to accept the (B1)  Challenge, then navigate to folder Bakers and subfolder B1).
-- [Create or upload your submission content.](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github).
+- Go back to [Code](https://github.com/Concordium/Testnet3-Challenges), choose the folder and subfolder related to your challenge (e.g. you have chosen to accept the (B1)  challenge, then navigate to folder Bakers and subfolder B1).
+- [Create or upload your submission content.](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github)
 - [Make a signed commit.](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
 - [Create a pull request.](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests)
 - Concordium approves correct, complete and signed submissions and merges them to the main branch on the initial repo.
 
 ## Bugs and Improvements
-If you encounter a problem, please check already reported issues on GitHub in [Project Bugs & Improvements](https://github.com/Concordium/Testnet3-Challenges/projects/2) and known issues on the Concordium webside under [Troubleshooting](https://developers.concordium.com/testnet/docs/troubleshooting). To submit a bug report, please go to [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) and provide a short description, steps to reproduce, platform and OS, expected result and actual result. We also welcome suggestions for improvements.
+If you encounter a problem, please check already reported issues on GitHub in [Project Bugs & Improvements](https://github.com/Concordium/Testnet3-Challenges/projects/2) and known issues on the Concordium webside under [Troubleshooting](https://developers.concordium.com/testnet/docs/troubleshooting). To submit a bug report, please go to [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) and provide a short description, steps to reproduce, platform and OS, logs, expected result and actual result. We also welcome suggestions for improvements.
 
 ## Documentation and Help
 - Concordium testnet information, step-by-step guides, and troubleshooting can be found [here](https://developers.concordium.com/testnet).
