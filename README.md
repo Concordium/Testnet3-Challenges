@@ -50,6 +50,7 @@ If you encounter a problem, please check already reported issues on GitHub in [P
 
 ## Documentation and Help
 - Concordium testnet information, step-by-step guides, and troubleshooting can be found [here](https://developers.concordium.com/testnet).
+- Frequently asked questions regarding the challenges can be found in [Project FAQs](https://github.com/Concordium/Testnet3-Challenges/projects/3).
 - General Github.com help documentation can be found [here](https://docs.github.com/en/github).
 
 ## Contact
