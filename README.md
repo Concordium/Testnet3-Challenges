@@ -32,9 +32,9 @@ The missions and challenges can be viewed in [Project Challenges](https://github
 
 ## Reward Distribution
 - Concordium accepts one approved submission per challenge per contributor. 
-- Each challenge has a GTU amount tag, which is rewarded, if Concordium approves the submission.
-- Rejected submissions can be modified and resubmitted.
-- Each mission has a max total number of rewards ("seats"). Rewards are paid out after the first-come-first-serve principle. When the max total number of seats is reached, Concordium will close the respective challenges and won’t check nor approve any more related submissions.
+- Each challenge has a GTU amount tag, indicated by the yellow label "<amount> GTU". This amount is rewarded, if Concordium approves the submission.
+- Each challenge has a total number of rewards, indicated by the purple label "<number> rewards". Rewards are paid out after the first-come-first-serve principle. When the maximal total number of rewards is reached, Concordium won’t check nor approve any more related submissions in the queue.
+- Rejected submissions can be modified and resubmitted. However, they will loose the spot of the original submission in the queue and the new resubmission will have to line up at the end of the submission queue.
 
 ## Submission Process
 - [Fork the Tesnet3-Challenges repo.](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
