@@ -1,0 +1,92 @@
+abukatov@k8s-etcd1:~/Документы/concordium-software$ ./concordium-node --listen-grpc-port 9999
+
+_________                                      .___.__
+\_   ___ \  ____   ____   ____  ___________  __| _/|__|__ __  _____
+/    \  \/ /  _ \ /    \_/ ___\/  _ \_  __ \/ __ | |  |  |  \/     \
+\     \___(  <_> )   |  \  \__(  <_> )  | \/ /_/ | |  |  |  /  Y Y  \
+ \______  /\____/|___|  /\___  >____/|__|  \____ | |__|____/|__|_|  /
+        \/            \/     \/                 \/                \/
+
+Welcome to the Concordium node (testnet). Let's get you started!
+
+This software requires you to have Docker installed, running and configured for access from this user
+
+
+Checking whether docker is accessible on your PATH
+OK
+
+Checking whether Docker is running
+OK
+
+Checking whether we can access docker
+OK
+
+
+Validating system credentials
+OK
+
+Currently your node name is set to abukatov-node1. Press enter to keep it or enter a new one:
+OK
+
+Latest version of the concordium client is 0.3.2
+Using your local image
+
+Do you want to flush the local node database before starting? (y/N): n
+Now going to boot up node with name abukatov-node1 running v0.3.2 (testnet)
+Trying to download upstream block state...
+groupadd: group 'docker' already exists
+useradd: user 'docker' already exists
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+Configuration initialized.
+2020-10-16 06:51:18,625 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-16 06:51:18,625 INFO Set uid to user 0 succeeded
+2020-10-16 06:51:18,640 INFO RPC interface 'supervisor' initialized
+2020-10-16 06:51:18,641 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-16 06:51:18,642 INFO supervisord started with pid 13
+2020-10-16 06:51:19,647 INFO spawned: 'collector' with pid 15
+2020-10-16 06:51:19,651 INFO spawned: 'middleware' with pid 16
+2020-10-16 06:51:19,656 INFO spawned: 'nginx' with pid 17
+2020-10-16 06:51:19,661 INFO spawned: 'p2p-client' with pid 18
+2020-10-16T06:51:19.762906902Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-16T06:51:19.762954202Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-16T06:51:19.762967902Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-16T06:51:19.762977602Z: INFO: Network: enabled
+2020-10-16T06:51:19.762983602Z: INFO: Log level: info
+2020-10-16T06:51:19.763288702Z: INFO: My Node ID is 6819ba2edd879c49
+2020-10-16T06:51:19.819883910Z: INFO: Starting consensus layer
+2020-10-16T06:51:19.819928510Z: INFO: Starting up the consensus thread
+2020-10-16T06:51:19.822995611Z: INFO: Starting up the consensus layer
+2020-10-16 06:51:20,824 INFO success: collector entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16 06:51:20,825 INFO success: middleware entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16 06:51:20,825 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16 06:51:20,825 INFO success: p2p-client entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16T06:52:12.978072725Z: INFO: Consensus layer started
+2020-10-16T06:52:12.978181125Z: INFO: RPC server started
+2020-10-16T06:52:12.978190125Z: INFO: Starting out of band catch-up
+2020-10-16T06:52:12.981869521Z: ERROR: External: Error importing block: OtherError ResultDuplicate
+2020-10-16T06:52:12.981923520Z: INFO: Completed out of band catch-up
+2020-10-16T06:52:12.982305120Z: INFO: Starting the P2P layer
+2020-10-16T06:52:12.982340620Z: INFO: Attempting to bootstrap
+2020-10-16T06:52:13.257319697Z: INFO: Using bootstrapper 54.77.133.220:8888
+2020-10-16T06:52:13.257373197Z: INFO: Using bootstrapper 52.17.42.154:8888
+2020-10-16T06:52:13.257384197Z: INFO: Commencing baking
+2020-10-16T06:52:13.258966495Z: INFO: Runner: Starting baker thread
+2020-10-16T06:52:13.767566798Z: INFO: Sent a direct message to peer c8726d0f4ffd64e1 containing a catch-up status message
+2020-10-16T06:52:13.864536285Z: INFO: Processed a catch-up status message from c8726d0f4ffd64e1
+2020-10-16T06:52:13.865473183Z: INFO: Sent a direct message to peer c8726d0f4ffd64e1 containing a catch-up status message
+2020-10-16T06:52:13.899384944Z: INFO: Processed a catch-up status message from 3864651b1dedf61a
+2020-10-16T06:52:13.899615143Z: INFO: Sent a direct message to peer 3864651b1dedf61a containing a catch-up status message
+2020-10-16T06:52:13.918561321Z: INFO: Processed a catch-up status message from a2bbb58f7c2f25b3
+2020-10-16T06:52:13.918753921Z: INFO: Sent a direct message to peer a2bbb58f7c2f25b3 containing a catch-up status message
+2020-10-16T06:52:13.933198404Z: INFO: Skov: Receive statistics: blocksReceivedCount=1 blockLastReceived=1.6028311339308255e9 blockReceiveLatencyEMA=26.993082550700002 blockReceiveLatencyEMSD=80.97924765210001 blockReceivePeriodEMA=Nothing blockReceivePeriodEMSD=Nothing
+2020-10-16T06:52:14.006097418Z: INFO: Skov: Block eb4d3e08c7428aa6e9894b85d1caba54f50a258ce11f8145a885151066dbbff6 (18) arrived
+2020-10-16T06:52:14.006553618Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=1 blockLastArrive=1.602831134005978e9 blockArriveLatencyEMA=27.0005978019 blockArriveLatencyEMSD=81.0017934057 blockArrivePeriodEMA=Nothing blockArrivePeriodEMSD=Nothing transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-10-16T06:52:14.006715718Z: INFO: Processed a block from c8726d0f4ffd64e1
+2020-10-16T06:52:14.010929613Z: INFO: Skov: Receive statistics: blocksReceivedCount=2 blockLastReceived=1.6028311340083811e9 blockReceiveLatencyEMA=50.09461241723 blockReceiveLatencyEMSD=103.46497395175687 blockReceivePeriodEMA=Just 7.7555709e-2 blockReceivePeriodEMSD=Just 0.0
+2020-10-16T06:52:14.030538790Z: INFO: Skov: Block eb4d3e08c7428aa6e9894b85d1caba54f50a258ce11f8145a885151066dbbff6 is finalized at height 78461 with finalization delta=0
+2020-10-16T06:52:14.030766790Z: INFO: Skov: Finalization statistics: finalizationCount=1 lastFinalizedTime=1.6028311340306277e9 finalizationPeriodEMA=Nothing finalizationPeriodEMSD=Nothing
