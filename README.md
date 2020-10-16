@@ -28,7 +28,7 @@ This approach enables Concordium to trace the GitHub user name to earned rewards
 Note that in one challenge, i.e. challenge (ID2) in mission Identities, a contributor must use a valid real-life identity to issue a Concordium identity. Concordium will only check the identity attributes made public in the submission. The Concordium identity will be erased when testnet3 is taken down.
 
 ## Missions and Challenges
-The missions and challenges can be viewed in [Project Challenges](https://github.com/Concordium/Testnet3-Challenges/projects/1). Please note that they intentionally only provide a minimum description of mission and submission content. For detailed step-to-step guides, troubleshooting and faqs, we expect the contributors to consult [Documentation and Help](https://github.com/Concordium/Testnet3-Challenges#documentation-and-help).
+The missions and challenges can be viewed in [Project Challenges](https://github.com/Concordium/Testnet3-Challenges/projects/1). Please note that they intentionally only provide a minimum description of tasks and submission content. For detailed step-to-step guides, troubleshooting and faqs, we expect the contributors to consult [Documentation and Help](https://github.com/Concordium/Testnet3-Challenges#documentation-and-help).
 
 ## Reward Distribution
 - Concordium accepts one approved submission per challenge per contributor. 
@@ -38,7 +38,7 @@ The missions and challenges can be viewed in [Project Challenges](https://github
 
 ## Submission Process
 - [Fork the Tesnet3-Challenges repo.](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
-- Navigate to [Projects](https://github.com/Concordium/Testnet3-Challenges/projects), choose the Challenges project and pick the mission you would like to participate in. Scope and submission content for each challenge are described in its respective card.
+- Navigate to [Projects](https://github.com/Concordium/Testnet3-Challenges/projects), choose the Challenges project and pick the mission and challenge you would like to participate in. Scope and submission content for each challenge are described in its respective card.
 - Go back to [Code](https://github.com/Concordium/Testnet3-Challenges), choose the folder and subfolder related to your challenge (e.g. you have chosen to accept the (B1)  challenge, then navigate to folder Bakers and subfolder B1).
 - [Create or upload your submission content.](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github)
 - [Make a signed commit.](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
