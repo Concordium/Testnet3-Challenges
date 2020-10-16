@@ -1,0 +1,21 @@
+Node Name	: quadim-node-2
+Node Id		: 3d8625357292a57f
+RAM		: 4 GB
+Disk		: 30 GB SSD
+
+--Process/Experience
+It's 1st try.  Date : 2020-10-17 00:43
+I can't generate "./concordium-node-retrieve-logs" from console my virtual server was stuck and got oom.
+Log file has been generated but there is no information. So i check with OS command to find problem.
+
+-rw-rw-r-- 1 ubuntu ubuntu       0 Oct 16 21:16 concordium-testnet-node.log
+
+--- Out of Memory / Log File (dmesg)
+[459403.766194] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice,task=concordium-node,pid=3748,uid=1000
+[459403.766206] Out of memory: Killed process 3748 (concordium-node) total-vm:532340kB, anon-rss:304488kB, file-rss:0kB, shmem-rss:0kB
+[459403.798816] oom_reaper: reaped process 3748 (concordium-node), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+
+-- Result
+Not generated log file.
+Maybe we need to make crontab for collect RAM usage. 2nd try i'll try.
+
