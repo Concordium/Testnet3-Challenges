@@ -45,6 +45,8 @@ The missions and challenges can be viewed in [Project Challenges](https://github
 - [Create a pull request.](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests)
 - Concordium approves correct, complete and signed submissions and merges them to the main branch on the initial repo.
 
+Please make a separate PR for each challenge submission (this will require a different branch for each PR, you can use the challenge ID as name i.e. `B1`, `B2`, `ID1` etc).
+
 ## Bugs and Improvements
 If you encounter a problem, please check already reported issues on GitHub in [Project Bugs & Improvements](https://github.com/Concordium/Testnet3-Challenges/projects/2) and known issues on the Concordium webside under [Troubleshooting](https://developers.concordium.com/testnet/docs/troubleshooting). To submit a bug report, please go to [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) and provide a short description, steps to reproduce, platform and OS, logs, expected result and actual result. We also welcome suggestions for improvements.
 
