@@ -1,0 +1,19 @@
+Node Id: 136c300b5b8535aa
+
+Restarting a node using local DB:
+
+Last finalized prior restart: 98927
+Blocks needed to catch up: 24
+Time to catch up: (! SMALL_BUG: Config initialization time has non readable characters, therefore I took the line after its time) 17.21.53.839284337Z to 17.22.08.169372109Z ~ Approximately 15 seconds
+
+! IMPORTANT_BUG: It must not but it gives an error "ERROR: External: Error importing block: OtherError ResultDuplicate" Tried a couple of times, got the same Error, tried other nodes got the same error as well. 
+Used system in the log file with the error is a droplet: Ubuntu 20.04 (LTS) x 64, 1vCPUs, 1GB / 25 GB Disk 
+
+
+Restarting a node using --no-block-state-import:
+
+Last finalized prior restart: 99081
+Blocks needed to catch up: 39
+Time to catch up: (Config initialization time has non readable characters, therefore I took the line after its time) 17.47.02.425Z to 17.47.38.9644593999Z ~ Approximately 36 seconds
+
+Logs are attached
