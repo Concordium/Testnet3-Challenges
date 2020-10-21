@@ -10,6 +10,6 @@ Restart with --no-block-state-import
 17:21:03 restart start
 17:21:48 finalization
 
-Log file under the same folder with this file.
-Lof file name: log.tar.gz
-Compress method: tar
+Log file under the same folder with this file. Splited 24mb files because of github limits.
+Lof file name: log.tar.gz.aa to log.tar.gz.ah
+Compress method: tar -cvzf - concordium-testnet-node.log | split -b 24m - log.tar.gz.
