@@ -1,1 +1,52 @@
+Node ID: d6decaa28e70c084
 
+----log----
+
+useradd: warning: the home directory /home/docker already exists.
+useradd: Not copying any file from skel directory into it.
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+[92mConfiguration initialized.
+[0m[92mKeys written to file '/var/lib/concordium/data/baker-credentials.json'.
+DO NOT LOSE THIS FILE.
+To add a baker to the chain using these keys, use 'baker add /var/lib/concordium/data/baker-credentials.json'.
+[0m2020-10-15 12:50:10,298 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-15 12:50:10,299 INFO Set uid to user 0 succeeded
+2020-10-15 12:50:10,306 INFO RPC interface 'supervisor' initialized
+2020-10-15 12:50:10,306 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-15 12:50:10,307 INFO supervisord started with pid 26
+2020-10-15 12:50:11,310 INFO spawned: 'collector' with pid 28
+2020-10-15 12:50:11,314 INFO spawned: 'middleware' with pid 29
+2020-10-15 12:50:11,317 INFO spawned: 'nginx' with pid 30
+2020-10-15 12:50:11,320 INFO spawned: 'p2p-client' with pid 31
+2020-10-15T12:50:11.368707338Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-15T12:50:11.368728478Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-15T12:50:11.368736762Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-15T12:50:11.368741986Z: INFO: Network: enabled
+2020-10-15T12:50:11.368745973Z: INFO: Log level: info
+2020-10-15T12:50:11.369375872Z: INFO: My Node ID is d6decaa28e70c084
+2020-10-15T12:50:11.380057450Z: INFO: Starting consensus layer
+2020-10-15T12:50:11.380076583Z: INFO: Starting up the consensus thread
+2020-10-15T12:50:11.381517735Z: INFO: Starting up the consensus layer
+2020-10-15T12:50:11.804302941Z: INFO: Consensus layer started
+2020-10-15T12:50:11.804518144Z: INFO: RPC server started
+2020-10-15T12:50:11.804524363Z: INFO: Starting out of band catch-up
+2020-10-15T12:50:11.809739448Z: INFO: Skov: Receive statistics: blocksReceivedCount=1 blockLastReceived=1.6027662118049235e9 blockReceiveLatencyEMA=78420.5554923647 blockReceiveLatencyEMSD=235261.66647709408 blockReceivePeriodEMA=Nothing blockReceivePeriodEMSD=Nothing
+2020-10-15T12:50:11.812686394Z: INFO: Skov: Block 4cc10b3b3ea49207b2d6daa2b5d6df410fd543fb0a3ea891864867ef6020fa27 (15) arrived
+2020-10-15T12:50:11.812805434Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=1 blockLastArrive=1.6027662118126595e9 blockArriveLatencyEMA=78420.5562659389 blockArriveLatencyEMSD=235261.6687978167 blockArrivePeriodEMA=Nothing blockArrivePeriodEMSD=Nothing transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-10-15T12:50:11.814392722Z: INFO: Skov: Receive statistics: blocksReceivedCount=2 blockLastReceived=1.6027662118049235e9 blockReceiveLatencyEMA=148996.38043549293 blockReceiveLatencyEMSD=307639.0257100832 blockReceivePeriodEMA=Just 0.0 blockReceivePeriodEMSD=Just 0.0
+2020-10-15T12:50:11.819577233Z: INFO: Skov: Block 4cc10b3b3ea49207b2d6daa2b5d6df410fd543fb0a3ea891864867ef6020fa27 is finalized at height 1 with finalization delta=0
+2020-10-15T12:50:11.820007910Z: INFO: Skov: Finalization statistics: finalizationCount=1 lastFinalizedTime=1.602766211819916e9 finalizationPeriodEMA=Nothing finalizationPeriodEMSD=Nothing
+2020-10-15T12:50:11.831064747Z: INFO: Skov: Block 8fbb7b5151f1cad3accf66df3051158410d09168c0445f95d4e7c3699814433c (5) arrived
+
+----syncning----
+
+2020-10-15T13:22:15.982664721Z: INFO: Processed a block from 5f4c15d2e137bc0b
+2020-10-15T13:22:15.982732004Z: INFO: Processed a catch-up status message from 5f4c15d2e137bc0b
+2020-10-15T13:22:15.984683223Z: INFO: Skov: Receive statistics: blocksReceivedCount=68352 blockLastReceived=1.6027681359827852e9 blockReceiveLatencyEMA=40363.467671733575 blockReceiveLatencyEMSD=13454.319486679977 blockReceivePeriodEMA=Just 3.9540524839791535e-2 blockReceivePeriodEMSD=Just 1.300076378302902e-2
+2020-10-15T13:22:15.984800455Z: INFO: Processed a block from 3693dbe85689f908
+2020-10-15T13:22:15.984841973Z: INFO: Sent a broadcast containing a block
+
+// the end of synchronization, it takes about 32 minutes for full sync at block height 68352
