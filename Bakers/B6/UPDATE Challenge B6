@@ -1,0 +1,380 @@
+Node Id: 610ff96ec28664bd
+
+VPS spec:
+CPU: 2 vCore, Intel Xeon Processor 2.6 Mhz
+RAM: 4096 MB
+Storage: 80 GB SSD
+OS: Ubuntu 20.04 x64
+
+Finished monitoring server for 7 days.
+I will add just daily HDD & RAM monitor data. Later will upload full log when we will get instructions how to submit these logs.
+
+I was using these commands:
+
+'dh -h' for disk space on VPS
+'free'  for display amount of free and used RAM.
+
+Description for HDD data monitoring: '/dev/vda1' a location where is a dock container and where concordium saves all data.
+
+My feedback: 
+
+Expectations about data was that node will collect data and it will use more disk space. What we can see that at start it was using 4.2Gb, after running for 7 days it has grown to 9Gb of data.
+
+Expectations about RAM was that if data will be growing so it will process more memory. But on these 7 days I didn't see much difference from day 1 to day 7.
+
+
+2020-10-17 04:50
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  744K  393M   1% /run
+/dev/vda1        76G  4.2G   67G   6% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      412984     1411904        2304     2205704     3430060
+Swap:             0           0           0
+
+2020-10-17 18:04
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  744K  393M   1% /run
+/dev/vda1        76G  4.6G   67G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      441148      782776        2304     2806668     3369736
+Swap:             0           0           0
+
+2020-10-18 10:17
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  5.1G   67G   8% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      488756      220272        2308     3321564     3323148
+Swap:             0           0           0
+
+2020-10-18 16:37
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  5.2G   66G   8% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      500800      131672        2308     3398120     3305264
+Swap:             0           0           0
+
+2020-10-18 23:08
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  5.4G   66G   8% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      503472      138124        2308     3388996     3300964
+Swap:             0           0           0
+
+2020-10-19 10:43
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  5.8G   66G   9% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      532588      158936        2308     3339068     3266068
+Swap:             0           0           0
+
+2020-10-19 16:02
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  6.0G   66G   9% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      535464      140964        2308     3354164     3259200
+Swap:             0           0           0
+
+2020-10-19 19:32
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  6.1G   66G   9% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      535664      115864        2308     3379064     3255040
+Swap:             0           0           0
+
+2020-10-20 00:49
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  6.2G   65G   9% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      535832      145100        2308     3349660     3248492
+Swap:             0           0           0
+
+2020-10-20 09:38
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  6.5G   65G  10% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      543328      145504        2308     3341760     3230276
+Swap:             0           0           0
+
+2020-10-20 15:25
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  752K  393M   1% /run
+/dev/vda1        76G  6.7G   65G  10% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      551988      138792        2312     3339812     3214260
+Swap:             0           0           0
+
+2020-10-20 21:06
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  6.8G   65G  10% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      575936      141776        2308     3312880     3184652
+Swap:             0           0           0
+
+2020-10-21 10:11
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  7.2G   64G  11% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      571088      130100        2308     3329404     3179092
+Swap:             0           0           0
+
+2020-10-21 14:48
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  7.3G   64G  11% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      573744      131064        2308     3325784     3173356
+Swap:             0           0           0
+
+2020-10-21 19:48
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  7.5G   64G  11% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      591736      137996        2308     3300860     3149612
+Swap:             0           0           0
+
+2020-10-22 09:36
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  7.9G   64G  12% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      612000      136848        2308     3281744     3122672
+Swap:             0           0           0
+
+2020-10-22 15:50
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  8.1G   63G  12% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      618964      149624        2308     3262004     3115488
+Swap:             0           0           0
+
+2020-10-23 11:23
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  8.6G   63G  13% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      666544      143272        2308     3220776     3066536
+Swap:             0           0           0
+
+2020-10-23 14:34
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  8.7G   63G  13% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      669548      130272        2308     3230772     3063588
+Swap:             0           0           0
+
+2020-10-23 20:08
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  8.9G   63G  13% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      689696      140640        2308     3200256     3043380
+Swap:             0           0           0
+
+2020-10-23 22:26
+
+HDD data:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           394M  748K  393M   1% /run
+/dev/vda1        76G  9.0G   63G  13% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           394M     0  394M   0% /run/user/1000
+
+RAM:
+              total        used        free      shared  buff/cache   available
+Mem:        4030592      690448      144456        2308     3195688     3042660
+Swap:             0           0           0
