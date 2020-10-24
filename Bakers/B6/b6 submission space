@@ -1,1 +1,52 @@
+Node ID c3f4184999681259
 
+machine specs:
+H/W path      Device       Class      Description
+=================================================
+                           system     Google Compute Engine
+/0                         bus        Google Compute Engine
+/0/0                       memory     96KiB BIOS
+/0/1001                    processor  Intel(R) Xeon(R) CPU @ 2.20GHz
+/0/1002                    processor  CPU
+/0/200                     memory     4GiB System Memory
+/0/200/0                   memory     4GiB DIMM RAM Synchronous
+/0/100                     bridge     440FX - 82441FX PMC [Natoma]
+/0/100/1                   bridge     82371AB/EB/MB PIIX4 ISA
+/0/100/1.3                 bridge     82371AB/EB/MB PIIX4 ACPI
+/0/100/3                   generic    Virtio SCSI
+/0/100/3/0                 generic    Virtual I/O device
+/0/100/4                   network    Virtio network device
+/0/100/4/0    ens4         network    Ethernet interface
+/0/100/5                   generic    Virtio memory balloon
+/0/100/5/0                 generic    Virtual I/O device
+/0/100/6                   generic    Virtio RNG
+/0/100/6/0                 generic    Virtual I/O device
+/0/1          scsi0        storage    
+/0/1/0.1.0    /dev/sda     disk       26GB PersistentDisk
+/0/1/0.1.0/1  /dev/sda1    volume     24GiB EXT4 volume
+/0/1/0.1.0/e  /dev/sda14   volume     4095KiB BIOS Boot partition
+/0/1/0.1.0/f  /dev/sda15   volume     105MiB Windows FAT volume
+/1            vethbf4da22  network    Ethernet interface
+/2            docker0      network    Ethernet interface
+
+==============================================================
+feedback on RAM and disk usage and expectations
+Sat Oct 24 18:46:08 UTC 2020
+$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           3935         545         771           0        2618        3255
+Swap:             0           0           0
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  980K  393M   1% /run
+/dev/sda1        25G  3.4G   21G  14% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9607
+/dev/loop1       56M   56M     0 100% /snap/core18/1885
+/dev/loop2      128M  128M     0 100% /snap/google-cloud-sdk/155
+tmpfs           394M     0  394M   0% /run/user/1001
+==============================================================
