@@ -1,1 +1,63 @@
+Node ID 552fa64ad8c6dd5d
 
+machine specs:
+H/W path       Device       Class       Description
+============================================================================================
+                            system      System Product Name
+/0                          bus         P5GD2-X
+/0/0                        memory      64KiB BIOS
+/0/4                        processor   Intel(R) Pentium(R) 4 CPU 2.80GHz
+/0/4/5                      memory      16KiB L1 cache
+/0/4/6                      memory      1MiB L2 cache
+/0/39                       memory      2GiB System Memory
+/0/39/0                     memory      512MiB DIMM SDRAM Synchronous
+/0/39/1                     memory      512MiB DIMM SDRAM Synchronous
+/0/39/2                     memory      512MiB DIMM SDRAM Synchronous
+/0/39/3                     memory      512MiB DIMM SDRAM Synchronous
+/0/100                      bridge      82915G/P/GV/GL/PL/910GL Memory Controller Hub
+/0/100/1b                   multimedia  82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller
+/0/100/1c                   bridge      82801FB/FBM/FR/FW/FRW (ICH6 Family) PCI Express Port 1
+/0/100/1c.1                 bridge      82801FB/FBM/FR/FW/FRW (ICH6 Family) PCI Express Port 2
+/0/100/1c.1/0  enp2s0       network     88E8053 PCI-E Gigabit Ethernet Controller
+/0/100/1d                   bus         82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI #1
+/0/100/1d/1    usb1         bus         UHCI Host Controller
+/0/100/1d.1                 bus         82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI #2
+/0/100/1d.1/1  usb2         bus         UHCI Host Controller
+/0/100/1d.2                 bus         82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI #3
+/0/100/1d.2/1  usb3         bus         UHCI Host Controller
+/0/100/1d.3                 bus         82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI #4
+/0/100/1d.3/1  usb4         bus         UHCI Host Controller
+/0/100/1e                   bridge      82801 PCI Bridge
+/0/100/1f                   bridge      82801FB/FR (ICH6/ICH6R) LPC Interface Bridge
+/0/100/1f.1                 storage     82801FB/FBM/FR/FW/FRW (ICH6 Family) IDE Controller
+/0/100/1f.2                 storage     82801FB/FW (ICH6/ICH6W) SATA Controller
+/0/100/1f.3                 bus         82801FB/FBM/FR/FW/FRW (ICH6 Family) SMBus Controller
+/0/1           scsi3        storage
+/0/1/0.1.0     /dev/sda     disk        80GB SAMSUNG HD080HJ
+/0/1/0.1.0/1   /dev/sda1    volume      1023KiB BIOS Boot partition
+/0/1/0.1.0/2   /dev/sda2    volume      1GiB EXT4 volume
+/0/1/0.1.0/3   /dev/sda3    volume      73GiB EFI partition
+/1             docker0      network     Ethernet interface
+/2             veth2e6aeb3  network     Ethernet interface
+============================================================================================
+
+feedback on RAM and disk usage:
+
+Sun Oct 25 07:18:31 UTC 2020
+$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           1993         425          85           1        1482        1440
+Swap:          2047           2        2045
+$ df -h
+Filesystem                         Size  Used Avail Use% Mounted on
+udev                               966M     0  966M   0% /dev
+tmpfs                              200M  1.1M  199M   1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv   36G  5.7G   29G  17% /
+tmpfs                              997M     0  997M   0% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+tmpfs                              997M     0  997M   0% /sys/fs/cgroup
+/dev/loop0                         126M  126M     0 100% /snap/docker/471
+/dev/loop1                          98M   98M     0 100% /snap/core/10185
+/dev/sda2                          976M   77M  832M   9% /boot
+tmpfs                              200M     0  200M   0% /run/user/1000
+============================================================================================
