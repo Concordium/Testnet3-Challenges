@@ -21,11 +21,12 @@ The purpose of this document is to provide real-time information when it comes t
   * ⚠️ On Sunday, October 25th, between 5am and 11am BST, there might be disruption in the identity issuing service, due to scheduled maintenance on the side of our identity issuer.
 
 
-### ⚠️ Challenges & supporting tooling
+### ✅ Challenges & supporting tooling
 
-* Investigating: Known issue for large log size submission for challenges requiring it.
-  * No need to post logs for now, just keep the logs until we advise the changed submission process.
-  * This will also cover the out-of-memory issues with `concordium-node-retrieve-logs`
+* No known major issues
+
+See [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) for existing reports & statuses before posting an issue.
+
 
 ### FAQs and Troubleshooting
 
