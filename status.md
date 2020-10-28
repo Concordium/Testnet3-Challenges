@@ -7,7 +7,7 @@ The purpose of this document is to provide real-time information when it comes t
 
 ## Known issues, limitations and schedule events
 
-### ✅ Test Network
+### Test Network
 
 * The wallet-proxy is being upgraded right now in preparation for the upcoming challenges. Therefore, the mobile apps are not working properly right now. It should be fixed very soon.
 * No Scheduled downtime
