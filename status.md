@@ -22,7 +22,7 @@ The purpose of this document is to provide real-time information when it comes t
 ### ✅ Challenges & supporting tooling
 
 * No known major issues
-* The GTU drop that can be requested for test purposes on newly created accounts has been increased from 100 GTU to 1000 GTU to ensure that transfer fees can be paid during the transaction challenges.
+* The GTU drop that can be requested on newly created accounts for test purposes has been increased temporarily from 100 GTU to 1000 GTU to ensure that transfer fees can be paid during the transaction challenges. Note that the GTU drop button in the mobile app as well as the related pending transfer details still indicate 100 GTU. You will however receive 1000 GTU on your account when the transfer is finalized.
 
 See [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) for existing reports & statuses before posting an issue.
 
