@@ -7,11 +7,12 @@ The purpose of this document is to provide real-time information when it comes t
 
 ## Known issues, limitations and schedule events
 
-### Test Network
+###  ✅ Test Network
 
-* The wallet-proxy is being upgraded right now in preparation for the upcoming challenges. Therefore, the mobile apps are not working properly right now. It should be fixed very soon.
+* No known issues
+* No limitations
 * No Scheduled downtime
-* ~ 610 running nodes
+* ~ 580 running nodes
 
 ### ✅ Identity Issuers
 
@@ -21,6 +22,7 @@ The purpose of this document is to provide real-time information when it comes t
 ### ✅ Challenges & supporting tooling
 
 * No known major issues
+* The GTU drop that can be requested for test purposes on newly created accounts has been increased from 100 GTU to 1000 GTU to ensure that transfer fees can be paid during the transaction challenges.
 
 See [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) for existing reports & statuses before posting an issue.
 
@@ -38,7 +40,8 @@ See [Issues](https://github.com/Concordium/Testnet3-Challenges/issues) for exist
 
 ## Past Updates
 
-- [Oct 25] Disruption in the identity issuing service, due to scheduled maintenance on the side of our identity issuer.
+- [Oct 28 12:12 UTC](https://discord.com/channels/667378330923696158/667387027003670528/768786895470854164) Wallet-proxy upgraded to increase GTU drop for transaction challenges.
+- Oct 25 Disruption in the identity issuing service, due to scheduled maintenance on the side of our identity issuer.
 - [Oct 22 10:44 UTC](https://discord.com/channels/667378330923696158/667387027003670528/768786895470854164) Testnet Stake Delegation service redeployed with fixes.
 - [Oct 19 13:11 UTC](https://github.com/Concordium/Testnet3-Challenges/issues/644) Identity Issuer: Notabene outage resolved.
 - [Oct 16 11:05 UTC](https://github.com/Concordium/Testnet3-Challenges/issues/299) Stake delegation slot increase to 25 @ ~1% stake each.
