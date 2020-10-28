@@ -1,0 +1,24 @@
+#!/usr/bin/expect -f
+set timeout -1
+
+
+spawn ./concordium-client  transaction send-gtu --sender "Prod account 1" --amount 0.1 --receiver "Prod account 2" --no-confirm
+expect "Enter password for signing key:"
+
+send -- "xxxxx\r"
+
+expect eof
+
+
+
+$ cat send.sh 
+#!/bin/bash
+
+for i in {1..1000}
+do
+	echo "Run $i"
+	./expect >> tx-out.log
+done
+
+cat tx-out.log | grep "Transaction is finalized into block" > blocks.log
+cat tx-out.log | grep "Transaction '" > txs.log
