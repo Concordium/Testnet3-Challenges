@@ -1,1 +1,36 @@
 
+Address	A	4RuZDpQphkMyYxttycqudGn5EPLecE7EXu5WMATkCqF6EuQPNL
+Address	B	42p8YvDhJ8uMQVTf3C3NVFWFRFVBMX9fLFMLYW85SccYwPQ6U5
+
+1. transfer 3 GTU from account A to account B
+
+Block 182083
+
+https://dashboard.testnet.concordium.com/chain/f8fd859e1891e352451d9e8970c9f335006a0028a9bcb7dbef04dab96c5f68c5
+./concordium@Concord:~/Documents/concordium-software$ ./concordium-client transaction send-gtu --amount 3 --sender 4RuZDpQphkMyYxttycqudGn5EPLecE7EXu5WMATkCqF6EuQPNL --receiver 42p8YvDhJ8uMQVTf3C3NVFWFRFVBMX9fLFMLYW85SccYwPQ6U5
+![SendCMD01](https://user-images.githubusercontent.com/22579956/97461469-da90d380-194e-11eb-888b-197eb936c510.PNG)
+
+
+2. shield 10 GTU of account A
+Block 182192
+https://dashboard.testnet.concordium.com/chain/d1899d440bd3d008e2e79fc32376f271ad083bb5a2be964aff0fbd9efd7affb8
+
+./concordium-client account encrypt --amount 10 --sender 4RuZDpQphkMyYxttycqudGn5EPLecE7EXu5WMATkCqF6EuQPNL
+![SendCMD02](https://user-images.githubusercontent.com/22579956/97461515-e381a500-194e-11eb-9065-e6406dba5f23.PNG)
+
+
+3. transfer 7 GTU from the shielded balance on account A to B
+
+Block 182218
+https://dashboard.testnet.concordium.com/chain/47abdff0bdb2d70cb28f9ebf0ac7ff9ac29a4dfc917a050ae06b01821e73122e
+./concordium-client transaction send-gtu-encrypted --sender 4RuZDpQphkMyYxttycqudGn5EPLecE7EXu5WMATkCqF6EuQPNL --receiver 42p8YvDhJ8uMQVTf3C3NVFWFRFVBMX9fLFMLYW85SccYwPQ6U5 --amount 7
+![SendCMD03](https://user-images.githubusercontent.com/22579956/97461542-e9778600-194e-11eb-82a9-8ed24deafa7e.PNG)
+
+
+4. unshield shielded balance on account B
+
+./concordium-client account decrypt --sender 42p8YvDhJ8uMQVTf3C3NVFWFRFVBMX9fLFMLYW85SccYwPQ6U5 --amount 7
+
+Block 182249
+https://dashboard.testnet.concordium.com/chain/f397f20669a06c8fc69ef2e6260b8b6b7ceab825906c2634c97cd8ccba1c96da
+![SendCMD04](https://user-images.githubusercontent.com/22579956/97461567-eed4d080-194e-11eb-8065-354528e67b51.PNG)
