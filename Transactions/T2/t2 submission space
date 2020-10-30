@@ -1,1 +1,79 @@
+Account 1: 3Jo9EskVKWCinYqNzSGfQJQ6qhnJnBgrD1BLWS1y822GU7vmRV
+Account 2: 32kZjASdbDS884V9pygBXr4C8CP9X3zaBJoMX7PHsugCqAeycN
 
+1 SS ADDED
+C:\Users\default\Documents\concordium-software>concordium-client.exe transaction send-gtu --sender 3Jo9EskVKWCinYqNzSGfQJQ6qhnJnBgrD1BLWS1y822GU7vmRV --amount 3 --receiver 32kZjASdbDS884V9pygBXr4C8CP9X3zaBJoMX7PHsugCqAeycN
+Using default energy amount of 59 NRG.
+Sending 3.000000 GTU from '3Jo9EskVKWCinYqNzSGfQJQ6qhnJnBgrD1BLWS1y822GU7vmRV' (Acc2) to '32kZjASdbDS884V9pygBXr4C8CP9X3zaBJoMX7PHsugCqAeycN' (okan).
+Allowing up to 59 NRG to be spent as transaction fee.
+Transaction expires at Fri, 30 Oct 2020 22:22:35 UTC.
+Confirm [yN]: y
+Enter password for signing key:
+Transaction '4776a82b7a7ecbf3e93016fefabd9ce49ef46e68a69b68d35fea79ebe0df40c8' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status 4776a82b7a7ecbf3e93016fefabd9ce49ef46e68a69b68d35fea79ebe0df40c8'.
+[22:12:40] Waiting for the transaction to be committed......
+Transaction is finalized into block f4567a3e07b0fc40d507aeca192eb2b99794b03bf46c494e7f5d442227954eba with status "success" and cost 0.005900 GTU (59 NRG).
+[22:12:46] Waiting for the transaction to be finalized...
+[22:12:46] Transaction finalized.
+
+
+2 SS ADDED
+C:\Users\default\Documents\concordium-software>concordium-client account encrypt --amount 10 --sender 3Jo9EskVKWCinYqNzSGfQJQ6qhnJnBgrD1BLWS1y822GU7vmRV
+Using default energy amount of 159 NRG.
+Transferring 10.000000 GTU from public to encrypted balance of account '3Jo9EskVKWCinYqNzSGfQJQ6qhnJnBgrD1BLWS1y822GU7vmRV' (Acc2).
+Allowing up to 159 NRG to be spent as transaction fee.
+Transaction expires at Fri, 30 Oct 2020 22:22:55 UTC.
+Confirm [yN]: y
+Enter password for signing key:
+Transaction '2ed3c80a7d2bb910bed934c3356ec4fd9f2ba0916901980c5bde8ccc28fd7826' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status 2ed3c80a7d2bb910bed934c3356ec4fd9f2ba0916901980c5bde8ccc28fd7826'.
+[22:13:00] Waiting for the transaction to be committed........
+Transaction is finalized into block dc0b98a8240ca08b2159157f32222a59899fc750e45866e46f5e8d4bb6a9f687 with status "success" and cost 0.015900 GTU (159 NRG).
+[22:13:10] Waiting for the transaction to be finalized...
+[22:13:10] Transaction finalized.
+
+
+3 SS ADDED
+C:\Users\default\Documents\concordium-software>concordium-client transaction send-gtu-encrypted --sender 3Jo9EskVKWCinYqNzSGfQJQ6qhnJnBgrD1BLWS1y822GU7vmRV --receiver 32kZjASdbDS884V9pygBXr4C8CP9X3zaBJoMX7PHsugCqAeycN --amount 7
+Using default energy amount of 30070 NRG.
+Enter password for decrypting the secret encryption key:
+Transferring 7.000000 GTU from encrypted balance of account '3Jo9EskVKWCinYqNzSGfQJQ6qhnJnBgrD1BLWS1y822GU7vmRV' (Acc2) to '32kZjASdbDS884V9pygBXr4C8CP9X3zaBJoMX7PHsugCqAeycN' (okan).
+Allowing up to 30070 NRG to be spent as transaction fee.
+Transaction expires at Fri, 30 Oct 2020 22:23:16 UTC.
+Confirm [yN]: y
+Enter password for signing key:
+Transaction '52587c97d3dc65f01e88b778b2970bd71feabe931e3a2b187e099c990c4f6289' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status 52587c97d3dc65f01e88b778b2970bd71feabe931e3a2b187e099c990c4f6289'.
+[22:13:31] Waiting for the transaction to be committed.........
+Transaction is committed into block 139a96b8c9e60329732e63d58e9d238a0e2f07816fd8a190f4780b37e1111a49 with status "success" and cost 3.007000 GTU (30070 NRG).
+[22:13:43] Waiting for the transaction to be finalized....
+[22:13:48] Transaction finalized.
+
+
+4 SS ADDED
+C:\Users\default\Documents\concordium-software>concordium-client account decrypt --sender 32kZjASdbDS884V9pygBXr4C8CP9X3zaBJoMX7PHsugCqAeycN --amount 7
+Using default energy amount of 16065 NRG.
+Enter password for decrypting the secret encryption key:
+Transferring 7.000000 GTU from encrypted to public balance of account '32kZjASdbDS884V9pygBXr4C8CP9X3zaBJoMX7PHsugCqAeycN' (okan).
+Allowing up to 16065 NRG to be spent as transaction fee.
+Transaction expires at Fri, 30 Oct 2020 22:23:53 UTC.
+Confirm [yN]: y
+Enter password for signing key:
+Transaction '15a9d738cc38c66bd3ac4fab2259005e687e5d2c43b2529c2c0eef394ffeb465' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status 15a9d738cc38c66bd3ac4fab2259005e687e5d2c43b2529c2c0eef394ffeb465'.
+[22:14:08] Waiting for the transaction to be committed...........
+Transaction is finalized into block 7e2e7cdf7463934b7d41edf642b33a475a28159484a31689e7e38464f664d247 with status "success" and cost 1.606500 GTU (16065 NRG).
+[22:14:24] Waiting for the transaction to be finalized...
+[22:14:24] Transaction finalized.
