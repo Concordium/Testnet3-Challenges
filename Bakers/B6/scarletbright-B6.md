@@ -3,7 +3,7 @@
 f75f2d5c7a32286d
 
 *submit machine specs
-
+```javascript
 ubuntu-concordium           
     description: Computer
     product: Droplet
@@ -100,12 +100,13 @@ ubuntu-concordium
                    capacity: 105MiB
                    capabilities: fat initialized
                    configuration: FATs=2 filesystem=fat label=UEFI mount.fstype=vfat mount.options=rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro state=mounted
-       
+```
 *provide feedback on RAM and disk usage and expectations
 
 The disc usage has increased by 10% in 7 days, the same has happened with RAM. No memory leaks were observed. Every time the node restarts, there are short peaks in CPU usage, disk writing and bandwith usage. The VPS used for the challenge is not that powerful, 4 Gb RAM / 2 shared vCPUs, however concordium node and client are not resource heavy, so it was more than enough.
 No other node was running on the VPS during the challenge.
 Below are some graphs available:
+
 
 ![picture](cpu.png)
 
