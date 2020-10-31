@@ -1,1 +1,87 @@
 
+Node System Configuration: Digital Ocean Droplet
+4 GB Memory / 80 GB Disk / AMS3 - Ubuntu 18.04 (LTS) x64
+
+Node IP: 188.166.72.203
+Node ID: 05b82155f0e123c8
+
+
+
+To analyse RAM usage and Disc usage of node "free" and "df" commands had been executed 
+frequently between 18.10.2020 and 24.10.2020 for 7 days as the following:
+
+date '+DATE: %m/%d/%y%nTIME:%H:%M:%S'>> /home/concordium/Documents/concordium-software/diskusage.log ; df -h >> /home/concordium/Documents/concordium-software/diskusage.log
+date '+DATE: %m/%d/%y%nTIME:%H:%M:%S'>> /home/concordium/Documents/concordium-software/ramusage.log ; free -h >> /home/concordium/Documents/concordium-software/ramusage.log
+
+
+The results are analyzed and summarized into Summary.xlsx (Please find attached). Also the log files and their excel forms attached.
+In addition to them summarized node logs attached.
+
+Attached Files:
+
+1) concordium-testnet-node-aa9c2814b33bfc25b36504edf7b7ed5f5dc074ccda7a52a9b26c9bfad2c11b27 : Concordium Client node log file
+2) concordium-testnet-system-report : Concordium client node log file
+3) diskusagefull: output of "df -h" commands for 7 days in txt file
+4) discusageworking.xlsx: output of "df -h" commands for 7 days in excel file
+5) ramusagefull: output of "free -h" commands for 7 days in txt file
+6) ramusageworking: output of "free -h" commands for 7 days in excel file
+7) result.txt: Report of the B6 challenge working (This text)
+8) Summary: Includes computed daily average values of RAM usage, Run Disc Usage, Total Disk Usage in tabular form. Each table is in seperate sheets.
+
+RAM Usage:
+
+Approximately %11 of RAM is used (Max. 15 %, Min %9.5). RAM usage is less than 0.5 GB. 
+Concordium client's RAM usage is good. The following table includes daily average RAM usage values. Also this table exists in Summary.xlsx.
+
+DATE	       AVG_USED_RAM (MB)	AVG_FREE (MB)	AVG_AVAILABLE (MB)	AVG_AVAILABLE_PERC(%)    AVG_USED_PERC(%)
+18.10.2020	        459	                 240	           3211	                 80.40	             11.50
+19.10.2020	        498	                 144	           3174	                 79.49	             12.47
+20.10.2020	        564	                 141	           3106	                 77.78	             14.11
+21.10.2020	        383	                 184	           3277	                 82.05	              9.59
+22.10.2020	        395	                 195	           3288	                 82.33	              9.90
+23.10.2020	        428	                 131	           3277	                 82.05	             10.73
+24.10.2020	        424	                 139	           3277	                 82.05	             10.62
+
+Total Average	      450	                 168	           3230	                 80.88	             11.27
+
+
+
+Disk Usage:
+
+Run Disc Usage: It is observed that while concordium client is running, it use average of 0.75 MB memory. 
+Concordium client's run memory usage is % 1 percent of memory. The following table includes daily average disk usage values.
+This table can be found in Summary.xlsx
+
+DATE	    Mounted	Filesystem	USED_MB (AVERAGE)	AVAILABLE_MB(AVERAGE)	 USE%
+18.10.2020	/run	   tmpfs	       0.75	               394	              1%
+19.10.2020	/run	   tmpfs	       0.74	               394	              1%
+20.10.2020	/run	   tmpfs	       0.74	               394	              1%
+21.10.2020	/run	   tmpfs	       0.74	               394	              1%
+22.10.2020	/run	   tmpfs	       0.76	               394	              1%
+23.10.2020	/run	   tmpfs	       0.77	               394	              1%
+24.10.2020	/run	   tmpfs	       0.76	               394	              1%
+
+Average			                       0.75	               394	              1%
+
+
+Total Disc Usage:
+
+It is observed that average total disk usage is  6472 MB (6.32 GB). It is 8.11 % of total disk capacity.
+The disk usage of Concordium Client is good. The following table includes daily average total disk usage values.
+This table can be found in Summary.xlsx
+
+
+DATE	     Mounted	   Filesystem	   USED_MB (AVERAGE)	          AVAILABLE_MB (AVERAGE)	  USE%
+18.10.2020	     /	         /dev/vda1	           4608	                    75049	          5.78
+19.10.2020	     /	         /dev/vda1	           5352	                    74483	          6.70
+20.10.2020	     /	         /dev/vda1	           6136	                    73728	          7.68
+21.10.2020	     /	         /dev/vda1	           6099	                    73920	          7.62
+22.10.2020	     /	         /dev/vda1	           6949	                    72704	          8.72
+23.10.2020	     /	         /dev/vda1	           7691	                    72003	          9.65
+24.10.2020	     /	         /dev/vda1	           8465	                    71134	         10.63
+
+Average			                                       6472	                    73289	          8.11
+
+
+
+
