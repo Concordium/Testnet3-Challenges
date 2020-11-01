@@ -1,0 +1,67 @@
+$ uptime
+ 16:26:38 up 19 days,  4:54,  3 users,  load average: 0.01, 0.09, 0.13
+$ free
+              total        used        free      shared  buff/cache   available
+Mem:        4030716     1235952      125500        1080     2669264     2504192
+Swap:             0           0           0
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  1.1M  393M   1% /run
+/dev/vda1        78G   16G   62G  21% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/vda15      105M  3.9M  101M   4% /boot/efi
+/dev/loop1       56M   56M     0 100% /snap/core18/1885
+/dev/loop2       71M   71M     0 100% /snap/lxd/16922
+tmpfs           394M     0  394M   0% /run/user/0
+/dev/loop3       31M   31M     0 100% /snap/snapd/9607
+/dev/loop4       31M   31M     0 100% /snap/snapd/9721
+/dev/loop5       56M   56M     0 100% /snap/core18/1932
+
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  53605 concord+  20   0 1026.9g   1.2g 363216 S   2.3  31.2   1074:16 p2p_client-cli
+  53595 concord+  20   0 1024.3g  33244  22572 S   0.7   0.8 137:34.11 middleware
+  49825 root      20   0 1116716  23200   2268 S   0.3   0.6  97:44.27 containerd
+      1 root      20   0  168928  12624   8112 S   0.0   0.3   1:32.52 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.20 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     10 root      20   0       0      0      0 S   0.0   0.0   3:38.47 ksoftirqd/0
+     11 root      20   0       0      0      0 I   0.0   0.0   2:09.77 rcu_sched
+     12 root      rt   0       0      0      0 S   0.0   0.0   0:07.00 migration/0
+     13 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     15 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1
+     16 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/1
+     17 root      rt   0       0      0      0 S   0.0   0.0   0:06.11 migration/1
+     18 root      20   0       0      0      0 S   0.0   0.0   3:23.50 ksoftirqd/1
+     20 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/1:0H-kblockd
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     22 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_kthre
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.84 khungtaskd
+     26 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     27 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     28 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kcompactd0
+     29 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     30 root      39  19       0      0      0 S   0.0   0.0   0:08.73 khugepaged
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     79 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     80 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     82 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     83 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     84 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     85 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdogd
+     88 root      20   0       0      0      0 S   0.0   0.0   0:04.08 kswapd0
+     89 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptfs-kthrea
+     91 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     92 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 acpi_thermal_pm
+     93 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_0
