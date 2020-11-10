@@ -7,7 +7,7 @@ EI1
 ![picture](photo_2020-11-10_18-23-41.jpg)
 
 3.
-![picture](photo_2020-11-10_18-23-29.jpg)
+![picture](photo_2020-11-10_18-23-39.jpg)
 
 4.
 ![picture](photo_2020-11-10_18-23-37.jpg)
