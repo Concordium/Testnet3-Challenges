@@ -10,10 +10,10 @@ EI1
 ![picture](photo_2020-11-10_18-23-29.jpg)
 
 4.
-![picture](photo_2020-11-10_18-23-39.jpg)
+![picture](photo_2020-11-10_18-23-37.jpg)
 
 5.
-![picture](photo_2020-11-10_18-23-37.jpg)
+![picture](photo_2020-11-10_18-23-33.jpg)
 
 6.
 ![picture](photo_2020-11-10_18-23-29.jpg)
