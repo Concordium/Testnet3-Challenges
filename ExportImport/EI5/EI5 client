@@ -1,0 +1,127 @@
+starry@NPW4-GIN4:~/Documents/concordium-software$ ./concordium-client config account import mercy.concordiumwallet
+Enter encryption password: 
+Loaded account(s):
+- 3KoXURk7cK7PrAwVRZDBZjziA9HGhAohkwvZxoJ7hyQkvWgXdd ("mercy02").
+- 4nJvTRJjz5L7iKA79Jyr5FD2mXFgGsRwui48PLvheU5rJ2jL9D ("mercy").
+- 4oYgvZowB8oHn2Ry7TDGSCGEF5uj7TMeJff4h87H4PfaDLxKCz ("mercy_client").
+All signing keys have been encrypted with the password used for this import.
+Adding account 3KoXURk7cK7PrAwVRZDBZjziA9HGhAohkwvZxoJ7hyQkvWgXdd with name 'mercy02'.
+Warning: Account is already initialized: directory '/var/lib/concordium/config/accounts/3KoXURk7cK7PrAwVRZDBZjziA9HGhAohkwvZxoJ7hyQkvWgXdd' exists.
+         Overwriting the directory would erase all the currently stored keys.
+         This is a destructive operation and cannot be undone.
+         Are you certain that you want to proceed with this operation?
+Confirm [yN]: y
+Overwriting directory '/var/lib/concordium/config/accounts/3KoXURk7cK7PrAwVRZDBZjziA9HGhAohkwvZxoJ7hyQkvWgXdd'.
+Overwrote key directory.
+Writing file '/var/lib/concordium/config/accounts/names.map'.
+Added name mapping.
+The keys were successfully written to disk.
+Adding account 4nJvTRJjz5L7iKA79Jyr5FD2mXFgGsRwui48PLvheU5rJ2jL9D with name 'mercy'.
+Warning: Account is already initialized: directory '/var/lib/concordium/config/accounts/4nJvTRJjz5L7iKA79Jyr5FD2mXFgGsRwui48PLvheU5rJ2jL9D' exists.
+         Overwriting the directory would erase all the currently stored keys.
+         This is a destructive operation and cannot be undone.
+         Are you certain that you want to proceed with this operation?
+Confirm [yN]: y
+Overwriting directory '/var/lib/concordium/config/accounts/4nJvTRJjz5L7iKA79Jyr5FD2mXFgGsRwui48PLvheU5rJ2jL9D'.
+Overwrote key directory.
+Writing file '/var/lib/concordium/config/accounts/names.map'.
+Added name mapping.
+The keys were successfully written to disk.
+Adding account 4oYgvZowB8oHn2Ry7TDGSCGEF5uj7TMeJff4h87H4PfaDLxKCz with name 'mercy_client'.
+Creating directory '/var/lib/concordium/config/accounts/4oYgvZowB8oHn2Ry7TDGSCGEF5uj7TMeJff4h87H4PfaDLxKCz'.
+Created key directory.
+Writing file '/var/lib/concordium/config/accounts/names.map'.
+Added name mapping.
+The keys were successfully written to disk.
+starry@NPW4-GIN4:~/Documents/concordium-software$ ./concordium-client config show 
+Base configuration:
+- Verbose:            no
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    mercy -> 4nJvTRJjz5L7iKA79Jyr5FD2mXFgGsRwui48PLvheU5rJ2jL9D
+    mercy02 -> 3KoXURk7cK7PrAwVRZDBZjziA9HGhAohkwvZxoJ7hyQkvWgXdd
+    mercy_client -> 4oYgvZowB8oHn2Ry7TDGSCGEF5uj7TMeJff4h87H4PfaDLxKCz
+
+Account keys:
+- '4nJvTRJjz5L7iKA79Jyr5FD2mXFgGsRwui48PLvheU5rJ2jL9D' (mercy):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "6+/MO86sublqOQLWsADlGA==",
+                "initializationVector": "LaDb2TcfXZTV42ApM2+4BQ==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "M3kRqoNtEOQTp1joRDWzoWCs7abBkqT2IN+Bpc1Nama3jaCWAlK8zwFzwA62pkZ8eUrFbEHAKVuiSL1qR1dvNkjdJUR4KjBTSOyARBxl8dA="
+        },
+        "verifyKey": "79f694b57391f32ac12cebd925c44e85816cd3955a99c90e1081b7616b013315",
+        "schemeId": "Ed25519"
+    }
+}
+- '3KoXURk7cK7PrAwVRZDBZjziA9HGhAohkwvZxoJ7hyQkvWgXdd' (mercy02):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "rQnKz2Xss1A4yspGjrI7FQ==",
+                "initializationVector": "b90KBt3XjGrisLOIfWaGeg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "bTa0pglxow2Rkj3i2bMgCN5wS+8ugB4Tnx7OiICZSkPQDf38C7eAUYqJ3UGSeewrtDJZyR6Qp9yoXONRwV8TnyO5rV9/L0k9pp3Xsb1JSGg="
+        },
+        "verifyKey": "48268dff54824c25d0a1e6c03be94505618bf85bac4f06ca7c2819ad47ef3331",
+        "schemeId": "Ed25519"
+    }
+}
+- '4oYgvZowB8oHn2Ry7TDGSCGEF5uj7TMeJff4h87H4PfaDLxKCz' (mercy_client):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "Alz4Er2mOYZcTzF37d0Kdg==",
+                "initializationVector": "oKrnh7cCqoPHH/RH2JdkpQ==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "nLoL5pMZBuWZUUPjNwuUlCG3tdFdEVVw9mJ8snsRkL3NXKTxbifmmkdgm4lUb+rN2rFBcCQGtPCuikRS5/pxRVuL7yhPrhkTmK4Vp6sHoOc="
+        },
+        "verifyKey": "afab19bf3e6988c763fb0b686a6ad4ca91edc0d5e0b675f41414de44fe6be0ea",
+        "schemeId": "Ed25519"
+    }
+}
+Encryption secret keys:
+- '4nJvTRJjz5L7iKA79Jyr5FD2mXFgGsRwui48PLvheU5rJ2jL9D' (mercy): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "YCdV6fGgNgZS2QqrgQsICw==",
+        "initializationVector": "XETARJ5mC24yLtfMDCDmwQ==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "d4pyDjNaLA6DM1xjvaYRfZcJbmr6gGA254Q8LOdxkpVGux7nLhGaBOtKzTJgXjiK8fFK5O+m9+g/fzSKissnxIaDK/swBTlGrUWaSCksT/3JCGvT4hMwoYOdy2LjX0Gi"
+}
+- '3KoXURk7cK7PrAwVRZDBZjziA9HGhAohkwvZxoJ7hyQkvWgXdd' (mercy02): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "atRfMxQxAs89+vcL7Y6OGA==",
+        "initializationVector": "hJ0idzVmS+aDTmxuFxnd4w==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "q0UBlxwEgPvfte3I/SfaMoAd0V8bUTuRrsS7QKm1vdmJaA4aGqb2Tad9WilWkJRMe/RzPfRj6rTFVEoXdC16gY5bljrmPDP3oOmQ5MxOC/mEVdyb9QkD/iInC17bMvAl"
+}
+- '4oYgvZowB8oHn2Ry7TDGSCGEF5uj7TMeJff4h87H4PfaDLxKCz' (mercy_client): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "rNKejv30HWgrx2WvEEouCA==",
+        "initializationVector": "S6qPIDJWXvZTUcRp3EFr1w==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "AToGoLatTFFIsGi5vy7Y7/glbaLyba9MwT48cSAacazKRL5l0XXAUTSq+Wf0h0Hupxi7QstdGd2Ctim6/2CIOJw4ZS4htNypLVksQCxKcd+0DgGAAfe4mK6YTuB5HSI5"
+}
