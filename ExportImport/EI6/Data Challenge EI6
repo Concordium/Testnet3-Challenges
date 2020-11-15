@@ -1,0 +1,471 @@
+INFO
+Device: Oneplus 6T A6013 with Android 10
+
+Name of node: ANOVERNODE-B4B5
+Node Id: b3ee72a838f2d35f
+
+Process:
+- Screenshot and file: https://www.dropbox.com/s/wegk5so8z2mrkni/EI6.zip?dl=1
+1. I've exported account from my Android App (see screen App-before-export.jpg)
+2. Imoorted account from client ./concordium-client config account import export.concordiumwallet on Node previously created and used for B4 and B5 challenge
+3. This is log for ./concordium-client config show
+
+concordium@vmi419354:~/Documents/concordium-software$ ./concordium-client config show
+Base configuration:
+- Verbose:            no
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    B4 baking -> 4LSSM3ZzmUmxDuFSDiJhsYAj5U5iQuGD4vwUKFAQeUYrqfsfpo
+    B5 -> 4DSeejbd7yeUFx9oBDHUBqtUtBsbR3zceH3iEFnykfT1PDevYp
+    B5S -> 34hX3VhRc5bv1ctxjnKnWwziRmL9LcGq68w9Vay8E6JtF4Ywmw
+    ID5 -> 4objPJnyJZpGQXsr4PtpBtJh4dNAf5e78QUUruw6c9wBvLs6hF
+    Primo -> 3nGYWT67gvbPcfcMmee7DnQWygViib21PSnESnQaT5oNcaKcDw
+    Real 1 -> 4qdisdia5FkSapptDh79saSgCs7vAV2wJAojbazp1KuNV6aUpK
+    Real 2 -> 3kvDuShoqHSzj1bnKzzSWQboMrwBZuLNxTGjbhE23yVbb6BWnC
+    Secondo -> 3HhNo8Ahub5Rrvp67QCs8av6uCxEddDiU4MC4CMro4LJYWGQ7J
+    T1accountA -> 453T8dBZJkeJ3NXLUYVWZJzGgd1rdzpFnMss4Kf3wAAq8ZbhjA
+    T1accountB -> 3EYEHat1t5NDS9nk7h9ajysHMuy3jtC7FPAbfxDdgyHzsMZgA6
+    T2accountA -> 3ydM4BnckTmib6SecRC57DwCQjSua1S6ynpBvprmnc7nHFooix
+    T2accountB -> 448oEKGnQTfefp6Ao5FLJo88x1XzmJ6xrfEiEJsiWwN7GRfwpU
+    T3accA -> 3Uyg2uCsV2ag6vgCgygCc2r34zkmXacv97ydFtuwNN9Uzyusp4
+    T3accB -> 3a5Hs8jTDeuthFLB9MmgUs3t4dbQqe1u5kK3XXpx4dpC1FxE2f
+    T3acccountA -> 4ijTJYTSTGtsRMkg83nF3zgjtJQUdspRt1ymgDrW9K9pwrojZt
+    T3accountB -> 3BVrhBDqUGANYSanez2eQmGhRYABgR41oNoBqxJPaHBzgXuh5Z
+
+Account keys:
+- '4LSSM3ZzmUmxDuFSDiJhsYAj5U5iQuGD4vwUKFAQeUYrqfsfpo' (B4 baking):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "NtEFpj/cDG4Nbwb88m6Iyg==",
+                "initializationVector": "zjjiKik9uNiPm8el33Pa5w==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "USDzp7+ZjQENyC228MuCv5CA7JlRua/DiJSwAr0fv71+ujTrnO+Jytqrv+/zuGbn03jsA7yizVbz2FMlS+vFpMQmC+cTaCW/kNffs+J1AC8="
+        },
+        "verifyKey": "fa9a880ebf7646244ff31e446134e310e308f0f99a069b5b0e76b3cfb05092a1",
+        "schemeId": "Ed25519"
+    }
+}
+- '34hX3VhRc5bv1ctxjnKnWwziRmL9LcGq68w9Vay8E6JtF4Ywmw' (B5S):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "tc4ajXu+eiRPXoVMQriP8A==",
+                "initializationVector": "Rd9BU4OR2BdJHA+U9XRG/Q==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "rXZHiFC+utSoY0rVcKGWYxMAdNwVlY8T5MYoxBWbaR+S1v7D9zSuph5I8nAXT4y27W/RoPHv+PXAT/D/n5wDiWZzmo4dXAMsfCzwVS4psEs="
+        },
+        "verifyKey": "0fc20c4dced2a651ecbcc5b306afd7364802cefa9ad9edd2090d34bba30be0f1",
+        "schemeId": "Ed25519"
+    }
+}
+- '3ydM4BnckTmib6SecRC57DwCQjSua1S6ynpBvprmnc7nHFooix' (T2accountA):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "bA0XLIwZpqUd0cymT1bX3A==",
+                "initializationVector": "SoENWxIDGYZUPv7AbzQtqA==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "1MOOHxxnpoyqdmralVrZL26v2rkhvaxLEHS9c5aGdqXd73F1Hv7uqQjT+bLgv+OwVCpRQsWK6+cNgD83jDuQW9xIjfdgDugXvfH/E0fHZfA="
+        },
+        "verifyKey": "02a20181d160bbd314e364d86b09df6e8a7153b103e864297cc625b5c8c9bf9d",
+        "schemeId": "Ed25519"
+    }
+}
+- '453T8dBZJkeJ3NXLUYVWZJzGgd1rdzpFnMss4Kf3wAAq8ZbhjA' (T1accountA):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "Y5tG6llS7Fim//nX5piaJA==",
+                "initializationVector": "hf228ewDtz+tn1qcoI0RDg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "d3dZrmOYnbQacgpzxIgrOgJtUwnU+FNxKZZlJTHKaCdVHYKm7EDfSd53pk3eCf8eL3OHYUqNmLzqogtGJauzfiSCUdfOnSh/T/FuYdcYE8o="
+        },
+        "verifyKey": "7bbdef89f1412fdafa23dd3b6142378e1597bfa829ba1f9eef20ecd39231aafd",
+        "schemeId": "Ed25519"
+    }
+}
+- '3BVrhBDqUGANYSanez2eQmGhRYABgR41oNoBqxJPaHBzgXuh5Z' (T3accountB):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "E1MRzcd9hV5cPdFD+51hNw==",
+                "initializationVector": "gU1KQKRQqgnyDUNGjFPJxQ==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "Mkli3HQKkBvh2wFTIzbkVC/G8zDemjYXX8KCQj+JugGsV712sytSdeuUtI8hVqtVZ/Vxub6mJzeP2/4irvfNwzoktimNxNr1p7BOdAsSCWY="
+        },
+        "verifyKey": "4ef43092dd89a44d46e3a9ce1a01acbd2d46cc95832d239506b3e20070ce33e2",
+        "schemeId": "Ed25519"
+    }
+}
+- '448oEKGnQTfefp6Ao5FLJo88x1XzmJ6xrfEiEJsiWwN7GRfwpU' (T2accountB):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "aBu1WzVmyIPlBbZOFFvEkg==",
+                "initializationVector": "tYyOzXevBzsIl1GmDFb7ZA==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "H9R/MvOLWnXLrjKXK+y0GODOQMcgJI1lj45ow0GauOVoGdtn9GBKI0/RMET2K4amLjQsHU6rltcrAYsXB62NfIlUgtDLOakZ5d/FndHK6O8="
+        },
+        "verifyKey": "b95145ab5ca85466a3ef889d1c155ed8d786c678d8a58a6622a48c1a4d18068d",
+        "schemeId": "Ed25519"
+    }
+}
+- '3EYEHat1t5NDS9nk7h9ajysHMuy3jtC7FPAbfxDdgyHzsMZgA6' (T1accountB):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "rGs8XfOpuidv1IOaGb/JNQ==",
+                "initializationVector": "1fmhKtpnETGV2mCHMzLzsQ==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "XhQl2ebDgPS/NnEoMIPeFgYXIBp4riPCno5QJtsmUIuhJQ9ajRDFFWyBAmR16DGlgNNCfqI8ICWgDuDiyCupoqzv9ou06WjTrsEBnXigSgo="
+        },
+        "verifyKey": "9e1f89a5c1102afb23746945edfa7075bce87ac00ead7a6e7af3cce54c271de6",
+        "schemeId": "Ed25519"
+    }
+}
+- '3Uyg2uCsV2ag6vgCgygCc2r34zkmXacv97ydFtuwNN9Uzyusp4' (T3accA):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "Ps/DL8+/NtXfLlOofqYCCQ==",
+                "initializationVector": "C+ZH1OA26wnBS6A1GdpCMA==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "4sjqzaQrNlwm6MZQpEE8gGcrqvUQX77lfIecA+qTgdmRAPp0411pwWF7d58IBEqWTmI8LqKjc3J3UFs8Js7SkKkZaMFCfAJ091saXUbxWEk="
+        },
+        "verifyKey": "67de3ac96c927047ae906f45efccbacefc27e759eb6a9ced2c3154b8012689be",
+        "schemeId": "Ed25519"
+    }
+}
+- '3a5Hs8jTDeuthFLB9MmgUs3t4dbQqe1u5kK3XXpx4dpC1FxE2f' (T3accB):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "+7SsS/7QrEac5CnL5CWn/g==",
+                "initializationVector": "q7uUmMKSRXBe80Ty7z9TVw==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "nnWaYKYETz7mDxeTQwE2ux8wVw+mz6Kd19pcZYwTn+CFPv7dRvj5+JgkwxZ4sgq/HavbCbGK5GDWV6eAB+/6gbgH2Z4LpMIwZghm2NgeVvU="
+        },
+        "verifyKey": "ad9f5ea4fba434d50510fdbfb2cfdb5defbbbed0514f50f391015a769c3f8e87",
+        "schemeId": "Ed25519"
+    }
+}
+- '4qdisdia5FkSapptDh79saSgCs7vAV2wJAojbazp1KuNV6aUpK' (Real 1):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "kJLHs+HqH1net6/bpWMxMg==",
+                "initializationVector": "Rg3grrIjkDNWXSHNNeCVuw==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "FUX8XJEMV/DqMfU+RQNT7snw+jaK8lGt3zGQaG0Vdqbe0EmZW1bC/kZh80+PWBEjbjjf7GCzBGHTm87Yqj4CGgEAcveAcpY3LNksjVmJ3ME="
+        },
+        "verifyKey": "0375a27fc1fa8b0b2379fd8f2ed63aa438572200fe3b2f3bc46d3c2445e5ce66",
+        "schemeId": "Ed25519"
+    }
+}
+- '3kvDuShoqHSzj1bnKzzSWQboMrwBZuLNxTGjbhE23yVbb6BWnC' (Real 2):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "ptI7enSqpW/YMp4WiQBFCw==",
+                "initializationVector": "by1A9Saa9KJ9GAPinH43ZA==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "krf7CSfSnUPHsd79D01nlyzyXqNxpGoEgmdwSe/WeqzRR+RLSsv6gUUPOLGDsaa1dm0gTleimzCp94Q2RISevpF8CcUT7IpyxzeY4iLe48Y="
+        },
+        "verifyKey": "9363e46e3f276233ddef782a813307f3a7928ca450992b5f8f355f4cdec0e25d",
+        "schemeId": "Ed25519"
+    }
+}
+- '3HhNo8Ahub5Rrvp67QCs8av6uCxEddDiU4MC4CMro4LJYWGQ7J' (Secondo):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "xltplmD8Pe//LYlyZIHQ7A==",
+                "initializationVector": "omjiFHGVk+ib7ZbzNdjLLg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "X40ybE/9Rkd9c+mtorW0d2My7uL+exlitwvh6akIiioXPBt8fmpdjIQQOXLGChJQVGzjl4K4iY28LQ893s/JJnYJt8S0U6+riTRA1oyiUNg="
+        },
+        "verifyKey": "56934ce0991de4d16e31647aea61d657f33b7a26ad4da7756e7ff7762001d042",
+        "schemeId": "Ed25519"
+    }
+}
+- '3nGYWT67gvbPcfcMmee7DnQWygViib21PSnESnQaT5oNcaKcDw' (Primo):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "ZDX2fGMbHJAndWbK1ZbUVA==",
+                "initializationVector": "4m5s0ScHUcgoWdMYRDxqTg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "Nby3259iQLOrSoH5nxEla/eTAzyGF8TPrBaBoOr0vo7J0ho3NViFp05OQ3w2y9Fze03Y1uruNBS95GHB1m4MmjsPRS3qXN3JY/n2BdI29fI="
+        },
+        "verifyKey": "68d3195850b1c5b783f1343e7178eaa3691aa650793abed152c49094d365673a",
+        "schemeId": "Ed25519"
+    }
+}
+- '4DSeejbd7yeUFx9oBDHUBqtUtBsbR3zceH3iEFnykfT1PDevYp' (B5):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "i8pz6fmdhgSXFjcA4YZjOA==",
+                "initializationVector": "3uQAVlcE0GFQzfFhQPKzxA==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "adXoy1wEZYEKU6977nGtLso24Qy1tiP5R5btSff7/QQkT0EtNai0JoG1zfVRC7v+eRY3EjHOVl6a8n4MkqfLVedfFoVHGFGKhKJFOXG6zMU="
+        },
+        "verifyKey": "85c80f5af48c7db1e6d432de0258a22f8c12f1badd9341ef7d53185640c7072e",
+        "schemeId": "Ed25519"
+    }
+}
+- '4objPJnyJZpGQXsr4PtpBtJh4dNAf5e78QUUruw6c9wBvLs6hF' (ID5):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "6ghJlkyHgNq85ny4oJAt2w==",
+                "initializationVector": "AJZjKRkswIaofuU9Mc9zNQ==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "1GoF/+e+o5byxVH8ypkMgM0T/WIFLSfKKK2M/4pV7h5UpEVzJLfCrQBNotcqowcV2ZCzPbo66/La+7+mnjQPSFrovPSyhkSaPI1//K082Uc="
+        },
+        "verifyKey": "18c487b93cf1a59b5dc76b3a700ffad7b87debd5c55ad3540b0eb5a49ff4b7dc",
+        "schemeId": "Ed25519"
+    }
+}
+- '4ijTJYTSTGtsRMkg83nF3zgjtJQUdspRt1ymgDrW9K9pwrojZt' (T3acccountA):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "ufj/rhJ3V4vPIquUP84dmw==",
+                "initializationVector": "OhMvSs0SF8+lq6lFgTOZcQ==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "0JIRCdNDypRsSAYsWO9jYXgF/xaPCeGniFNXyV5Kjz2D5fNMKXgkG7nP16yTOk2ubFPZQrvBZeakITe7Cyr9tiTQFUJSeum5uf36QUVL4oM="
+        },
+        "verifyKey": "0fea9d501c572f4b755146c03ffb3f55067b0001a2d797aae356dd25aa93c362",
+        "schemeId": "Ed25519"
+    }
+}
+Encryption secret keys:
+- '4LSSM3ZzmUmxDuFSDiJhsYAj5U5iQuGD4vwUKFAQeUYrqfsfpo' (B4 baking): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "V+wHH8gbLa776ODWnCL/bQ==",
+        "initializationVector": "6SIpOt72LiT5nfMkh37jEQ==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "8+Mr+VE2ebh4LX/quCCrwjufe0qC6GuCsLW5M58Fp5wFM89XtG1EA/hb0gxJDTaeByIIOgTjE0RVU4oyxjp5KSXua83YFOjzcSjlSJo6jK+y6hAMCh9xnLn8H2i5WkIT"
+}
+- '34hX3VhRc5bv1ctxjnKnWwziRmL9LcGq68w9Vay8E6JtF4Ywmw' (B5S): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "OSCmfGRxWbYb01qL3aksOg==",
+        "initializationVector": "nRROSOJq6djABf2OGjK4yA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "AEjoCjv8iO1OFazsRISGN48OvLUMaoDgj5bljLgffwdiTCMw9cqpuEsKgcKmgOBn7UYwbwD+WCjYQzqKrVNKTQ4JYldmCM+ahtU6u5/HhHc8onDPk7fskZWok4Snpl6o"
+}
+- '3ydM4BnckTmib6SecRC57DwCQjSua1S6ynpBvprmnc7nHFooix' (T2accountA): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "mxN/ZsEKOgMas2FvuRxOkA==",
+        "initializationVector": "RNyiwoUWJeXS4aPnXHTf2w==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "SVMEekYFUm8FUyw7vpn04Ti7S7rag+8Bo6cioiHmdRB7Lr0Z3crTiCu7mwMigCtTKuHRhS6fLEuXAQCNyrmODMkU9J0ZH0nBvF1avCrHaA6Z1MO1SozqlaVDmQMsfWHc"
+}
+- '453T8dBZJkeJ3NXLUYVWZJzGgd1rdzpFnMss4Kf3wAAq8ZbhjA' (T1accountA): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "Rjqnp0SBjTQhNk2oUWTV0A==",
+        "initializationVector": "dkkonjSmeIffR41OLia+yw==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "cPs6FMx9OMsDSR4KfG2ETv0Y0Ywi9y6qCbt1D51NzGs2MwWAJmH4VD5BzPEAnwPt3YCZ3mt5KsbwF3cxJEuW7ASd0s2pF962UnX8b2fsnZRDozWDNloiIKNE2cY1VKCf"
+}
+- '3BVrhBDqUGANYSanez2eQmGhRYABgR41oNoBqxJPaHBzgXuh5Z' (T3accountB): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "q735HWfQETRdbsdJ53DS6Q==",
+        "initializationVector": "v4XjdwKsKx7pTpGsMiSZsA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "tpjD+piV2nnPo0CIT9lJgmGZ6FUbMluWLPpLCpxW6RAEoR2/ZPXrabm3k4iwsExWc1RRqPS/vFmMD0DpjoiML6KlnEHnGkTudC0AzV2jtBwsuWWd/ASI++znXdAPm9Q4"
+}
+- '448oEKGnQTfefp6Ao5FLJo88x1XzmJ6xrfEiEJsiWwN7GRfwpU' (T2accountB): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "hQybcc/xGJUaERBUW/SjqQ==",
+        "initializationVector": "eSbE3ZKSZX0w9xqEcVlRfw==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "8yT7Wh/fsln7i9lfWgak1X6C6zZu19KH9D+sAxG8456+KZse2fgL9IuFKMMrOAcx/nLk8GROozO90SkcHWS5YKMvOVtCUTfHlMFgizpkdO4GPiK0HFiqjOLKdq1vzrUN"
+}
+- '3EYEHat1t5NDS9nk7h9ajysHMuy3jtC7FPAbfxDdgyHzsMZgA6' (T1accountB): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "xiokecwJoNwKeERhcQ4WQA==",
+        "initializationVector": "e85gfKjOnLzyAXZYhdF+qg==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "k5M2PDKk7XYW5krmsYJlCXPuP+RnlU9BzSblN7BMQfumC6Ko5pFit2gOfBWOpGL9572yiRbh4VnmCPC5TDftJJOkexGGb9y5En5eIujbCjicK+p54Blsqsk0Z1eit/4Q"
+}
+- '3Uyg2uCsV2ag6vgCgygCc2r34zkmXacv97ydFtuwNN9Uzyusp4' (T3accA): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "J3K+6wgKHB+j4lC+GF9IHw==",
+        "initializationVector": "HF6q86cmlzxSMTYvn8rEoQ==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "H9nfx5KpIdqbpYgkyW2vnmJM7nqV+RxYK2tpM16aurA1lYvUHjGF7QTxztxitKBZYPKc9Lyo3tccTnYWTbxqMUhE6zp68NmDEj0d65SHzgSqPNnWVdw7uL5USagxuQxS"
+}
+- '3a5Hs8jTDeuthFLB9MmgUs3t4dbQqe1u5kK3XXpx4dpC1FxE2f' (T3accB): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "aTQNkNEst4hC5qDHeHSQ2A==",
+        "initializationVector": "68sepqTFunsb6BzopClu1w==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "YR9umpNAMLgr5FGCLWPEl7LVD26V1hZkU4L8WApj+agW8w5y1wpy0ogWYsyV2IuJM/Pbc7DY5s0QqjvBrjFrEVptiu6S1GxokB5R1D8YB4u6+DyC2lyyqQvTTWUEENo0"
+}
+- '4qdisdia5FkSapptDh79saSgCs7vAV2wJAojbazp1KuNV6aUpK' (Real 1): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "M7KNWzdDBmmJjCo8a3T5VA==",
+        "initializationVector": "YckfiXhftaGYs00qW+46TA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "B7k5owpTLkXI2jm+Nu1ZVEKwZMTWH9uWaX2ip7cmhLrM8Q9BGlYZjgPjZW7xQz9Wx3obV3ouqU4SiiZWlo3b2+6C5lcHau8paxTrfc4ZBg1zN+nmiJdaqxKVByCBsWNy"
+}
+- '3kvDuShoqHSzj1bnKzzSWQboMrwBZuLNxTGjbhE23yVbb6BWnC' (Real 2): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "AtobiwEYOPYbAlcARWlAwg==",
+        "initializationVector": "YljY8jac1U3Yo0L+Lf8stA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "KawOhL/SWLMbqJe+kPww7rjk2AQSpIrnrX5dra37uluEybcG5iQ2KUHdcVQqQ/oKkjq42vwokG7hOPnRiJ4EBaBQMfC8Q/lqj8Xl5dJ7ffcXyeLHUNIPTT+K3of+1KvI"
+}
+- '3HhNo8Ahub5Rrvp67QCs8av6uCxEddDiU4MC4CMro4LJYWGQ7J' (Secondo): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "bOZCO1uYbIm6DyxzIIqFHQ==",
+        "initializationVector": "61M4S26TswSKamgg1LLixg==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "SU4wV2GtQujtY7pr5r7p+fJdcHs+3UDL4tWfzevn+SK2nqYlWtNcSCHAB2pPygkCfcEP5aoZrT7i4B1FKbncu7c/oA77t2j+hYk0Umq8EenCzeQOYn0e1MrBiRR9l0k9"
+}
+- '3nGYWT67gvbPcfcMmee7DnQWygViib21PSnESnQaT5oNcaKcDw' (Primo): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "FzI1mqfWXN+nx8eFZ+75mg==",
+        "initializationVector": "muEzwMIcFhmTWkV4hgdpnw==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "cmJtJzWKI/N+PBkg1Qf22En8ZTEWdlQHaQRuCE3G+J22N6Kv9YEg5AA2HyGP/hgzTxY5wgn4piD+l90Sf1quj7ahFpCl6qrzG7hdOi1P2/Xy117Vd4xGMssWBZicjGLx"
+}
+- '4DSeejbd7yeUFx9oBDHUBqtUtBsbR3zceH3iEFnykfT1PDevYp' (B5): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "wevxRxunwmbVrZRRiNPqRw==",
+        "initializationVector": "db4fk7bJ5So0fQ3iez3oJQ==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "BTVZ3ZhvdELw1wiRizinUzITPbusq0FUbWs2zWGT7esGxQtj24LxSEPJeVBa+E+FqMrEuxNs2Sbjc/VqeoMBzMIQ8+rTlKC98CRjwsj0/tqKnhPAhiNGRu6cZqCUBRaW"
+}
+- '4objPJnyJZpGQXsr4PtpBtJh4dNAf5e78QUUruw6c9wBvLs6hF' (ID5): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "sx1XLpTQS5DiNFL5vhY+eA==",
+        "initializationVector": "vwsSxwGJEyF1nbQU/W/sFA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "27s9Xys9UCz++gdEfR2l6e5msz0cYTbER+IzvpegLE2isWz3CkenxF96MIsKbjzXRnLKj3tfzuko9yI4+MFSHJdCj//wZq5wTyL2uQBuSIMygqZWBLfzJJ7Y3F7LXInH"
+}
+- '4ijTJYTSTGtsRMkg83nF3zgjtJQUdspRt1ymgDrW9K9pwrojZt' (T3acccountA): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "pv5/aqJhf0+u4w5TSzvCww==",
+        "initializationVector": "VkRom/SqMQ+wEa0CGLeQ9A==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "ALrLuOoMFDOnjhfRo+e4qSQYNk2J4FRTwUU2bAtDYaXyB+oY+edynMFg1loIwUoj2RIVO7ludYVYRJm9EjO1Zp819vIjMmgx+jP6DCOxplpCwFKvn/xOdVS3x/FSJCAZ"
+}
+concordium@vmi419354:~/Documents/concordium-software$
+
+ 
