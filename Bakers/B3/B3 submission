@@ -1,0 +1,104 @@
+B3 Submission:
+
+Node id: 277938aaa3763944
+
+Restart a node using local DB
+
+Logs of startup sequence:
+useradd: warning: the home directory /home/docker already exists.
+useradd: Not copying any file from skel directory into it.
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+^[[92mConfiguration initialized.
+^[[0m^[[92mKeys written to file '/var/lib/concordium/data/baker-credentials.json'.
+DO NOT LOSE THIS FILE.
+To add a baker to the chain using these keys, use 'baker add /var/lib/concordium/data/baker-credentials.json'.
+^[[0m2020-10-17 15:06:48,788 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-17 15:06:48,788 INFO Set uid to user 0 succeeded
+2020-10-17 15:06:48,791 INFO RPC interface 'supervisor' initialized
+2020-10-17 15:06:48,791 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-17 15:06:48,791 INFO supervisord started with pid 27
+2020-10-17 15:06:49,793 INFO spawned: 'collector' with pid 29
+2020-10-17 15:06:49,794 INFO spawned: 'middleware' with pid 30
+2020-10-17 15:06:49,795 INFO spawned: 'nginx' with pid 31
+2020-10-17 15:06:49,796 INFO spawned: 'p2p-client' with pid 32
+2020-10-17T15:06:49.813643307Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-17T15:06:49.813658706Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-17T15:06:49.813661561Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-17T15:06:49.813663184Z: INFO: Network: enabled
+2020-10-17T15:06:49.813663926Z: INFO: Log level: info
+2020-10-17T15:06:49.814139563Z: INFO: My Node ID is 277938aaa3763944
+2020-10-17T15:06:49.817236683Z: INFO: Starting consensus layer
+2020-10-17T15:06:49.817244538Z: INFO: Starting up the consensus thread
+2020-10-17T15:06:49.818068592Z: INFO: Starting up the consensus layer
+2020-10-17T15:06:50.113353459Z: INFO: Consensus layer started
+2020-10-17T15:06:50.113453077Z: INFO: RPC server started
+2020-10-17T15:06:50.113454489Z: INFO: Starting out of band catch-up
+2020-10-17T15:06:50.114190327Z: INFO: Skov: Receive statistics: blocksReceivedCount=1 blockLastReceived=1.6029472101134753e9 blockReceiveLatencyEMA=96520.3863475388 bl$
+2020-10-17T15:06:50.116803195Z: INFO: Skov: Block 4cc10b3b3ea49207b2d6daa2b5d6df410fd543fb0a3ea891864867ef6020fa27 (15) arrived
+2020-10-17T15:06:50.116924974Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=1 blockLastArrive=1.6029472101167912e9 blockArriveLatencyEMA=96520.3866791142 blockA$
+2020-10-17T15:06:50.117567336Z: INFO: Skov: Receive statistics: blocksReceivedCount=2 blockLastReceived=1.6029472101134753e9 blockReceiveLatencyEMA=183386.05906032375 $
+2020-10-17T15:06:50.120344121Z: INFO: Skov: Block 4cc10b3b3ea49207b2d6daa2b5d6df410fd543fb0a3ea891864867ef6020fa27 is finalized at height 1 with finalization delta=0
+2020-10-17T15:06:50.120363057Z: INFO: Skov: Finalization statistics: finalizationCount=1 lastFinalizedTime=1.6029472101203496e9 finalizationPeriodEMA=Nothing finalizat$
+2020-10-17T15:06:50.123412598Z: INFO: Skov: Block 8fbb7b5151f1cad3accf66df3051158410d09168c0445f95d4e7c3699814433c (5) arrived
+2020-10-17T15:06:50.123457091Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=2 blockLastArrive=1.6029472101234038e9 blockArriveLatencyEMA=183386.060351592 blockA$
+                    
+                                                 
+
+Feedback on measured time and chain length:
+Duration from start up of node to catch up with chain is
+23 minutes 51 seconds at a block height of 89998.
+
+
+
+
+Restart a node with --no-block-state-import.
+
+Logs of startup sequence: 
+useradd: warning: the home directory /home/docker already exists.
+useradd: Not copying any file from skel directory into it.
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+^[[92mConfiguration initialized.
+^[[0m2020-10-17 15:40:30,695 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-17 15:40:30,696 INFO Set uid to user 0 succeeded
+2020-10-17 15:40:30,698 INFO RPC interface 'supervisor' initialized
+2020-10-17 15:40:30,698 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-17 15:40:30,698 INFO supervisord started with pid 25
+2020-10-17 15:40:31,701 INFO spawned: 'collector' with pid 27
+2020-10-17 15:40:31,703 INFO spawned: 'middleware' with pid 28
+2020-10-17 15:40:31,704 INFO spawned: 'nginx' with pid 29
+2020-10-17 15:40:31,706 INFO spawned: 'p2p-client' with pid 31
+2020-10-17T15:40:31.723874055Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-17T15:40:31.723890626Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-17T15:40:31.723893532Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-17T15:40:31.723895235Z: INFO: Network: enabled
+2020-10-17T15:40:31.723895927Z: INFO: Log level: info
+2020-10-17T15:40:31.724094250Z: INFO: My Node ID is 277938aaa3763944
+2020-10-17T15:40:31.726207507Z: INFO: Starting consensus layer
+2020-10-17T15:40:31.726214590Z: INFO: Starting up the consensus thread
+2020-10-17T15:40:31.726776029Z: INFO: Starting up the consensus layer
+2020-10-17 15:40:32,728 INFO success: collector entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-17 15:40:32,729 INFO success: middleware entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-17 15:40:32,729 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-17 15:40:32,730 INFO success: p2p-client entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-17T15:40:45.771847158Z: INFO: Consensus layer started
+2020-10-17T15:40:45.771972335Z: INFO: RPC server started
+2020-10-17T15:40:45.772144329Z: INFO: Starting the P2P layer
+2020-10-17T15:40:45.772146493Z: INFO: Attempting to bootstrap
+2020-10-17T15:40:46.000819561Z: INFO: Using bootstrapper 52.17.42.154:8888
+2020-10-17T15:40:46.000841672Z: INFO: Using bootstrapper 54.77.133.220:8888
+2020-10-17T15:40:46.000844147Z: INFO: Commencing baking
+2020-10-17T15:40:46.001074020Z: INFO: Runner: Starting baker thread
+
+
+
+Feedback on measured time and chain length:
+Duration from start up of node to catch up with chain is
+39 seconds at a block height of 90046.
