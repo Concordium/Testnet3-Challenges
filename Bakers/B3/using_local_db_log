@@ -1,0 +1,1237 @@
+Script started on 2020-11-11 15:18:01+00:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="180" LINES="75"]
+]0;goku_vul@gokuserver: ~/concordium/concordium-software[01;32mgoku_vul@gokuserver[00m:[01;34m~/concordium/concordium-software[00m$ ./concordium-node --listen-middleware-address 209.250.234.104
+[2J[1;1H
+_________                                      .___.__               
+\_   ___ \  ____   ____   ____  ___________  __| _/|__|__ __  _____  
+/    \  \/ /  _ \ /    \_/ ___\/  _ \_  __ \/ __ | |  |  |  \/     \ 
+\     \___(  <_> )   |  \  \__(  <_> )  | \/ /_/ | |  |  |  /  Y Y  \
+ \______  /\____/|___|  /\___  >____/|__|  \____ | |__|____/|__|_|  /
+        \/            \/     \/                 \/                \/ 
+
+Welcome to the Concordium node (testnet). Let's get you started!
+
+This software requires you to have Docker installed, running and configured for access from this user
+
+
+Checking whether docker is accessible on your PATH
+OK
+
+Checking whether Docker is running
+OK
+
+Checking whether we can access docker
+OK
+
+
+Validating system credentials
+OK
+
+Currently your node name is set to goku. Press enter to keep it or enter a new one: 
+OK
+
+Latest version of the concordium client is 0.3.2
+Using your local image
+
+Do you want to flush the local node database before starting? (y/N): n
+Now going to boot up node with name goku running v0.3.2 (testnet)
+[2J[1;1HCould not create concordium client dir due to No such file or directory (os error 2)
+Trying to download upstream block state...
+groupadd: group 'docker' already exists
+useradd: user 'docker' already exists
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+[92mConfiguration initialized.
+[0m2020-11-11 15:18:37,706 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-11-11 15:18:37,706 INFO Set uid to user 0 succeeded
+Unlinking stale socket /var/run/supervisor.sock
+2020-11-11 15:18:38,016 INFO RPC interface 'supervisor' initialized
+2020-11-11 15:18:38,016 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-11-11 15:18:38,016 INFO supervisord started with pid 13
+2020-11-11 15:18:39,019 INFO spawned: 'collector' with pid 15
+2020-11-11 15:18:39,022 INFO spawned: 'middleware' with pid 16
+2020-11-11 15:18:39,025 INFO spawned: 'nginx' with pid 17
+2020-11-11 15:18:39,030 INFO spawned: 'p2p-client' with pid 19
+2020-11-11T15:18:39.086719241Z: INFO: Starting up p2p_client version 0.3.2!
+2020-11-11T15:18:39.086752800Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-11-11T15:18:39.086827214Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-11-11T15:18:39.086829280Z: INFO: Network: enabled
+2020-11-11T15:18:39.086830345Z: INFO: Log level: info
+2020-11-11T15:18:39.087076277Z: INFO: My Node ID is a87735f53c0bafb4
+2020-11-11T15:18:39.089572769Z: INFO: Starting consensus layer
+2020-11-11T15:18:39.089591431Z: INFO: Starting up the consensus thread
+2020-11-11T15:18:39.091245897Z: INFO: Starting up the consensus layer
+2020-11-11 15:18:40,092 INFO success: collector entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-11-11 15:18:40,092 INFO success: middleware entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-11-11 15:18:40,092 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-11-11 15:18:40,092 INFO success: p2p-client entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-11-11T15:19:10.582391707Z: INFO: Consensus layer started
+2020-11-11T15:19:10.582575209Z: INFO: RPC server started
+2020-11-11T15:19:10.582578380Z: INFO: Starting out of band catch-up
+2020-11-11T15:19:10.586046879Z: ERROR: External: Error importing block: OtherError ResultDuplicate
+2020-11-11T15:19:10.586090068Z: INFO: Completed out of band catch-up
+2020-11-11T15:19:10.586737089Z: INFO: Starting the P2P layer
+2020-11-11T15:19:10.586753769Z: INFO: Attempting to bootstrap
+2020-11-11T15:19:10.619498580Z: INFO: Using bootstrapper 54.77.133.220:8888
+2020-11-11T15:19:10.619537732Z: INFO: Using bootstrapper 52.17.42.154:8888
+2020-11-11T15:19:10.619541733Z: INFO: Commencing baking
+2020-11-11T15:19:10.619646448Z: INFO: Runner: Starting baker thread
+2020-11-11T15:19:11.046716302Z: INFO: Sent a direct message to peer 881651fcdfdfc927 containing a catch-up status message
+2020-11-11T15:19:11.048077064Z: INFO: Processed a catch-up status message from 881651fcdfdfc927
+2020-11-11T15:19:11.048091520Z: INFO: Sent a direct message to peer 881651fcdfdfc927 containing a catch-up status message
+2020-11-11T15:19:11.059943529Z: INFO: Processed a catch-up status message from 2a0a1713b90b4e8b
+2020-11-11T15:19:11.059977176Z: INFO: Sent a direct message to peer 2a0a1713b90b4e8b containing a catch-up status message
+2020-11-11T15:19:11.061740977Z: INFO: Processed a catch-up status message from 0e4d417a460054b1
+2020-11-11T15:19:11.061777292Z: INFO: Sent a direct message to peer 0e4d417a460054b1 containing a catch-up status message
+2020-11-11T15:19:11.067965162Z: INFO: Processed a catch-up status message from 4586a5d424628679
+2020-11-11T15:19:11.067976917Z: INFO: Sent a direct message to peer 4586a5d424628679 containing a catch-up status message
+2020-11-11T15:19:11.070174678Z: INFO: Processed a catch-up status message from dc5f678b2ee8db4d
+2020-11-11T15:19:11.070194063Z: INFO: Sent a direct message to peer dc5f678b2ee8db4d containing a catch-up status message
+2020-11-11T15:19:11.076266838Z: INFO: Processed a catch-up status message from 8573b77357f92db6
+2020-11-11T15:19:11.076281455Z: INFO: Sent a direct message to peer 8573b77357f92db6 containing a catch-up status message
+2020-11-11T15:19:11.087581445Z: INFO: Processed a catch-up status message from 650db77f1f563701
+2020-11-11T15:19:11.087645210Z: INFO: Sent a direct message to peer 650db77f1f563701 containing a catch-up status message
+2020-11-11T15:19:11.132435031Z: INFO: Processed a catch-up status message from 7c92e161c766bf87
+2020-11-11T15:19:11.132453315Z: INFO: Sent a direct message to peer 7c92e161c766bf87 containing a catch-up status message
+2020-11-11T15:19:11.132527881Z: INFO: Processed a catch-up status message from 4d79a833040f7d61
+2020-11-11T15:19:11.132537001Z: INFO: Sent a direct message to peer 4d79a833040f7d61 containing a catch-up status message
+2020-11-11T15:19:11.132547022Z: INFO: Processed a catch-up status message from 80d7a773ba43c848
+2020-11-11T15:19:11.132551030Z: INFO: Sent a direct message to peer 80d7a773ba43c848 containing a catch-up status message
+2020-11-11T15:19:11.132568248Z: INFO: Processed a catch-up status message from c113cb305442e551
+2020-11-11T15:19:11.132571179Z: INFO: Sent a direct message to peer c113cb305442e551 containing a catch-up status message
+2020-11-11T15:19:11.244250030Z: INFO: Skov: Receive statistics: blocksReceivedCount=1 blockLastReceived=1.6051079512434742e9 blockReceiveLatencyEMA=77.44934742640001 blockReceiveLatencyEMSD=232.34804227920003 blockReceivePeriodEMA=Nothing blockReceivePeriodEMSD=Nothing
+2020-11-11T15:19:11.285121615Z: INFO: Skov: Block ce9a5b83b5de7107cc2932cef27bd2360f04e277d61008f1bec035e22278e97c (9) arrived
+2020-11-11T15:19:11.285941595Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=1 blockLastArrive=1.6051079512850628e9 blockArriveLatencyEMA=77.4535062889 blockArriveLatencyEMSD=232.3605188667 blockArrivePeriodEMA=Nothing blockArrivePeriodEMSD=Nothing transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.286508561Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.288500573Z: INFO: Skov: Receive statistics: blocksReceivedCount=2 blockLastReceived=1.6051079512872467e9 blockReceiveLatencyEMA=146.75813734366 blockReceiveLatencyEMSD=303.0188553770758 blockReceivePeriodEMA=Just 4.3772335e-2 blockReceivePeriodEMSD=Just 0.0
+2020-11-11T15:19:11.296205245Z: INFO: Skov: Block ce9a5b83b5de7107cc2932cef27bd2360f04e277d61008f1bec035e22278e97c is finalized at height 298075 with finalization delta=0
+2020-11-11T15:19:11.296908308Z: INFO: Skov: Finalization statistics: finalizationCount=1 lastFinalizedTime=1.6051079512968671e9 finalizationPeriodEMA=Nothing finalizationPeriodEMSD=Nothing
+2020-11-11T15:19:11.305028999Z: INFO: Skov: Block 9411f65cded0182da6647ead739e6f09df82c79d49022cae77de365b62012877 (958) arrived
+2020-11-11T15:19:11.305896423Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=2 blockLastArrive=1.6051079513050003e9 blockArriveLatencyEMA=146.76365569331 blockArriveLatencyEMSD=303.03026408158735 blockArrivePeriodEMA=Just 1.9937444e-2 blockArrivePeriodEMSD=Just 0.0 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.306458257Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.307683836Z: INFO: Skov: Receive statistics: blocksReceivedCount=3 blockLastReceived=1.605107951306955e9 blockReceiveLatencyEMA=208.813019121894 blockReceiveLatencyEMSD=342.4845386513459 blockReceivePeriodEMA=Just 4.13659542e-2 blockReceivePeriodEMSD=Just 7.219142400000001e-3
+2020-11-11T15:19:11.315488669Z: INFO: Skov: Block 9411f65cded0182da6647ead739e6f09df82c79d49022cae77de365b62012877 is finalized at height 298076 with finalization delta=0
+2020-11-11T15:19:11.316226528Z: INFO: Skov: Finalization statistics: finalizationCount=2 lastFinalizedTime=1.6051079513160787e9 finalizationPeriodEMA=Just 1.9211503e-2 finalizationPeriodEMSD=Just 0.0
+2020-11-11T15:19:11.324112398Z: INFO: Skov: Block 2986e7d63ca43900a249b2221df8f4c0c55e9ff30d8c49e21a0b48d3534af48a (1) arrived
+2020-11-11T15:19:11.324215138Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=3 blockLastArrive=1.6051079513240695e9 blockArriveLatencyEMA=208.819697072879 blockArriveLatencyEMSD=342.49551427682366 blockArrivePeriodEMA=Just 1.9850615199999998e-2 blockArrivePeriodEMSD=Just 2.604863999999995e-4 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.324248117Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.325930010Z: INFO: Skov: Receive statistics: blocksReceivedCount=4 blockLastReceived=1.6051079513242614e9 blockReceiveLatencyEMA=263.6641433551046 blockReceiveLatencyEMSD=364.2031105860117 blockReceivePeriodEMA=Just 3.895999158e-2 blockReceivePeriodEMSD=Just 9.949990977476581e-3
+2020-11-11T15:19:11.335501280Z: INFO: Skov: Block 2986e7d63ca43900a249b2221df8f4c0c55e9ff30d8c49e21a0b48d3534af48a is finalized at height 298077 with finalization delta=0
+2020-11-11T15:19:11.335601711Z: INFO: Skov: Finalization statistics: finalizationCount=3 lastFinalizedTime=1.6051079513355362e9 finalizationPeriodEMA=Just 1.92361134e-2 finalizationPeriodEMSD=Just 7.38311999999991e-5
+2020-11-11T15:19:11.343861401Z: INFO: Skov: Block e6301f4ac36ec1e10c1435e3dc02a7edd5d9232188db20b99d8f7fde9cf6e051 (1064) arrived
+2020-11-11T15:19:11.344004466Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=4 blockLastArrive=1.6051079513438206e9 blockArriveLatencyEMA=263.6721094269911 blockArriveLatencyEMSD=364.2141455783414 blockArrivePeriodEMA=Just 1.9840666179999997e-2 blockArrivePeriodEMSD=Just 2.489150359401925e-4 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.344041679Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.345508120Z: INFO: Skov: Receive statistics: blocksReceivedCount=5 blockLastReceived=1.605107951344054e9 blockReceiveLatencyEMA=312.13213440889416 blockReceiveLatencyEMSD=374.8624155548086 blockReceivePeriodEMA=Just 3.7043236321999996e-2 blockReceivePeriodEMSD=Just 1.1052947338982246e-2
+2020-11-11T15:19:11.354296904Z: INFO: Skov: Block e6301f4ac36ec1e10c1435e3dc02a7edd5d9232188db20b99d8f7fde9cf6e051 is finalized at height 298078 with finalization delta=0
+2020-11-11T15:19:11.354378824Z: INFO: Skov: Finalization statistics: finalizationCount=4 lastFinalizedTime=1.6051079513543222e9 finalizationPeriodEMA=Just 1.919111116e-2 finalizationPeriodEMSD=Just 1.5209456245788097e-4
+2020-11-11T15:19:11.361624126Z: INFO: Skov: Block eb6e63554d1690c0dff9550cdf1404b08ae55013ba9dc1dd4ce38bea84f68bd9 (0) arrived
+2020-11-11T15:19:11.361736107Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=5 blockLastArrive=1.6051079513615937e9 blockArriveLatencyEMA=312.141057858492 blockArriveLatencyEMSD=374.87317870704567 blockArrivePeriodEMA=Just 1.9633912361999996e-2 blockArrivePeriodEMSD=Just 6.636920196322915e-4 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.361778148Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.364053597Z: INFO: Skov: Receive statistics: blocksReceivedCount=6 blockLastReceived=1.605107951363099e9 blockReceiveLatencyEMA=355.5802308721047 blockReceiveLatencyEMSD=378.7601897144359 blockReceivePeriodEMA=Just 3.52434274898e-2 blockReceivePeriodEMSD=Just 1.179426499967969e-2
+2020-11-11T15:19:11.371506818Z: INFO: Skov: Block eb6e63554d1690c0dff9550cdf1404b08ae55013ba9dc1dd4ce38bea84f68bd9 is finalized at height 298079 with finalization delta=0
+2020-11-11T15:19:11.371940279Z: INFO: Skov: Finalization statistics: finalizationCount=5 lastFinalizedTime=1.605107951371821e9 finalizationPeriodEMA=Just 1.9021872044e-2 finalizationPeriodEMSD=Just 5.278223051335384e-4
+2020-11-11T15:19:11.381053364Z: INFO: Skov: Block c5218d01334c360f00159ab49524bb5eaac70c332882be8a8d04aa30d8f9729f (6) arrived
+2020-11-11T15:19:11.381157253Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=6 blockLastArrive=1.6051079513810167e9 blockArriveLatencyEMA=355.5900537370428 blockArriveLatencyEMSD=378.770705425091 blockArrivePeriodEMA=Just 1.9612811325799995e-2 blockArrivePeriodEMSD=Just 6.328077676432664e-4 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.381776433Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.383881434Z: INFO: Skov: Receive statistics: blocksReceivedCount=7 blockLastReceived=1.6051079513829732e9 blockReceiveLatencyEMA=393.53550510289426 blockReceiveLatencyEMSD=376.93338769426333 blockReceivePeriodEMA=Just 3.370649864082e-2 blockReceivePeriodEMSD=Just 1.2101800311352245e-2
+2020-11-11T15:19:11.391960955Z: INFO: Skov: Block c5218d01334c360f00159ab49524bb5eaac70c332882be8a8d04aa30d8f9729f is finalized at height 298080 with finalization delta=0
+2020-11-11T15:19:11.392444222Z: INFO: Skov: Finalization statistics: finalizationCount=6 lastFinalizedTime=1.6051079513923168e9 finalizationPeriodEMA=Just 1.91692634396e-2 finalizationPeriodEMSD=Just 6.680230225741287e-4
+2020-11-11T15:19:11.400933306Z: INFO: Skov: Block 2260267c54aa1f380921ac71a529f2f34eaa8c3f059f836393cc02eb7cd084f8 (4) arrived
+2020-11-11T15:19:11.401070704Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=7 blockLastArrive=1.6051079514008975e9 blockArriveLatencyEMA=393.54613812013855 blockArriveLatencyEMSD=376.94363190624284 blockArrivePeriodEMA=Just 1.9639622593219996e-2 blockArrivePeriodEMSD=Just 6.05698522580904e-4 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.401104483Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.404263286Z: INFO: Skov: Receive statistics: blocksReceivedCount=8 blockLastReceived=1.605107951403594e9 blockReceiveLatencyEMA=427.09731400580483 blockReceiveLatencyEMSD=371.49489368539895 blockReceivePeriodEMA=Just 3.2397943976738e-2 blockReceivePeriodEMSD=Just 1.2133385820877765e-2
+2020-11-11T15:19:11.411905748Z: INFO: Skov: Block 2260267c54aa1f380921ac71a529f2f34eaa8c3f059f836393cc02eb7cd084f8 is finalized at height 298081 with finalization delta=0
+2020-11-11T15:19:11.412324240Z: INFO: Skov: Finalization statistics: finalizationCount=7 lastFinalizedTime=1.605107951412232e9 finalizationPeriodEMA=Just 1.9243856295640002e-2 finalizationPeriodEMSD=Just 6.720908646678698e-4
+2020-11-11T15:19:11.421332184Z: INFO: Skov: Block 3b4dfb51309e845c5c0f5aa462afabbc070526dbbd8814a10eb2ce2f5ac690a0 (18) arrived
+2020-11-11T15:19:11.421851239Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=8 blockLastArrive=1.6051079514212828e9 blockArriveLatencyEMA=427.1086525789247 blockArriveLatencyEMSD=371.5048221253235 blockArrivePeriodEMA=Just 1.9714174333897997e-2 blockArrivePeriodEMSD=Just 6.166078888354407e-4 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.422358475Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.422959083Z: INFO: Skov: Receive statistics: blocksReceivedCount=9 blockLastReceived=1.605107951422623e9 blockReceiveLatencyEMA=457.0048449085244 blockReceiveLatencyEMSD=363.67259186412076 blockReceivePeriodEMA=Just 3.1061039679064203e-2 blockReceivePeriodEMSD=Just 1.2189461195668081e-2
+2020-11-11T15:19:11.424595212Z: INFO: Skov: Block 3ab063bd338f0eed9f3fbdecb8a4c2b63b635cd267d8c729310d557697f5da21 (5) arrived
+2020-11-11T15:19:11.424693498Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=9 blockLastArrive=1.6051079514245698e9 blockArriveLatencyEMA=457.01524429723224 blockArriveLatencyEMSD=363.6810245668329 blockArrivePeriodEMA=Just 1.8071462300508198e-2 blockArrivePeriodEMSD=Just 4.9627321287280405e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.424732683Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.425616302Z: INFO: Skov: Receive statistics: blocksReceivedCount=10 blockLastReceived=1.605107951424745e9 blockReceiveLatencyEMA=482.39683492557197 blockReceiveLatencyEMSD=353.31962453150436 blockReceivePeriodEMA=Just 2.816714031115778e-2 blockReceivePeriodEMSD=Just 1.4460171153231581e-2
+2020-11-11T15:19:11.433915885Z: INFO: Skov: Block 3b4dfb51309e845c5c0f5aa462afabbc070526dbbd8814a10eb2ce2f5ac690a0 is finalized at height 298082 with finalization delta=1
+2020-11-11T15:19:11.433992552Z: INFO: Skov: Finalization statistics: finalizationCount=8 lastFinalizedTime=1.6051079514339416e9 finalizationPeriodEMA=Just 1.9490428266076002e-2 finalizationPeriodEMSD=Just 9.76583404925165e-4
+2020-11-11T15:19:11.441190651Z: INFO: Skov: Block fecfe39f620d64c520c2b240c1e159503e0357ba795d65768c31030a8d55f8af (942) arrived
+2020-11-11T15:19:11.441892832Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=10 blockLastArrive=1.605107951441146e9 blockArriveLatencyEMA=482.407834452809 blockArriveLatencyEMSD=353.3278245203242 blockArrivePeriodEMA=Just 1.792192517045738e-2 blockArrivePeriodEMSD=Just 4.729385937173357e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.442323315Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.443251464Z: INFO: Skov: Receive statistics: blocksReceivedCount=11 blockLastReceived=1.6051079514426188e9 blockReceiveLatencyEMA=505.07641332771476 blockReceiveLatencyEMSD=342.02419630731595 blockReceivePeriodEMA=Just 2.7137813080042e-2 blockReceivePeriodEMSD=Just 1.4061384204306629e-2
+2020-11-11T15:19:11.450895860Z: INFO: Skov: Block 3ab063bd338f0eed9f3fbdecb8a4c2b63b635cd267d8c729310d557697f5da21 is finalized at height 298083 with finalization delta=0
+2020-11-11T15:19:11.451346268Z: INFO: Skov: Finalization statistics: finalizationCount=9 lastFinalizedTime=1.6051079514511726e9 finalizationPeriodEMA=Just 1.9264491839468403e-2 finalizationPeriodEMSD=Just 1.1479412231955126e-3
+2020-11-11T15:19:11.459270964Z: INFO: Skov: Block e0291c6a3c2202843b19e7cd1be393e1696a7fca893aa26c9b8654418f93014e (9) arrived
+2020-11-11T15:19:11.459368815Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=11 blockLastArrive=1.6051079514592454e9 blockArriveLatencyEMA=505.08797555452816 blockArriveLatencyEMSD=342.032155835944 blockArrivePeriodEMA=Just 1.793969435341164e-2 blockArrivePeriodEMSD=Just 4.487006118028542e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.459397442Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.459802579Z: INFO: Skov: Receive statistics: blocksReceivedCount=12 blockLastReceived=1.6051079514594116e9 blockReceiveLatencyEMA=525.4647131581432 blockReceiveLatencyEMSD=330.18728125637716 blockReceivePeriodEMA=Just 2.61033002720378e-2 blockReceivePeriodEMSD=Just 1.3696066001459476e-2
+2020-11-11T15:19:11.462317524Z: INFO: Skov: Block cd99f5199e3c524b02d710d727d0771fc6fbfc94e5b315bcaa27242b8db6b8ae (4) arrived
+2020-11-11T15:19:11.462865050Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=12 blockLastArrive=1.6051079514622874e9 blockArriveLatencyEMA=525.4754067349753 blockArriveLatencyEMSD=330.1942189294694 blockArrivePeriodEMA=Just 1.6449913818070476e-2 blockArrivePeriodEMSD=Just 6.172107897974213e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.463191044Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.464134713Z: INFO: Skov: Receive statistics: blocksReceivedCount=13 blockLastReceived=1.60510795146322e9 blockReceiveLatencyEMA=543.589563841529 blockReceiveLatencyEMSD=317.92745798968883 blockReceivePeriodEMA=Just 2.3873806244834022e-2 blockReceivePeriodEMSD=Just 1.4613685164281347e-2
+2020-11-11T15:19:11.473886602Z: INFO: Skov: Block e0291c6a3c2202843b19e7cd1be393e1696a7fca893aa26c9b8654418f93014e is finalized at height 298085 with finalization delta=0
+2020-11-11T15:19:11.473968024Z: INFO: Skov: Finalization statistics: finalizationCount=10 lastFinalizedTime=1.6051079514739134e9 finalizationPeriodEMA=Just 1.9612112455521562e-2 finalizationPeriodEMSD=Just 1.5078305544944542e-3
+2020-11-11T15:19:11.513970155Z: INFO: Skov: Block 5f5cabf967393681be716e838b92bdfc9b14d45c9d100df6c0fa51ef658edadb (11) arrived
+2020-11-11T15:19:11.514944637Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=13 blockLastArrive=1.605107951513939e9 blockArriveLatencyEMA=543.6042599468777 blockArriveLatencyEMSD=317.93599648672455 blockArrivePeriodEMA=Just 1.9970071936263427e-2 blockArrivePeriodEMSD=Just 1.2075141527432704e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.515004519Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.516338232Z: INFO: Skov: Receive statistics: blocksReceivedCount=14 blockLastReceived=1.6051079515155447e9 blockReceiveLatencyEMA=559.5071619118761 blockReceiveLatencyEMSD=305.36930272109686 blockReceivePeriodEMA=Just 2.671888092035062e-2 blockReceivePeriodEMSD=Just 1.6280474927226663e-2
+2020-11-11T15:19:11.524280478Z: INFO: Skov: Block cd99f5199e3c524b02d710d727d0771fc6fbfc94e5b315bcaa27242b8db6b8ae is finalized at height 298086 with finalization delta=0
+2020-11-11T15:19:11.524943649Z: INFO: Skov: Finalization statistics: finalizationCount=11 lastFinalizedTime=1.6051079515248868e9 finalizationPeriodEMA=Just 2.2748262409969407e-2 finalizationPeriodEMSD=Just 9.516571153204773e-3
+2020-11-11T15:19:11.532236911Z: INFO: Skov: Block 5223612ebe8da6a2ce67fd5ef47ae81464a462628be3889d0254f84113b909ff (1) arrived
+2020-11-11T15:19:11.532347316Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=14 blockLastArrive=1.6051079515322084e9 blockArriveLatencyEMA=559.52205479569 blockArriveLatencyEMSD=305.3773957113488 blockArrivePeriodEMA=Just 1.9800022842637086e-2 blockArrivePeriodEMSD=Just 1.1466838660457604e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.532379679Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.534106854Z: INFO: Skov: Receive statistics: blocksReceivedCount=15 blockLastReceived=1.605107951532393e9 blockReceiveLatencyEMA=572.9346850178885 blockReceiveLatencyEMSD=292.48599168301115 blockReceivePeriodEMA=Just 2.5731835528315556e-2 blockReceivePeriodEMSD=Just 1.572630932303855e-2
+2020-11-11T15:19:11.541644574Z: INFO: Skov: Block 5223612ebe8da6a2ce67fd5ef47ae81464a462628be3889d0254f84113b909ff is finalized at height 298088 with finalization delta=0
+2020-11-11T15:19:11.542240904Z: INFO: Skov: Finalization statistics: finalizationCount=12 lastFinalizedTime=1.605107951542184e9 finalizationPeriodEMA=Just 2.2203160368972467e-2 finalizationPeriodEMSD=Just 9.175120706481174e-3
+2020-11-11T15:19:11.552165416Z: INFO: Skov: Block 6a0b8ba4e80394c5b7a6c7f04369ae7fbb94886e9598651711e8d0e4e765807f (7) arrived
+2020-11-11T15:19:11.552823322Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=15 blockLastArrive=1.605107951552108e9 blockArriveLatencyEMA=572.950060116221 blockArriveLatencyEMSD=292.4937954423906 blockArrivePeriodEMA=Just 1.9809977158373376e-2 blockArrivePeriodEMSD=Just 1.0878439307827415e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.553460462Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.554478798Z: INFO: Skov: Receive statistics: blocksReceivedCount=16 blockLastReceived=1.6051079515534925e9 blockReceiveLatencyEMA=583.9215657637997 blockReceiveLatencyEMSD=279.4273675473448 blockReceivePeriodEMA=Just 2.5268602475484e-2 blockReceivePeriodEMSD=Just 1.4983870934528938e-2
+2020-11-11T15:19:11.561977829Z: INFO: Skov: Block 6a0b8ba4e80394c5b7a6c7f04369ae7fbb94886e9598651711e8d0e4e765807f is finalized at height 298089 with finalization delta=0
+2020-11-11T15:19:11.562438072Z: INFO: Skov: Finalization statistics: finalizationCount=13 lastFinalizedTime=1.6051079515623157e9 finalizationPeriodEMA=Just 2.199599463207522e-2 finalizationPeriodEMSD=Just 8.726443420062222e-3
+2020-11-11T15:19:11.575326499Z: INFO: Skov: Block b72bd2d2920b490e633c14a620a84c0572c1ae45918f188425ec4a5438c1ccc9 (10) arrived
+2020-11-11T15:19:11.575485376Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=16 blockLastArrive=1.60510795157525e9 blockArriveLatencyEMA=583.937579102799 blockArriveLatencyEMSD=279.43494501652657 blockArrivePeriodEMA=Just 2.014317754253604e-2 blockArrivePeriodEMSD=Just 1.0368490732056014e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.575530466Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.577453500Z: INFO: Skov: Receive statistics: blocksReceivedCount=17 blockLastReceived=1.605107951575548e9 blockReceiveLatencyEMA=593.3869639911197 blockReceiveLatencyEMSD=266.60463655647624 blockReceivePeriodEMA=Just 2.49472982279356e-2 blockReceivePeriodEMSD=Just 1.4247591976884823e-2
+2020-11-11T15:19:11.589605765Z: INFO: Skov: Block b72bd2d2920b490e633c14a620a84c0572c1ae45918f188425ec4a5438c1ccc9 is finalized at height 298090 with finalization delta=0
+2020-11-11T15:19:11.590106734Z: INFO: Skov: Finalization statistics: finalizationCount=14 lastFinalizedTime=1.6051079515900252e9 finalizationPeriodEMA=Just 2.25673559688677e-2 finalizationPeriodEMSD=Just 8.454218904300037e-3
+2020-11-11T15:19:11.601663847Z: INFO: Skov: Block ab7fa26d7ef42ba30a9fca27639f58f0586affd88397653ba922124377fdf6a7 (7) arrived
+2020-11-11T15:19:11.602197208Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=17 blockLastArrive=1.6051079516015973e9 blockArriveLatencyEMA=593.403980913819 blockArriveLatencyEMSD=266.61210496895944 blockArrivePeriodEMA=Just 2.0763582888282436e-2 blockArrivePeriodEMSD=Just 1.0010952261994594e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.602667387Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.604133754Z: INFO: Skov: Receive statistics: blocksReceivedCount=18 blockLastReceived=1.6051079516029472e9 blockReceiveLatencyEMA=601.4335623254077 blockReceiveLatencyEMSD=254.0727429553395 blockReceivePeriodEMA=Just 2.519249810514204e-2 blockReceivePeriodEMSD=Just 1.3536454345353955e-2
+2020-11-11T15:19:11.615668425Z: INFO: Skov: Block ab7fa26d7ef42ba30a9fca27639f58f0586affd88397653ba922124377fdf6a7 is finalized at height 298091 with finalization delta=0
+2020-11-11T15:19:11.615785030Z: INFO: Skov: Finalization statistics: finalizationCount=15 lastFinalizedTime=1.6051079516157076e9 finalizationPeriodEMA=Just 2.2878847471980927e-2 finalizationPeriodEMSD=Just 8.07463176635612e-3
+2020-11-11T15:19:11.626713494Z: INFO: Skov: Block 3d538d87a5d5dc522176551717703bf41358c21dc842dc0a2f657fc1c8a7f0ed (942) arrived
+2020-11-11T15:19:11.626863491Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=18 blockLastArrive=1.6051079516266735e9 blockArriveLatencyEMA=601.4512501773371 blockArriveLatencyEMSD=254.07998730277356 blockArrivePeriodEMA=Just 2.1194858199454193e-2 blockArrivePeriodEMSD=Just 9.58494831592627e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.626910551Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.629255322Z: INFO: Skov: Receive statistics: blocksReceivedCount=19 blockLastReceived=1.6051079516269286e9 blockReceiveLatencyEMA=607.7528989409669 blockReceiveLatencyEMSD=241.77896719713183 blockReceivePeriodEMA=Just 2.5071362994627838e-2 blockReceivePeriodEMSD=Just 1.2846949056272481e-2
+2020-11-11T15:19:11.640234715Z: INFO: Skov: Block 3d538d87a5d5dc522176551717703bf41358c21dc842dc0a2f657fc1c8a7f0ed is finalized at height 298092 with finalization delta=0
+2020-11-11T15:19:11.640355424Z: INFO: Skov: Finalization statistics: finalizationCount=16 lastFinalizedTime=1.6051079516402857e9 finalizationPeriodEMA=Just 2.3048782224782835e-2 finalizationPeriodEMSD=Just 7.677213734676874e-3
+2020-11-11T15:19:11.651153136Z: INFO: Skov: Block fa0098a7d629dd11227dd7e4676eae3658dc23cec694ce5db10c48c5804fcb12 (11) arrived
+2020-11-11T15:19:11.651279732Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=19 blockLastArrive=1.6051079516511142e9 blockArriveLatencyEMA=607.7712365807034 blockArriveLatencyEMSD=241.78597148355905 blockArrivePeriodEMA=Just 2.1519438579508773e-2 blockArrivePeriodEMSD=Just 9.145068758906489e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.651318606Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.653100499Z: INFO: Skov: Receive statistics: blocksReceivedCount=20 blockLastReceived=1.605107951651334e9 blockReceiveLatencyEMA=611.8677424408702 blockReceiveLatencyEMSD=229.70361232309526 blockReceivePeriodEMA=Just 2.5004772595165054e-2 blockReceivePeriodEMSD=Just 1.2189323138744e-2
+2020-11-11T15:19:11.664003781Z: INFO: Skov: Block fa0098a7d629dd11227dd7e4676eae3658dc23cec694ce5db10c48c5804fcb12 is finalized at height 298093 with finalization delta=0
+2020-11-11T15:19:11.664115720Z: INFO: Skov: Finalization statistics: finalizationCount=17 lastFinalizedTime=1.6051079516640415e9 finalizationPeriodEMA=Just 2.3119470802304552e-2 finalizationPeriodEMSD=Just 7.286331143315441e-3
+2020-11-11T15:19:11.674095623Z: INFO: Skov: Block fad13c37cfeb0ac9ce3f8bd203893e1d759a0c91eda8715e33a260c1d5a1644c (10) arrived
+2020-11-11T15:19:11.674873952Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=20 blockLastArrive=1.605107951673964e9 blockArriveLatencyEMA=611.886509321333 blockArriveLatencyEMSD=229.710316775698 blockArrivePeriodEMA=Just 2.1652472321557894e-2 blockArrivePeriodEMSD=Just 8.684948827329212e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.674962722Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.675066314Z: INFO: Processed a catch-up status message from 176c12b2563a1084
+2020-11-11T15:19:11.676014908Z: INFO: Sent a direct message to peer 176c12b2563a1084 containing a catch-up status message
+2020-11-11T15:19:11.676833077Z: INFO: Skov: Receive statistics: blocksReceivedCount=21 blockLastReceived=1.6051079516750777e9 blockReceiveLatencyEMA=615.0984759699832 blockReceiveLatencyEMSD=218.1314129488831 blockReceivePeriodEMA=Just 2.487867453564855e-2 blockReceivePeriodEMSD=Just 1.1569993310636458e-2
+2020-11-11T15:19:11.687186212Z: INFO: Skov: Block fad13c37cfeb0ac9ce3f8bd203893e1d759a0c91eda8715e33a260c1d5a1644c is finalized at height 298094 with finalization delta=0
+2020-11-11T15:19:11.687317916Z: INFO: Skov: Finalization statistics: finalizationCount=18 lastFinalizedTime=1.60510795168725e9 finalizationPeriodEMA=Just 2.3128359722074096e-2 finalizationPeriodEMSD=Just 6.912472097093462e-3
+2020-11-11T15:19:11.698264524Z: INFO: Skov: Block 8a6bb9049a568f2a32d6e63e118508447430d58c3b889b0ee5c97d83099c6c1e (5) arrived
+2020-11-11T15:19:11.698401036Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=21 blockLastArrive=1.6051079516982272e9 blockArriveLatencyEMA=615.1176811163998 blockArriveLatencyEMSD=218.13782549203952 blockArrivePeriodEMA=Just 2.1913553589402106e-2 blockArrivePeriodEMSD=Just 8.276410657752949e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.698441167Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.700145557Z: INFO: Skov: Receive statistics: blocksReceivedCount=22 blockLastReceived=1.60510795169936e9 blockReceiveLatencyEMA=617.9585643571849 blockReceiveLatencyEMSD=207.11543383778044 blockReceivePeriodEMA=Just 2.4819018082083696e-2 blockReceivePeriodEMSD=Just 1.0977718374936687e-2
+2020-11-11T15:19:11.702002363Z: INFO: Skov: Block ad23be7ebb38cad412c25e07bc4909b6bc8c169402d483dab31e109532fcca4e (1351) arrived
+2020-11-11T15:19:11.702218123Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=22 blockLastArrive=1.6051079517019207e9 blockArriveLatencyEMA=617.9761050762598 blockArriveLatencyEMSD=207.121305295145 blockArrivePeriodEMA=Just 2.0091542530461894e-2 blockArrivePeriodEMSD=Just 9.566953262574967e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.702261708Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.703657991Z: INFO: Skov: Receive statistics: blocksReceivedCount=23 blockLastReceived=1.6051079517022772e9 blockReceiveLatencyEMA=619.5829356496664 blockReceiveLatencyEMSD=196.54737311725475 blockReceivePeriodEMA=Just 2.2628860273875326e-2 blockReceivePeriodEMSD=Just 1.2313829285449149e-2
+2020-11-11T15:19:11.712136374Z: INFO: Skov: Block 8a6bb9049a568f2a32d6e63e118508447430d58c3b889b0ee5c97d83099c6c1e is finalized at height 298095 with finalization delta=0
+2020-11-11T15:19:11.712216109Z: INFO: Skov: Finalization statistics: finalizationCount=19 lastFinalizedTime=1.605107951712169e9 finalizationPeriodEMA=Just 2.3307434349866686e-2 finalizationPeriodEMSD=Just 6.579715263190163e-3
+2020-11-11T15:19:11.720671801Z: INFO: Skov: Block 0c869c6c97b0a4f1653bb352f5a91e5f613094d219bec7e07dd68d01755fe941 (3) arrived
+2020-11-11T15:19:11.720784877Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=23 blockLastArrive=1.6051079517206423e9 blockArriveLatencyEMA=619.6005587902339 blockArriveLatencyEMSD=196.55294768908396 blockArrivePeriodEMA=Just 1.9954538377415704e-2 blockArrivePeriodEMSD=Just 9.085310478846144e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.720823037Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.722394122Z: INFO: Skov: Receive statistics: blocksReceivedCount=24 blockLastReceived=1.6051079517208438e9 blockReceiveLatencyEMA=613.7717264553997 blockReceiveLatencyEMSD=187.2744356874685 blockReceivePeriodEMA=Just 2.2222616746487792e-2 blockReceivePeriodEMSD=Just 1.1745324888480735e-2
+2020-11-11T15:19:11.731489220Z: INFO: Skov: Block ad23be7ebb38cad412c25e07bc4909b6bc8c169402d483dab31e109532fcca4e is finalized at height 298096 with finalization delta=0
+2020-11-11T15:19:11.731882667Z: INFO: Skov: Finalization statistics: finalizationCount=20 lastFinalizedTime=1.605107951731515e9 finalizationPeriodEMA=Just 2.2911285314880018e-2 finalizationPeriodEMSD=Just 6.354195005780014e-3
+2020-11-11T15:19:11.740377957Z: INFO: Skov: Block b5a25497238916f293cd55c51af91ee1a156d2b14958c709ae5151c3ae67a34a (1) arrived
+2020-11-11T15:19:11.740518187Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=24 blockLastArrive=1.6051079517403421e9 blockArriveLatencyEMA=613.7895371190104 blockArriveLatencyEMSD=187.2796488583633 blockArrivePeriodEMA=Just 1.9929070739674135e-2 blockArrivePeriodEMSD=Just 8.619420934870139e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.740548452Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.741496138Z: INFO: Skov: Receive statistics: blocksReceivedCount=25 blockLastReceived=1.6051079517405617e9 blockReceiveLatencyEMA=607.2936099814598 blockReceiveLatencyEMSD=178.7239121474885 blockReceivePeriodEMA=Just 2.1972155971839012e-2 blockReceivePeriodEMSD=Just 1.116789892769036e-2
+2020-11-11T15:19:11.749426890Z: INFO: Skov: Block b5a25497238916f293cd55c51af91ee1a156d2b14958c709ae5151c3ae67a34a is finalized at height 298098 with finalization delta=0
+2020-11-11T15:19:11.749510639Z: INFO: Skov: Finalization statistics: finalizationCount=21 lastFinalizedTime=1.605107951749463e9 finalizationPeriodEMA=Just 2.2414976283392014e-2 finalizationPeriodEMSD=Just 6.209276821575981e-3
+2020-11-11T15:19:11.759549101Z: INFO: Skov: Block 1c726d24eb1e74ced918b1fb19b599fbabde648cb113085cf4ef9f51b4fd7be1 (15) arrived
+2020-11-11T15:19:11.759657545Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=25 blockLastArrive=1.6051079517595117e9 blockArriveLatencyEMA=607.3115345859094 blockArriveLatencyEMSD=178.7287913018785 blockArrivePeriodEMA=Just 1.985313466570672e-2 blockArrivePeriodEMSD=Just 8.180273351985012e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.759694552Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.760964678Z: INFO: Skov: Receive statistics: blocksReceivedCount=26 blockLastReceived=1.605107951760004e9 blockReceiveLatencyEMA=600.9152493850138 blockReceiveLatencyEMSD=170.62873278278053 blockReceivePeriodEMA=Just 2.171917047465511e-2 blockReceivePeriodEMSD=Just 1.0621948256758983e-2
+2020-11-11T15:19:11.768779932Z: INFO: Skov: Block 1c726d24eb1e74ced918b1fb19b599fbabde648cb113085cf4ef9f51b4fd7be1 is finalized at height 298099 with finalization delta=0
+2020-11-11T15:19:11.768863028Z: INFO: Skov: Finalization statistics: finalizationCount=22 lastFinalizedTime=1.6051079517688048e9 finalizationPeriodEMA=Just 2.2107665255052814e-2 finalizationPeriodEMSD=Just 5.96234579637199e-3
+2020-11-11T15:19:11.776454903Z: INFO: Skov: Block 6e9d0d87b7937d15d4e49508a3d5f6507bab42af9c974ceae83b07519164ccce (9) arrived
+2020-11-11T15:19:11.776894780Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=26 blockLastArrive=1.605107951776423e9 blockArriveLatencyEMA=600.9330234350184 blockArriveLatencyEMSD=170.63338300791483 blockArrivePeriodEMA=Just 1.955895009913605e-2 blockArrivePeriodEMSD=Just 7.810511246695179e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.777268286Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.778114321Z: INFO: Skov: Receive statistics: blocksReceivedCount=27 blockLastReceived=1.605107951777358e9 blockReceiveLatencyEMA=594.0764602466124 blockReceiveLatencyEMSD=163.16761117901868 blockReceivePeriodEMA=Just 2.1282651827189598e-2 blockReceivePeriodEMSD=Just 1.0161601402269465e-2
+2020-11-11T15:19:11.786391540Z: INFO: Skov: Block 6e9d0d87b7937d15d4e49508a3d5f6507bab42af9c974ceae83b07519164ccce is finalized at height 298100 with finalization delta=0
+2020-11-11T15:19:11.786525469Z: INFO: Skov: Finalization statistics: finalizationCount=23 lastFinalizedTime=1.6051079517864609e9 finalizationPeriodEMA=Just 2.166248722954753e-2 finalizationPeriodEMSD=Just 5.811906909569208e-3
+2020-11-11T15:19:11.794809243Z: INFO: Skov: Block d9781e98fb6cb60a30c080a3bbb7d80c565e0f31bf8bd0e826948fca32c8845a (10) arrived
+2020-11-11T15:19:11.795150981Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=27 blockLastArrive=1.605107951794781e9 blockArriveLatencyEMA=594.0941991990165 blockArriveLatencyEMSD=163.17200099720392 blockArrivePeriodEMA=Just 1.9438854889222444e-2 blockArrivePeriodEMSD=Just 7.418455572170964e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.795185721Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.796281771Z: INFO: Skov: Receive statistics: blocksReceivedCount=28 blockLastReceived=1.605107951795198e9 blockReceiveLatencyEMA=584.9483340254512 blockReceiveLatencyEMSD=157.19798535243936 blockReceivePeriodEMA=Just 2.0938390044470637e-2 blockReceivePeriodEMSD=Just 9.69530681969951e-3
+2020-11-11T15:19:11.804121605Z: INFO: Skov: Block d9781e98fb6cb60a30c080a3bbb7d80c565e0f31bf8bd0e826948fca32c8845a is finalized at height 298101 with finalization delta=0
+2020-11-11T15:19:11.804193087Z: INFO: Skov: Finalization statistics: finalizationCount=24 lastFinalizedTime=1.6051079518041432e9 finalizationPeriodEMA=Just 2.126448580659278e-2 finalizationPeriodEMSD=Just 5.641460974518439e-3
+2020-11-11T15:19:11.811508653Z: INFO: Skov: Block a7c6d9877b1e9e2572ba10542dc7b95e8a9ce348b5e67a9aea4ca501fb9be65a (8) arrived
+2020-11-11T15:19:11.811621295Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=28 blockLastArrive=1.6051079518114815e9 blockArriveLatencyEMA=584.9659274285149 blockArriveLatencyEMSD=157.20216228835278 blockArrivePeriodEMA=Just 1.91650113003002e-2 blockArrivePeriodEMSD=Just 7.085552029968542e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.811652320Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.813024262Z: INFO: Skov: Receive statistics: blocksReceivedCount=29 blockLastReceived=1.6051079518116891e9 blockReceiveLatencyEMA=576.2346695295062 blockReceiveLatencyEMSD=151.40487931209555 blockReceivePeriodEMA=Just 2.0493654140023573e-2 blockReceivePeriodEMSD=Just 9.294040408651115e-3
+2020-11-11T15:19:11.820151606Z: INFO: Skov: Block a7c6d9877b1e9e2572ba10542dc7b95e8a9ce348b5e67a9aea4ca501fb9be65a is finalized at height 298102 with finalization delta=0
+2020-11-11T15:19:11.820262795Z: INFO: Skov: Finalization statistics: finalizationCount=25 lastFinalizedTime=1.6051079518202138e9 finalizationPeriodEMA=Just 2.07450946259335e-2 finalizationPeriodEMSD=Just 5.574170657706206e-3
+2020-11-11T15:19:11.827621618Z: INFO: Skov: Block 661da28dc5fe2f1338e8dca4b5a262d153148218859d249ca47f4db581ef0a6f (6) arrived
+2020-11-11T15:19:11.827712344Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=29 blockLastArrive=1.605107951827593e9 blockArriveLatencyEMA=576.2520940002634 blockArriveLatencyEMSD=151.4088698936032 blockArrivePeriodEMA=Just 1.8859675370270182e-2 blockArrivePeriodEMSD=Just 6.784070539429692e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.827740037Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.830400736Z: INFO: Skov: Receive statistics: blocksReceivedCount=30 blockLastReceived=1.6051079518297763e9 blockReceiveLatencyEMA=567.8691801964555 blockReceiveLatencyEMSD=145.8112699265446 blockReceivePeriodEMA=Just 2.0253002026021216e-2 blockReceivePeriodEMSD=Just 8.846608918994896e-3
+2020-11-11T15:19:11.838502753Z: INFO: Skov: Block 661da28dc5fe2f1338e8dca4b5a262d153148218859d249ca47f4db581ef0a6f is finalized at height 298103 with finalization delta=0
+2020-11-11T15:19:11.838582932Z: INFO: Skov: Finalization statistics: finalizationCount=26 lastFinalizedTime=1.605107951838523e9 finalizationPeriodEMA=Just 2.050150076334015e-2 finalizationPeriodEMSD=Just 5.33837825543937e-3
+2020-11-11T15:19:11.846447894Z: INFO: Skov: Block 259b3037a37390106cddaad93e6f09235d62e1e4b5f5ffae3161ead2ee7c586e (11) arrived
+2020-11-11T15:19:11.846566560Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=30 blockLastArrive=1.605107951846417e9 blockArriveLatencyEMA=567.886526284337 blockArriveLatencyEMSD=145.81503970132846 blockArrivePeriodEMA=Just 1.8856077333243165e-2 blockArrivePeriodEMSD=Just 6.435943465288994e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.846601737Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.847436010Z: INFO: Skov: Receive statistics: blocksReceivedCount=31 blockLastReceived=1.6051079518466146e9 blockReceiveLatencyEMA=559.6919236472099 blockReceiveLatencyEMSD=140.48715783260084 blockReceivePeriodEMA=Just 1.9911552323419093e-2 blockReceivePeriodEMSD=Just 8.454911680422198e-3
+2020-11-11T15:19:11.855390790Z: INFO: Skov: Block 259b3037a37390106cddaad93e6f09235d62e1e4b5f5ffae3161ead2ee7c586e is finalized at height 298104 with finalization delta=0
+2020-11-11T15:19:11.855478126Z: INFO: Skov: Finalization statistics: finalizationCount=27 lastFinalizedTime=1.6051079518554263e9 finalizationPeriodEMA=Just 2.0141679987006136e-2 finalizationPeriodEMSD=Just 5.178193997724266e-3
+2020-11-11T15:19:11.862983596Z: INFO: Skov: Block fdd48bba6534ad25a2427bfc59b51b2591c2635b2429f89c1b2dd6febf588e20 (4) arrived
+2020-11-11T15:19:11.863102691Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=31 blockLastArrive=1.6051079518629441e9 blockArriveLatencyEMA=559.7091680750034 blockArriveLatencyEMSD=140.49073246425834 blockArrivePeriodEMA=Just 1.8623204599918848e-2 blockArrivePeriodEMSD=Just 6.145510462841142e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.863132367Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.864067958Z: INFO: Skov: Receive statistics: blocksReceivedCount=32 blockLastReceived=1.6051079518631456e9 blockReceiveLatencyEMA=551.1840458360889 blockReceiveLatencyEMSD=135.69979081757856 blockReceivePeriodEMA=Just 1.9573480291077184e-2 blockReceivePeriodEMSD=Just 8.084900287748257e-3
+2020-11-11T15:19:11.871492465Z: INFO: Skov: Block fdd48bba6534ad25a2427bfc59b51b2591c2635b2429f89c1b2dd6febf588e20 is finalized at height 298105 with finalization delta=0
+2020-11-11T15:19:11.871565978Z: INFO: Skov: Finalization statistics: finalizationCount=28 lastFinalizedTime=1.6051079518715193e9 finalizationPeriodEMA=Just 1.9736823288305522e-2 finalizationPeriodEMSD=Just 5.060385784562842e-3
+2020-11-11T15:19:11.878023321Z: INFO: Skov: Block e068e2a3e6d0e4f785053033c5f9766275b2464469512e630a9e63db21f9436a (1401) arrived
+2020-11-11T15:19:11.878122602Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=32 blockLastArrive=1.6051079518779967e9 blockArriveLatencyEMA=551.2010509406031 blockArriveLatencyEMSD=135.70325652711333 blockArrivePeriodEMA=Just 1.8266138139926964e-2 blockArrivePeriodEMSD=Just 5.927734565216392e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.878152265Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.879129464Z: INFO: Skov: Receive statistics: blocksReceivedCount=33 blockLastReceived=1.6051079518781688e9 blockReceiveLatencyEMA=542.97845814288 blockReceiveLatencyEMSD=131.06858864601995 blockReceivePeriodEMA=Just 1.9118469061969467e-2 blockReceivePeriodEMSD=Just 7.790530685651377e-3
+2020-11-11T15:19:11.885828011Z: INFO: Skov: Block e068e2a3e6d0e4f785053033c5f9766275b2464469512e630a9e63db21f9436a is finalized at height 298106 with finalization delta=0
+2020-11-11T15:19:11.885923482Z: INFO: Skov: Finalization statistics: finalizationCount=29 lastFinalizedTime=1.605107951885856e9 finalizationPeriodEMA=Just 1.919678625947497e-2 finalizationPeriodEMSD=Just 5.0667064047878576e-3
+2020-11-11T15:19:11.893007888Z: INFO: Skov: Block 11e88e5ebeb63bf112c5ce2c47f054db605b57d644f4dec00d179849859a1de8 (10) arrived
+2020-11-11T15:19:11.893137204Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=33 blockLastArrive=1.60510795189296e9 blockArriveLatencyEMA=542.9952418472427 blockArriveLatencyEMSD=131.07194274423205 blockArrivePeriodEMA=Just 1.7935851925934266e-2 blockArrivePeriodEMSD=Just 5.710169368458148e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.893170061Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.894300511Z: INFO: Skov: Receive statistics: blocksReceivedCount=34 blockLastReceived=1.6051079518932223e9 blockReceiveLatencyEMA=534.844934571692 blockReceiveLatencyEMSD=126.7141084798424 blockReceivePeriodEMA=Just 1.871197485577252e-2 blockReceivePeriodEMSD=Just 7.490678833371066e-3
+2020-11-11T15:19:11.901033413Z: INFO: Skov: Block 11e88e5ebeb63bf112c5ce2c47f054db605b57d644f4dec00d179849859a1de8 is finalized at height 298107 with finalization delta=0
+2020-11-11T15:19:11.901121614Z: INFO: Skov: Finalization statistics: finalizationCount=30 lastFinalizedTime=1.6051079519010763e9 finalizationPeriodEMA=Just 1.8799156033527473e-2 finalizationPeriodEMSD=Just 4.9525095237031086e-3
+2020-11-11T15:19:11.907926722Z: INFO: Skov: Block 19f69a3d2bf8cbc24c24133077728b946a07ead897eed4ffc6b0e56f6389ec63 (1) arrived
+2020-11-11T15:19:11.908235449Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=34 blockLastArrive=1.6051079519079006e9 blockArriveLatencyEMA=534.8615077151185 blockArriveLatencyEMSD=126.71735254360892 blockArrivePeriodEMA=Just 1.763631863334084e-2 blockArrivePeriodEMSD=Just 5.491166773571595e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.908380055Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.909217069Z: INFO: Skov: Receive statistics: blocksReceivedCount=35 blockLastReceived=1.6051079519084775e9 blockReceiveLatencyEMA=527.3262888786228 blockReceiveLatencyEMSD=122.3093988889583 blockReceivePeriodEMA=Just 1.836629837019527e-2 blockReceivePeriodEMSD=Just 7.1815508450731825e-3
+2020-11-11T15:19:11.915978587Z: INFO: Skov: Block 19f69a3d2bf8cbc24c24133077728b946a07ead897eed4ffc6b0e56f6389ec63 is finalized at height 298108 with finalization delta=0
+2020-11-11T15:19:11.916047220Z: INFO: Skov: Finalization statistics: finalizationCount=31 lastFinalizedTime=1.605107951916002e9 finalizationPeriodEMA=Just 1.8411803730174727e-2 finalizationPeriodEMSD=Just 4.839937167603222e-3
+2020-11-11T15:19:11.923670191Z: INFO: Skov: Block 19a01c3335b3779b25160305e38c6da9fea425dcabb910592640adce6f8e13a8 (12) arrived
+2020-11-11T15:19:11.923818199Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=35 blockLastArrive=1.605107951923643e9 blockArriveLatencyEMA=527.3427212585066 blockArriveLatencyEMSD=122.3125015692031 blockArrivePeriodEMA=Just 1.7446949070006757e-2 blockArrivePeriodEMSD=Just 5.240264188503771e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.923856033Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.924784244Z: INFO: Skov: Receive statistics: blocksReceivedCount=36 blockLastReceived=1.6051079519238923e9 blockReceiveLatencyEMA=519.8610492123605 blockReceiveLatencyEMSD=118.17444046998109 blockReceivePeriodEMA=Just 1.8071126033175743e-2 blockReceivePeriodEMSD=Just 6.870323548655357e-3
+2020-11-11T15:19:11.931969812Z: INFO: Skov: Block 19a01c3335b3779b25160305e38c6da9fea425dcabb910592640adce6f8e13a8 is finalized at height 298109 with finalization delta=0
+2020-11-11T15:19:11.932037040Z: INFO: Skov: Finalization statistics: finalizationCount=32 lastFinalizedTime=1.6051079519319928e9 finalizationPeriodEMA=Just 1.8169702357157255e-2 finalizationPeriodEMSD=Just 4.648656825478183e-3
+2020-11-11T15:19:11.938823280Z: INFO: Skov: Block 5cb0cd3d8ba9079fc2fe95f09ed1c62bdc17a4499926d05a06a77741ab377f4b (10) arrived
+2020-11-11T15:19:11.938958148Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=36 blockLastArrive=1.605107951938779e9 blockArriveLatencyEMA=519.8773270530559 blockArriveLatencyEMSD=118.17741845162158 blockArrivePeriodEMA=Just 1.721585966300608e-2 blockArrivePeriodEMSD=Just 5.019457412413705e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.938988311Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.939558928Z: INFO: Skov: Receive statistics: blocksReceivedCount=37 blockLastReceived=1.6051079519390037e9 blockReceiveLatencyEMA=513.1188446561245 blockReceiveLatencyEMSD=113.92012308129308 blockReceivePeriodEMA=Just 1.777515682985817e-2 blockReceivePeriodEMSD=Just 6.5779625280704855e-3
+2020-11-11T15:19:11.941105932Z: INFO: Skov: Block 2eabb820cfb229603f97289d5effa7a3c60db9d7a918a80a1e1c0748d1bedfe5 (10) arrived
+2020-11-11T15:19:11.941186185Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=37 blockLastArrive=1.605107951941083e9 blockArriveLatencyEMA=513.1337026388503 blockArriveLatencyEMSD=113.923659706224 blockArrivePeriodEMA=Just 1.5724644396705473e-2 blockArrivePeriodEMSD=Just 6.533679222120056e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.941214488Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.943798856Z: INFO: Skov: Receive statistics: blocksReceivedCount=38 blockLastReceived=1.605107951943087e9 blockReceiveLatencyEMA=506.351268904512 blockReceiveLatencyEMSD=109.9646112736074 blockReceivePeriodEMA=Just 1.640599014687235e-2 blockReceivePeriodEMSD=Just 7.470889409622858e-3
+2020-11-11T15:19:11.950248652Z: INFO: Skov: Block 5cb0cd3d8ba9079fc2fe95f09ed1c62bdc17a4499926d05a06a77741ab377f4b is finalized at height 298110 with finalization delta=0
+2020-11-11T15:19:11.950333277Z: INFO: Skov: Finalization statistics: finalizationCount=33 lastFinalizedTime=1.6051079519502745e9 finalizationPeriodEMA=Just 1.818089332144153e-2 finalizationPeriodEMSD=Just 4.410230877413667e-3
+2020-11-11T15:19:11.957427050Z: INFO: Skov: Block 5dc558a0e82b3a4301ca406dc11ab30910a89f670ae5fec2fd1c3600ae0454e8 (18) arrived
+2020-11-11T15:19:11.957525192Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=38 blockLastArrive=1.6051079519574027e9 blockArriveLatencyEMA=506.36607264156527 blockArriveLatencyEMSD=109.96793877669502 blockArrivePeriodEMA=Just 1.5784155457034925e-2 blockArrivePeriodEMSD=Just 6.200962978160798e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.957555189Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.958544925Z: INFO: Skov: Receive statistics: blocksReceivedCount=39 blockLastReceived=1.6051079519575677e9 blockReceiveLatencyEMA=498.46189877426076 blockReceiveLatencyEMSD=106.97277040802919 blockReceivePeriodEMA=Just 1.6213437332185113e-2 blockReceivePeriodEMSD=Just 7.11100970268845e-3
+2020-11-11T15:19:11.967510209Z: INFO: Skov: Block 2eabb820cfb229603f97289d5effa7a3c60db9d7a918a80a1e1c0748d1bedfe5 is finalized at height 298111 with finalization delta=0
+2020-11-11T15:19:11.967597760Z: INFO: Skov: Finalization statistics: finalizationCount=34 lastFinalizedTime=1.605107951967538e9 finalizationPeriodEMA=Just 1.8089184789297375e-2 finalizationPeriodEMSD=Just 4.192948466973562e-3
+2020-11-11T15:19:11.975251838Z: INFO: Skov: Block 87a1d99f5adb5ddc30558e012040423702c6ace46b237ae1703a37ab764d7aa0 (4) arrived
+2020-11-11T15:19:11.975366185Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=39 blockLastArrive=1.605107951975023e9 blockArriveLatencyEMA=498.47696767110875 blockArriveLatencyEMSD=106.9756729262751 blockArrivePeriodEMA=Just 1.5967767011331433e-2 blockArrivePeriodEMSD=Just 5.908482588339359e-3 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:11.975401979Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:11.976306485Z: INFO: Skov: Receive statistics: blocksReceivedCount=40 blockLastReceived=1.605107951975453e9 blockReceiveLatencyEMA=490.3882541894347 blockReceiveLatencyEMSD=104.33364692097587 blockReceivePeriodEMA=Just 1.6380625998966603e-2 blockReceivePeriodEMSD=Just 6.764715924948947e-3
+2020-11-11T15:19:11.983555077Z: INFO: Skov: Block 87a1d99f5adb5ddc30558e012040423702c6ace46b237ae1703a37ab764d7aa0 is finalized at height 298113 with finalization delta=0
+2020-11-11T15:19:11.983689329Z: INFO: Skov: Finalization statistics: finalizationCount=35 lastFinalizedTime=1.6051079519836202e9 finalizationPeriodEMA=Just 1.7888473310367636e-2 finalizationPeriodEMSD=Just 4.02309595237223e-3
+2020-11-11T15:19:12.139743219Z: INFO: Skov: Block 3fa42c2ad86b472e9b52262f1822dd5b306fd69ae16f25d81fef5417ad4c0ae8 (13) arrived
+2020-11-11T15:19:12.139894951Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=40 blockLastArrive=1.6051079521397083e9 blockArriveLatencyEMA=490.4182417393979 blockArriveLatencyEMSD=104.32594457280659 blockArrivePeriodEMA=Just 3.083953201019829e-2 blockArrivePeriodEMSD=Just 4.496602826001792e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.139940271Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.142427622Z: INFO: Skov: Receive statistics: blocksReceivedCount=41 blockLastReceived=1.6051079521417184e9 blockReceiveLatencyEMA=482.41360060639124 blockReceiveLatencyEMSD=101.82983251372706 blockReceivePeriodEMA=Just 3.136910669906994e-2 blockReceivePeriodEMSD=Just 4.542109891522952e-2
+2020-11-11T15:19:12.150330661Z: INFO: Skov: Block 3fa42c2ad86b472e9b52262f1822dd5b306fd69ae16f25d81fef5417ad4c0ae8 is finalized at height 298114 with finalization delta=0
+2020-11-11T15:19:12.150408313Z: INFO: Skov: Finalization statistics: finalizationCount=36 lastFinalizedTime=1.605107952150357e9 finalizationPeriodEMA=Just 3.2773299679330875e-2 finalizationPeriodEMSD=Just 4.481728768282887e-2
+2020-11-11T15:19:12.157816283Z: INFO: Skov: Block 17d1ee0e694b549f53f25b7c60af90bfa86507ed3859eeb077c599b974ba844b (1) arrived
+2020-11-11T15:19:12.157931979Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=41 blockLastArrive=1.6051079521577868e9 blockArriveLatencyEMA=482.44219624785813 blockArriveLatencyEMSD=101.82371116324278 blockArrivePeriodEMA=Just 2.956342580917846e-2 blockArrivePeriodEMSD=Just 4.282995856943115e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.157980053Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.159214969Z: INFO: Skov: Receive statistics: blocksReceivedCount=42 blockLastReceived=1.6051079521584284e9 blockReceiveLatencyEMA=473.1380833999521 blockReceiveLatencyEMSD=100.53208585232312 blockReceivePeriodEMA=Just 2.9903214329162948e-2 blockReceivePeriodEMSD=Just 4.331406432051513e-2
+2020-11-11T15:19:12.160813494Z: INFO: Skov: Block ba5b950e9f08b5b34e19cbc75f2b1078fb523ec1121ed84f28d42706b843a4e2 (4) arrived
+2020-11-11T15:19:12.160909572Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=42 blockLastArrive=1.6051079521607623e9 blockArriveLatencyEMA=473.16405284307234 blockArriveLatencyEMSD=100.52868667652969 blockArrivePeriodEMA=Just 2.6904620828260613e-2 blockArrivePeriodEMSD=Just 4.140758398279537e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.160950120Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.162274164Z: INFO: Skov: Receive statistics: blocksReceivedCount=43 blockLastReceived=1.605107952160965e9 blockReceiveLatencyEMA=464.2653715533569 blockReceiveLatencyEMSD=99.01795492157663 blockReceivePeriodEMA=Just 2.7166532096246653e-2 blockReceivePeriodEMSD=Just 4.1903486942749604e-2
+2020-11-11T15:19:12.170201271Z: INFO: Skov: Block 17d1ee0e694b549f53f25b7c60af90bfa86507ed3859eeb077c599b974ba844b is finalized at height 298115 with finalization delta=1
+2020-11-11T15:19:12.170333115Z: INFO: Skov: Finalization statistics: finalizationCount=37 lastFinalizedTime=1.6051079521702666e9 finalizationPeriodEMA=Just 3.148692311139779e-2 finalizationPeriodEMSD=Just 4.269219167238485e-2
+2020-11-11T15:19:12.178803180Z: INFO: Skov: Block c1cec9d59452d3c942a44ffc50e4676fdb1cdce7e5d07b9b0424940e12403ceb (1050) arrived
+2020-11-11T15:19:12.178910199Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=43 blockLastArrive=1.6051079521787772e9 blockArriveLatencyEMA=464.2905252739651 blockArriveLatencyEMSD=99.01550678603046 blockArrivePeriodEMA=Just 2.6015653945434553e-2 blockArrivePeriodEMSD=Just 3.937310718284601e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.178956388Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.180455722Z: INFO: Skov: Receive statistics: blocksReceivedCount=44 blockLastReceived=1.6051079521793675e9 blockReceiveLatencyEMA=455.7317711600212 blockReceiveLatencyEMSD=97.36272838321908 blockReceivePeriodEMA=Just 2.629014748662199e-2 blockReceivePeriodEMSD=Just 3.983998551732858e-2
+2020-11-11T15:19:12.188020460Z: INFO: Skov: Block ba5b950e9f08b5b34e19cbc75f2b1078fb523ec1121ed84f28d42706b843a4e2 is finalized at height 298116 with finalization delta=0
+2020-11-11T15:19:12.188134548Z: INFO: Skov: Finalization statistics: finalizationCount=38 lastFinalizedTime=1.6051079521880643e9 finalizationPeriodEMA=Just 3.0118005700258008e-2 finalizationPeriodEMSD=Just 4.070904470408481e-2
+2020-11-11T15:19:12.194474730Z: INFO: Skov: Block 4b8144281e185d203515ed403565dfb24972dea9f758c940c98d79a4892bf43b (2) arrived
+2020-11-11T15:19:12.194939352Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=44 blockLastArrive=1.605107952194447e9 blockArriveLatencyEMA=455.7559174622686 blockArriveLatencyEMSD=97.36128234663018 blockArrivePeriodEMA=Just 2.49810890508911e-2 blockArrivePeriodEMSD=Just 3.748133312727667e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.195027740Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.198473211Z: INFO: Skov: Receive statistics: blocksReceivedCount=45 blockLastReceived=1.6051079521978307e9 blockReceiveLatencyEMA=441.42837710971907 blockReceiveLatencyEMSD=101.84711347223352 blockReceivePeriodEMA=Just 2.550743643795979e-2 blockReceivePeriodEMSD=Just 3.786840016016173e-2
+2020-11-11T15:19:12.205833573Z: INFO: Skov: Block 4b8144281e185d203515ed403565dfb24972dea9f758c940c98d79a4892bf43b is finalized at height 298118 with finalization delta=0
+2020-11-11T15:19:12.205965580Z: INFO: Skov: Finalization statistics: finalizationCount=39 lastFinalizedTime=1.6051079522059007e9 finalizationPeriodEMA=Just 2.8889834830232206e-2 finalizationPeriodEMSD=Just 3.8795351806899206e-2
+2020-11-11T15:19:12.215284879Z: INFO: Skov: Block ebe6671da4057dac2feaa8c3d9c79386c7a3607171e1fe066309122157854a71 (7) arrived
+2020-11-11T15:19:12.215383078Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=45 blockLastArrive=1.6051079522152457e9 blockArriveLatencyEMA=441.45185029704174 blockArriveLatencyEMSD=101.84672016009209 blockArrivePeriodEMA=Just 2.456284544580199e-2 blockArrivePeriodEMSD=Just 3.558004565928605e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.218302200Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.218886629Z: INFO: Skov: Receive statistics: blocksReceivedCount=46 blockLastReceived=1.6051079522183273e9 blockReceiveLatencyEMA=427.00737213244713 blockReceiveLatencyEMSD=105.86425048784844 blockReceivePeriodEMA=Just 2.5006360794163813e-2 blockReceivePeriodEMSD=Just 3.595655501891656e-2
+2020-11-11T15:19:12.225702514Z: INFO: Skov: Block ebe6671da4057dac2feaa8c3d9c79386c7a3607171e1fe066309122157854a71 is finalized at height 298119 with finalization delta=0
+2020-11-11T15:19:12.225801364Z: INFO: Skov: Finalization statistics: finalizationCount=40 lastFinalizedTime=1.6051079522257488e9 finalizationPeriodEMA=Just 2.7985667947208984e-2 finalizationPeriodEMSD=Just 3.6904322909520684e-2
+2020-11-11T15:19:12.233426573Z: INFO: Skov: Block 31862df23d9ccd66db3fc157bc99da81c4e8091f2bc713cce384c8fd3cc8f0d3 (9) arrived
+2020-11-11T15:19:12.233610885Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=46 blockLastArrive=1.6051079522333727e9 blockArriveLatencyEMA=427.03000253613754 blockArriveLatencyEMSD=105.86494321624875 blockArrivePeriodEMA=Just 2.391924870122179e-2 blockArrivePeriodEMSD=Just 3.380937200144214e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.233646054Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.234550810Z: INFO: Skov: Receive statistics: blocksReceivedCount=47 blockLastReceived=1.6051079522336583e9 blockReceiveLatencyEMA=412.7550007481024 blockReceiveLatencyEMSD=109.15441534319223 blockReceivePeriodEMA=Just 2.403881991474743e-2 blockReceivePeriodEMSD=Just 3.423465615608857e-2
+2020-11-11T15:19:12.242479028Z: INFO: Skov: Block 31862df23d9ccd66db3fc157bc99da81c4e8091f2bc713cce384c8fd3cc8f0d3 is finalized at height 298120 with finalization delta=0
+2020-11-11T15:19:12.242731391Z: INFO: Skov: Finalization statistics: finalizationCount=41 lastFinalizedTime=1.6051079522424984e9 finalizationPeriodEMA=Just 2.6862071952488086e-2 finalizationPeriodEMSD=Just 3.517240901762817e-2
+2020-11-11T15:19:12.249685631Z: INFO: Skov: Block 9a4656c66c29c7636d6c935adb4b1de031cc178a1c85ff4d352617d01e445ebe (10) arrived
+2020-11-11T15:19:12.249784241Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=47 blockLastArrive=1.6051079522496593e9 blockArriveLatencyEMA=412.77696821232377 blockArriveLatencyEMSD=109.15579906209258 blockArrivePeriodEMA=Just 2.315598483109961e-2 blockArrivePeriodEMSD=Just 3.2156016812373e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.249811930Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.250724996Z: INFO: Skov: Receive statistics: blocksReceivedCount=48 blockLastReceived=1.6051079522498248e9 blockReceiveLatencyEMA=399.8044831606922 blockReceiveLatencyEMSD=110.60136030835744 blockReceivePeriodEMA=Just 2.3251596423272687e-2 blockReceivePeriodEMSD=Just 3.256359933027703e-2
+2020-11-11T15:19:12.259719360Z: INFO: Skov: Block 9a4656c66c29c7636d6c935adb4b1de031cc178a1c85ff4d352617d01e445ebe is finalized at height 298121 with finalization delta=0
+2020-11-11T15:19:12.259802480Z: INFO: Skov: Finalization statistics: finalizationCount=42 lastFinalizedTime=1.6051079522597418e9 finalizationPeriodEMA=Just 2.5900206057239278e-2 finalizationPeriodEMSD=Just 3.3492016877115414e-2
+2020-11-11T15:19:12.266961022Z: INFO: Skov: Block a39e06bfc7dd169010f86e9a688a0b56f838e521274580fe485c9e8ec2bb1b2e (11) arrived
+2020-11-11T15:19:12.267089155Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=48 blockLastArrive=1.605107952266923e9 blockArriveLatencyEMA=399.8259636758914 blockArriveLatencyEMSD=110.603102526646 blockArrivePeriodEMA=Just 2.256674134798965e-2 blockArrivePeriodEMSD=Just 3.0557050683194892e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.267130336Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.268863146Z: INFO: Skov: Receive statistics: blocksReceivedCount=49 blockLastReceived=1.6051079522678435e9 blockReceiveLatencyEMA=387.700819204323 blockReceiveLatencyEMSD=111.03099991611171 blockReceivePeriodEMA=Just 2.272830908094542e-2 blockReceivePeriodEMSD=Just 3.093240482071021e-2
+2020-11-11T15:19:12.275558266Z: INFO: Skov: Block a39e06bfc7dd169010f86e9a688a0b56f838e521274580fe485c9e8ec2bb1b2e is finalized at height 298122 with finalization delta=0
+2020-11-11T15:19:12.275640504Z: INFO: Skov: Finalization statistics: finalizationCount=43 lastFinalizedTime=1.6051079522755914e9 finalizationPeriodEMA=Just 2.489514735151535e-2 finalizationPeriodEMSD=Just 3.1916061192835944e-2
+2020-11-11T15:19:12.282677029Z: INFO: Skov: Block 354e96d7c7a12fd7c6785a1626a163697f4999802098cc166052c03bfbf34f69 (11) arrived
+2020-11-11T15:19:12.282777382Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=49 blockLastArrive=1.605107952282647e9 blockArriveLatencyEMA=387.72163199250224 blockArriveLatencyEMSD=111.03321696312898 blockArrivePeriodEMA=Just 2.1882466613190685e-2 blockArrivePeriodEMSD=Just 2.9061557064685387e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.282809714Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.283430307Z: INFO: Skov: Receive statistics: blocksReceivedCount=50 blockLastReceived=1.6051079522829173e9 blockReceiveLatencyEMA=376.7840290058907 blockReceiveLatencyEMSD=110.30721382694664 blockReceivePeriodEMA=Just 2.1962840472850877e-2 blockReceivePeriodEMSD=Just 2.9434771629874595e-2
+2020-11-11T15:19:12.284781621Z: INFO: Skov: Block ca5d96be148fb451976e85ea82236c4aa9a83548918c6f0c4857b65cc71c98d1 (17) arrived
+2020-11-11T15:19:12.284866961Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=50 blockLastArrive=1.6051079522847478e9 blockArriveLatencyEMA=376.80294358155203 blockArriveLatencyEMSD=110.31091311290064 blockArrivePeriodEMA=Just 1.9904324051871616e-2 blockArrivePeriodEMSD=Just 2.8201668763704148e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.284896129Z: INFO: Processed a block from 881651fcdfdfc927
+2020-11-11T15:19:12.284919355Z: INFO: Processed a catch-up status message from 881651fcdfdfc927
+2020-11-11T15:19:12.290033524Z: INFO: Sent a direct message to peer 23e4a0a328185a6a containing a catch-up status message
+2020-11-11T15:19:12.290053220Z: INFO: Processed a catch-up status message from 23e4a0a328185a6a
+2020-11-11T15:19:12.314834378Z: INFO: Sent a direct message to peer 0e4d417a460054b1 containing a catch-up status message
+2020-11-11T15:19:12.420287730Z: INFO: Skov: Receive statistics: blocksReceivedCount=51 blockLastReceived=1.605107952419168e9 blockReceiveLatencyEMA=366.84754289360166 blockReceiveLatencyEMSD=108.80954501501593 blockReceivePeriodEMA=Just 3.339162272556579e-2 blockReceivePeriodEMSD=Just 4.421898661019184e-2
+2020-11-11T15:19:12.431158732Z: INFO: Skov: Block 354e96d7c7a12fd7c6785a1626a163697f4999802098cc166052c03bfbf34f69 is finalized at height 298123 with finalization delta=0
+2020-11-11T15:19:12.431261456Z: INFO: Skov: Finalization statistics: finalizationCount=44 lastFinalizedTime=1.605107952431198e9 finalizationPeriodEMA=Just 3.7966275616363815e-2 finalizationPeriodEMSD=Just 4.954251722413232e-2
+2020-11-11T15:19:12.439118261Z: INFO: Skov: Block 5fa9f671d7b50f07d518e07a47794bd87338ce5fd072410502f3a6a712ec310c (15) arrived
+2020-11-11T15:19:12.439218788Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=51 blockLastArrive=1.6051079524390798e9 blockArriveLatencyEMA=366.86655720479683 blockArriveLatencyEMSD=108.81283823462755 blockArrivePeriodEMA=Just 3.3347084746684456e-2 blockArrivePeriodEMSD=Just 4.839598170131444e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.439250087Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.440352900Z: INFO: Skov: Receive statistics: blocksReceivedCount=52 blockLastReceived=1.6051079524392648e9 blockReceiveLatencyEMA=357.8067150883415 blockReceiveLatencyEMSD=106.72953894951758 blockReceivePeriodEMA=Just 3.206215625300921e-2 blockReceivePeriodEMSD=Just 4.213898704363883e-2
+2020-11-11T15:19:12.447279737Z: INFO: Skov: Block ca5d96be148fb451976e85ea82236c4aa9a83548918c6f0c4857b65cc71c98d1 is finalized at height 298124 with finalization delta=0
+2020-11-11T15:19:12.447671503Z: INFO: Skov: Finalization statistics: finalizationCount=45 lastFinalizedTime=1.6051079524476137e9 finalizationPeriodEMA=Just 3.5811222054727435e-2 finalizationPeriodEMSD=Just 4.744273615944592e-2
+2020-11-11T15:19:12.458191116Z: INFO: Skov: Block 5c37154d7d3485881603b2c40111a6f665f7ae99ae2d5aedd476a80eee23d70a (0) arrived
+2020-11-11T15:19:12.458287224Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=52 blockLastArrive=1.6051079524581654e9 blockArriveLatencyEMA=357.82571802631713 blockArriveLatencyEMSD=106.73256928261354 blockArrivePeriodEMA=Just 3.192093687201601e-2 blockArrivePeriodEMSD=Just 4.6111376255695925e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.458324969Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.459968558Z: INFO: Skov: Receive statistics: blocksReceivedCount=53 blockLastReceived=1.6051079524583418e9 blockReceiveLatencyEMA=346.0218777532073 blockReceiveLatencyEMSD=107.24745477203211 blockReceivePeriodEMA=Just 3.076363022770829e-2 blockReceivePeriodEMSD=Just 4.016591010674375e-2
+2020-11-11T15:19:12.468012132Z: INFO: Skov: Block 5c37154d7d3485881603b2c40111a6f665f7ae99ae2d5aedd476a80eee23d70a is finalized at height 298126 with finalization delta=0
+2020-11-11T15:19:12.468604387Z: INFO: Skov: Finalization statistics: finalizationCount=46 lastFinalizedTime=1.6051079524684145e9 finalizationPeriodEMA=Just 3.431019954925469e-2 finalizationPeriodEMSD=Just 4.523283663360876e-2
+2020-11-11T15:19:12.478541400Z: INFO: Skov: Block a083a1ff123f4ccd9e0284decee140e47019b7473d2ec797ce957aebc3a35062 (15) arrived
+2020-11-11T15:19:12.478634606Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=53 blockLastArrive=1.6051079524785151e9 blockArriveLatencyEMA=346.0409977413854 blockArriveLatencyEMSD=107.25005315079261 blockArrivePeriodEMA=Just 3.076381888481441e-2 blockArrivePeriodEMSD=Just 4.3882609499683034e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.478662509Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.479565035Z: INFO: Skov: Receive statistics: blocksReceivedCount=54 blockLastReceived=1.605107952478676e9 blockReceiveLatencyEMA=334.5925575770866 blockReceiveLatencyEMSD=107.36609863809755 blockReceivePeriodEMA=Just 2.9720692704937463e-2 blockReceivePeriodEMSD=Just 3.823296704835171e-2
+2020-11-11T15:19:12.486646980Z: INFO: Skov: Block a083a1ff123f4ccd9e0284decee140e47019b7473d2ec797ce957aebc3a35062 is finalized at height 298127 with finalization delta=0
+2020-11-11T15:19:12.487008873Z: INFO: Skov: Finalization statistics: finalizationCount=47 lastFinalizedTime=1.605107952486958e9 finalizationPeriodEMA=Just 3.273351279432922e-2 finalizationPeriodEMSD=Just 4.3171541888596954e-2
+2020-11-11T15:19:12.493955196Z: INFO: Skov: Block c62fa175bbcba309b5e60e1e3f864c2776883a41e16cb13a22e92b0e2192a493 (1120) arrived
+2020-11-11T15:19:12.494304738Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=54 blockLastArrive=1.605107952493912e9 blockArriveLatencyEMA=334.61128916054685 blockArriveLatencyEMSD=107.36880671288613 blockArrivePeriodEMA=Just 2.922711259633297e-2 blockArrivePeriodEMSD=Just 4.188517960812667e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.494574540Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.495380289Z: INFO: Skov: Receive statistics: blocksReceivedCount=55 blockLastReceived=1.605107952494746e9 blockReceiveLatencyEMA=321.68277642157796 blockReceiveLatencyEMSD=108.97106619849721 blockReceivePeriodEMA=Just 2.8355626434443715e-2 blockReceivePeriodEMSD=Just 3.65014307348886e-2
+2020-11-11T15:19:12.502405314Z: INFO: Skov: Block c62fa175bbcba309b5e60e1e3f864c2776883a41e16cb13a22e92b0e2192a493 is finalized at height 298128 with finalization delta=0
+2020-11-11T15:19:12.503279929Z: INFO: Skov: Finalization statistics: finalizationCount=48 lastFinalizedTime=1.6051079525027275e9 finalizationPeriodEMA=Just 3.10371245148963e-2 finalizationPeriodEMSD=Just 4.1271096725025005e-2
+2020-11-11T15:19:12.510387840Z: INFO: Skov: Block 49df6b1511d4759cade7222f3c7d8573838273c0582896791edf4740b5cb1f49 (2) arrived
+2020-11-11T15:19:12.510483591Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=55 blockLastArrive=1.6051079525103548e9 blockArriveLatencyEMA=321.70119572349216 blockArriveLatencyEMSD=108.97380053221752 blockArrivePeriodEMA=Just 2.794868703669967e-2 blockArrivePeriodEMSD=Just 3.992043074577529e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.510519474Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.512060205Z: INFO: Skov: Receive statistics: blocksReceivedCount=56 blockLastReceived=1.605107952511042e9 blockReceiveLatencyEMA=307.06560299992015 blockReceiveLatencyEMSD=112.29505675292616 blockReceivePeriodEMA=Just 2.7149682090999345e-2 blockReceivePeriodEMSD=Just 3.4816773500137156e-2
+2020-11-11T15:19:12.519574519Z: INFO: Skov: Block 49df6b1511d4759cade7222f3c7d8573838273c0582896791edf4740b5cb1f49 is finalized at height 298129 with finalization delta=0
+2020-11-11T15:19:12.520579132Z: INFO: Skov: Finalization statistics: finalizationCount=49 lastFinalizedTime=1.605107952520518e9 finalizationPeriodEMA=Just 2.971245446340667e-2 finalizationPeriodEMSD=Just 3.935436238977268e-2
+2020-11-11T15:19:12.528495457Z: INFO: Skov: Block 32b7e7d202c8591705c37c862826ece518fa62b8bf999058f6f46277ebf69c44 (18) arrived
+2020-11-11T15:19:12.528910476Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=56 blockLastArrive=1.6051079525284524e9 blockArriveLatencyEMA=307.08392138234296 blockArriveLatencyEMSD=112.29756303977284 blockArrivePeriodEMA=Just 2.6963570533029703e-2 blockArrivePeriodEMSD=Just 3.7986982014469685e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.529510692Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.530408720Z: INFO: Skov: Receive statistics: blocksReceivedCount=57 blockLastReceived=1.605107952529544e9 blockReceiveLatencyEMA=291.9619971104281 blockReceiveLatencyEMSD=115.76800936275313 blockReceivePeriodEMA=Just 2.628490388189941e-2 blockReceivePeriodEMSD=Just 3.3131820315555775e-2
+2020-11-11T15:19:12.537475566Z: INFO: Skov: Block 32b7e7d202c8591705c37c862826ece518fa62b8bf999058f6f46277ebf69c44 is finalized at height 298130 with finalization delta=0
+2020-11-11T15:19:12.537815142Z: INFO: Skov: Finalization statistics: finalizationCount=50 lastFinalizedTime=1.6051079525377533e9 finalizationPeriodEMA=Just 2.8464729917066004e-2 finalizationPeriodEMSD=Just 3.7522001600219415e-2
+2020-11-11T15:19:12.545355600Z: INFO: Skov: Block 6c0a28002bb1a152afd692a4ab514deda2b7721c3d0000c850e82b33e5920a9d (1064) arrived
+2020-11-11T15:19:12.545476741Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=57 blockLastArrive=1.6051079525453281e9 blockArriveLatencyEMA=291.9800620645087 blockArriveLatencyEMSD=115.77049492353805 blockArrivePeriodEMA=Just 2.5954802679726732e-2 blockArrivePeriodEMSD=Just 3.6164460946454e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.545515760Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.547314228Z: INFO: Skov: Receive statistics: blocksReceivedCount=58 blockLastReceived=1.6051079525455306e9 blockReceiveLatencyEMA=276.4953504600853 blockReceiveLatencyEMSD=119.22652062394548 blockReceivePeriodEMA=Just 2.525506369370947e-2 blockReceivePeriodEMSD=Just 3.1583079378030045e-2
+2020-11-11T15:19:12.554105093Z: INFO: Skov: Block 6c0a28002bb1a152afd692a4ab514deda2b7721c3d0000c850e82b33e5920a9d is finalized at height 298131 with finalization delta=0
+2020-11-11T15:19:12.554196452Z: INFO: Skov: Finalization statistics: finalizationCount=51 lastFinalizedTime=1.6051079525541506e9 finalizationPeriodEMA=Just 2.7257981325359403e-2 finalizationPeriodEMSD=Just 3.578011630990674e-2
+2020-11-11T15:19:12.561630986Z: INFO: Skov: Block 2e74252072fe075f30c8cba76bcc517c90869c43908a7fcdb11cb568fe71e2d2 (17) arrived
+2020-11-11T15:19:12.562331902Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=58 blockLastArrive=1.6051079525615897e9 blockArriveLatencyEMA=276.5132148406578 blockArriveLatencyEMSD=119.22892691276871 blockArrivePeriodEMA=Just 2.498548461175406e-2 blockArrivePeriodEMSD=Just 3.443163675524185e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.562408480Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.563955947Z: INFO: Skov: Receive statistics: blocksReceivedCount=59 blockLastReceived=1.6051079525624273e9 blockReceiveLatencyEMA=262.3270581328768 blockReceiveLatencyEMSD=120.83100374202812 blockReceivePeriodEMA=Just 2.4419215424338524e-2 blockReceivePeriodEMSD=Just 3.006708488802574e-2
+2020-11-11T15:19:12.572110313Z: INFO: Skov: Block 2e74252072fe075f30c8cba76bcc517c90869c43908a7fcdb11cb568fe71e2d2 is finalized at height 298132 with finalization delta=0
+2020-11-11T15:19:12.572194055Z: INFO: Skov: Finalization statistics: finalizationCount=52 lastFinalizedTime=1.605107952572137e9 finalizationPeriodEMA=Just 2.6330843892823464e-2 finalizationPeriodEMSD=Just 3.405776424260249e-2
+2020-11-11T15:19:12.579475787Z: INFO: Skov: Block b5b0d79915c04a95ce24f3105e26a3ee87b8c62d32976240d1c3fd7d93bf40f4 (4) arrived
+2020-11-11T15:19:12.579593767Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=59 blockLastArrive=1.6051079525794463e9 blockArriveLatencyEMA=262.344837998492 blockArriveLatencyEMSD=120.83322983586876 blockArrivePeriodEMA=Just 2.4272595450578652e-2 blockArrivePeriodEMSD=Just 3.273465666973646e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.579629023Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.581363176Z: INFO: Skov: Receive statistics: blocksReceivedCount=60 blockLastReceived=1.6051079525796456e9 blockReceiveLatencyEMA=248.55231688068912 blockReceiveLatencyEMSD=121.85158918888953 blockReceivePeriodEMA=Just 2.369913618190467e-2 blockReceivePeriodEMSD=Just 2.8605825653803953e-2
+2020-11-11T15:19:12.588223000Z: INFO: Skov: Block b5b0d79915c04a95ce24f3105e26a3ee87b8c62d32976240d1c3fd7d93bf40f4 is finalized at height 298133 with finalization delta=0
+2020-11-11T15:19:12.588750629Z: INFO: Skov: Finalization statistics: finalizationCount=53 lastFinalizedTime=1.60510795258857e9 finalizationPeriodEMA=Just 2.5341072503541118e-2 finalizationPeriodEMSD=Just 3.244618623677675e-2
+2020-11-11T15:19:12.598849970Z: INFO: Skov: Block 632f258bde8f12b20269b1a74f1886546f515af88ba809b4cf089e7ea01b2419 (958) arrived
+2020-11-11T15:19:12.598981773Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=60 blockLastArrive=1.6051079525988133e9 blockArriveLatencyEMA=248.57023552154277 blockArriveLatencyEMSD=121.85343470699902 blockArrivePeriodEMA=Just 2.3782016905520786e-2 blockArrivePeriodEMSD=Just 3.1089676394855086e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.599020011Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.600188535Z: INFO: Skov: Receive statistics: blocksReceivedCount=61 blockLastReceived=1.605107952599038e9 blockReceiveLatencyEMA=235.25698897092022 blockReceiveLatencyEMSD=122.2862237013092 blockReceivePeriodEMA=Just 2.3268439763714205e-2 blockReceivePeriodEMSD=Just 2.7168611113636713e-2
+2020-11-11T15:19:12.611249454Z: INFO: Skov: Block 632f258bde8f12b20269b1a74f1886546f515af88ba809b4cf089e7ea01b2419 is finalized at height 298134 with finalization delta=0
+2020-11-11T15:19:12.611343117Z: INFO: Skov: Finalization statistics: finalizationCount=54 lastFinalizedTime=1.605107952611279e9 finalizationPeriodEMA=Just 2.5077834853187007e-2 finalizationPeriodEMSD=Just 3.0791283632312514e-2
+2020-11-11T15:19:12.621637066Z: INFO: Skov: Block 7a7a85905c5ac5524040d153872bf81997be508fcd4564f3e939ee3c8144a79d (2) arrived
+2020-11-11T15:19:12.622262288Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=61 blockLastArrive=1.6051079526216004e9 blockArriveLatencyEMA=235.2753719981885 blockArriveLatencyEMSD=122.28742437325732 blockArrivePeriodEMA=Just 2.3682521114968706e-2 blockArrivePeriodEMSD=Just 2.949576707282194e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.622316936Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.624035197Z: INFO: Skov: Receive statistics: blocksReceivedCount=62 blockLastReceived=1.6051079526228406e9 blockReceiveLatencyEMA=223.01857412822818 blockReceiveLatencyEMSD=121.68211716259046 blockReceivePeriodEMA=Just 2.3321871887342784e-2 blockReceivePeriodEMSD=Just 2.5774906048056528e-2
+2020-11-11T15:19:12.635352627Z: INFO: Skov: Block 7a7a85905c5ac5524040d153872bf81997be508fcd4564f3e939ee3c8144a79d is finalized at height 298135 with finalization delta=0
+2020-11-11T15:19:12.635453031Z: INFO: Skov: Finalization statistics: finalizationCount=55 lastFinalizedTime=1.6051079526353877e9 finalizationPeriodEMA=Just 2.4980921267868307e-2 finalizationPeriodEMSD=Just 2.921262335258747e-2
+2020-11-11T15:19:12.645408453Z: INFO: Skov: Block 86ee2e34e5c6f60f9d1e08a5ecafda8d61cd7125dba9bce5cf048ef61973bf5f (10) arrived
+2020-11-11T15:19:12.645534838Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=62 blockLastArrive=1.6051079526453753e9 blockArriveLatencyEMA=223.03737232676963 blockArriveLatencyEMSD=121.68282733187723 blockArrivePeriodEMA=Just 2.3691768603471837e-2 blockArrivePeriodEMSD=Just 2.7982155337592254e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.645568548Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.647001630Z: INFO: Skov: Receive statistics: blocksReceivedCount=63 blockLastReceived=1.6051079526455848e9 blockReceiveLatencyEMA=210.85627519220537 blockReceiveLatencyEMSD=121.06683076770446 blockReceivePeriodEMA=Just 2.3264107098608506e-2 blockReceivePeriodEMSD=Just 2.4452836942671592e-2
+2020-11-11T15:19:12.658061968Z: INFO: Skov: Block 86ee2e34e5c6f60f9d1e08a5ecafda8d61cd7125dba9bce5cf048ef61973bf5f is finalized at height 298136 with finalization delta=0
+2020-11-11T15:19:12.658172327Z: INFO: Skov: Finalization statistics: finalizationCount=56 lastFinalizedTime=1.6051079526581106e9 finalizationPeriodEMA=Just 2.4755139341081478e-2 finalizationPeriodEMSD=Just 2.7721804128380552e-2
+2020-11-11T15:19:12.667902045Z: INFO: Skov: Block ce3c236b3431c47f750e9828a01d036106bf0629e9d1c5f9efec3af4e155fdc0 (3) arrived
+2020-11-11T15:19:12.668046782Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=63 blockLastArrive=1.605107952667836e9 blockArriveLatencyEMA=210.87541867949267 blockArriveLatencyEMSD=121.06716098677677 blockArrivePeriodEMA=Just 2.3568648743124653e-2 blockArrivePeriodEMSD=Just 2.6548772892612864e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.668082622Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.669625374Z: INFO: Skov: Receive statistics: blocksReceivedCount=64 blockLastReceived=1.6051079526680987e9 blockReceiveLatencyEMA=198.91245754708484 blockReceiveLatencyEMSD=120.31356025145888 blockReceivePeriodEMA=Just 2.3189093688747657e-2 blockReceivePeriodEMSD=Just 2.3199089512205576e-2
+2020-11-11T15:19:12.680690388Z: INFO: Skov: Block ce3c236b3431c47f750e9828a01d036106bf0629e9d1c5f9efec3af4e155fdc0 is finalized at height 298137 with finalization delta=0
+2020-11-11T15:19:12.680802043Z: INFO: Skov: Finalization statistics: finalizationCount=57 lastFinalizedTime=1.6051079526807294e9 finalizationPeriodEMA=Just 2.454149120697333e-2 finalizationPeriodEMSD=Just 2.6307021713716253e-2
+2020-11-11T15:19:12.693065330Z: INFO: Skov: Block 5777d8ee502c40522a279382c8390f24119a074b98cc94d043cb74fb996645fb (7) arrived
+2020-11-11T15:19:12.693199771Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=64 blockLastArrive=1.6051079526930306e9 blockArriveLatencyEMA=198.93217986534341 blockArriveLatencyEMSD=120.31334216455184 blockArrivePeriodEMA=Just 2.373125226881219e-2 blockArrivePeriodEMSD=Just 2.5191100949586865e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.693267451Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.695115453Z: INFO: Skov: Receive statistics: blocksReceivedCount=65 blockLastReceived=1.6051079526933599e9 blockReceiveLatencyEMA=186.21554777637635 blockReceiveLatencyEMSD=120.32755778238374 blockReceivePeriodEMA=Just 2.3396294219872892e-2 blockReceivePeriodEMSD=Just 2.2017365131111428e-2
+2020-11-11T15:19:12.705676632Z: INFO: Skov: Block 5777d8ee502c40522a279382c8390f24119a074b98cc94d043cb74fb996645fb is finalized at height 298138 with finalization delta=0
+2020-11-11T15:19:12.705799328Z: INFO: Skov: Finalization statistics: finalizationCount=58 lastFinalizedTime=1.6051079527057276e9 finalizationPeriodEMA=Just 2.4587171186275996e-2 finalizationPeriodEMSD=Just 2.495740836396933e-2
+2020-11-11T15:19:12.715313312Z: INFO: Skov: Block 7128354e522a8482c3cd759497da6c797138412cd9821b091ae8d8a57db18c3d (1064) arrived
+2020-11-11T15:19:12.715442807Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=65 blockLastArrive=1.605107952715279e9 blockArriveLatencyEMA=186.23548979210906 blockArriveLatencyEMSD=120.32715288689408 blockArrivePeriodEMA=Just 2.358298654193097e-2 blockArrivePeriodEMSD=Just 2.3902515660050454e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.715476997Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.716799771Z: INFO: Skov: Receive statistics: blocksReceivedCount=66 blockLastReceived=1.605107952715493e9 blockReceiveLatencyEMA=173.6405422979387 blockReceiveLatencyEMSD=120.22489721655094 blockReceivePeriodEMA=Just 2.3269979997885604e-2 blockReceivePeriodEMSD=Just 2.0890943686896948e-2
+2020-11-11T15:19:12.727547392Z: INFO: Skov: Block 7128354e522a8482c3cd759497da6c797138412cd9821b091ae8d8a57db18c3d is finalized at height 298139 with finalization delta=0
+2020-11-11T15:19:12.727644013Z: INFO: Skov: Finalization statistics: finalizationCount=59 lastFinalizedTime=1.6051079527275717e9 finalizationPeriodEMA=Just 2.4312849367648395e-2 finalizationPeriodEMSD=Just 2.36909746773515e-2
+2020-11-11T15:19:12.736790157Z: INFO: Skov: Block c473e6b352740d854e4b4769bbdec8819796c27ac8fcedf741b918bd84e31a65 (4) arrived
+2020-11-11T15:19:12.736910980Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=66 blockLastArrive=1.6051079527367444e9 blockArriveLatencyEMA=173.66061525699814 blockArriveLatencyEMSD=120.22440923474488 blockArrivePeriodEMA=Just 2.3371218687737873e-2 blockArrivePeriodEMSD=Just 2.2684815185663017e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.736945116Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.738361594Z: INFO: Skov: Receive statistics: blocksReceivedCount=67 blockLastReceived=1.6051079527369604e9 blockReceiveLatencyEMA=161.77518410464484 blockReceiveLatencyEMSD=119.48097691747297 blockReceivePeriodEMA=Just 2.308971929809704e-2 blockReceivePeriodEMSD=Just 1.9826265926673733e-2
+2020-11-11T15:19:12.748880427Z: INFO: Skov: Block c473e6b352740d854e4b4769bbdec8819796c27ac8fcedf741b918bd84e31a65 is finalized at height 298140 with finalization delta=0
+2020-11-11T15:19:12.749026534Z: INFO: Skov: Finalization statistics: finalizationCount=60 lastFinalizedTime=1.6051079527489119e9 finalizationPeriodEMA=Just 2.4015582230883556e-2 finalizationPeriodEMSD=Just 2.2492918058847376e-2
+2020-11-11T15:19:12.758893899Z: INFO: Skov: Block 4a1fa5865465493b9efbaabe026702574054b684caf1d3eca1d05e27222d33ab (9) arrived
+2020-11-11T15:19:12.759015498Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=67 blockLastArrive=1.6051079527588599e9 blockArriveLatencyEMA=161.79543972189833 blockArriveLatencyEMSD=119.48037174602217 blockArrivePeriodEMA=Just 2.3245643318964084e-2 blockArrivePeriodEMSD=Just 2.152400238259843e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.759061821Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.760854312Z: INFO: Skov: Receive statistics: blocksReceivedCount=68 blockLastReceived=1.605107952759205e9 blockReceiveLatencyEMA=150.99858620888034 blockReceiveLatencyEMSD=117.87005141468845 blockReceivePeriodEMA=Just 2.3005225568287338e-2 blockReceivePeriodEMSD=Just 1.881055531474443e-2
+2020-11-11T15:19:12.771486328Z: INFO: Skov: Block 4a1fa5865465493b9efbaabe026702574054b684caf1d3eca1d05e27222d33ab is finalized at height 298141 with finalization delta=0
+2020-11-11T15:19:12.771586671Z: INFO: Skov: Finalization statistics: finalizationCount=61 lastFinalizedTime=1.6051079527715225e9 finalizationPeriodEMA=Just 2.38751021077952e-2 finalizationPeriodEMSD=Just 2.134281702368894e-2
+2020-11-11T15:19:12.781218896Z: INFO: Skov: Block efe7a25e61d2a74f05417fa907cc091ab483651174176a4bc29f313d7cc6d291 (15) arrived
+2020-11-11T15:19:12.781357699Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=68 blockLastArrive=1.605107952781175e9 blockArriveLatencyEMA=151.0190132358085 blockArriveLatencyEMSD=117.86935827263069 blockArrivePeriodEMA=Just 2.3152574487067677e-2 blockArrivePeriodEMSD=Just 2.0421370350119202e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.781391251Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.782728481Z: INFO: Skov: Receive statistics: blocksReceivedCount=69 blockLastReceived=1.6051079527814064e9 blockReceiveLatencyEMA=140.2518682217923 blockReceiveLatencyEMSD=116.37629331567999 blockReceivePeriodEMA=Just 2.2924822111458604e-2 blockReceivePeriodEMSD=Just 1.7846889772926373e-2
+2020-11-11T15:19:12.793883716Z: INFO: Skov: Block efe7a25e61d2a74f05417fa907cc091ab483651174176a4bc29f313d7cc6d291 is finalized at height 298142 with finalization delta=0
+2020-11-11T15:19:12.793976139Z: INFO: Skov: Finalization statistics: finalizationCount=62 lastFinalizedTime=1.6051079527939153e9 finalizationPeriodEMA=Just 2.3726859697015677e-2 finalizationPeriodEMSD=Just 2.0252457553768217e-2
+2020-11-11T15:19:12.802928734Z: INFO: Skov: Block 3656661fcc78e1c388de1b4497343b5c0f227f0fb41cdf62aa14a87785fea131 (10) arrived
+2020-11-11T15:19:12.803047779Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=69 blockLastArrive=1.6051079528028967e9 blockArriveLatencyEMA=140.27240158202764 blockArriveLatencyEMSD=116.37557310697208 blockArrivePeriodEMA=Just 2.300950073836091e-2 blockArrivePeriodEMSD=Just 1.93781671258449e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.803081709Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.805040898Z: INFO: Skov: Receive statistics: blocksReceivedCount=70 blockLastReceived=1.6051079528030984e9 blockReceiveLatencyEMA=127.30699124071307 blockReceiveLatencyEMSD=117.03514874517373 blockReceivePeriodEMA=Just 2.2801547200312744e-2 blockReceivePeriodEMSD=Just 1.693508480769281e-2
+2020-11-11T15:19:12.812661427Z: INFO: Skov: Block 3656661fcc78e1c388de1b4497343b5c0f227f0fb41cdf62aa14a87785fea131 is finalized at height 298143 with finalization delta=0
+2020-11-11T15:19:12.812728894Z: INFO: Skov: Finalization statistics: finalizationCount=63 lastFinalizedTime=1.6051079528126848e9 finalizationPeriodEMA=Just 2.323112062731411e-2 finalizationPeriodEMSD=Just 1.927064213505928e-2
+2020-11-11T15:19:12.820334087Z: INFO: Skov: Block 169baf8e5980ed16dced20796f8e34bed936abacb7e7bbb821a359cf827774d2 (1050) arrived
+2020-11-11T15:19:12.820426161Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=70 blockLastArrive=1.6051079528203065e9 blockArriveLatencyEMA=127.32719207322488 blockArriveLatencyEMSD=117.03483523045504 blockArrivePeriodEMA=Just 2.2449530264524818e-2 blockArrivePeriodEMSD=Just 1.846033930960025e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.820457299Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.821653996Z: INFO: Skov: Receive statistics: blocksReceivedCount=71 blockLastReceived=1.605107952820471e9 blockReceiveLatencyEMA=115.13333921634177 blockReceiveLatencyEMSD=116.88149413024614 blockReceivePeriodEMA=Just 2.225865108028147e-2 blockReceivePeriodEMSD=Just 1.6148374948386543e-2
+2020-11-11T15:19:12.829089587Z: INFO: Skov: Block 169baf8e5980ed16dced20796f8e34bed936abacb7e7bbb821a359cf827774d2 is finalized at height 298144 with finalization delta=0
+2020-11-11T15:19:12.829179479Z: INFO: Skov: Finalization statistics: finalizationCount=64 lastFinalizedTime=1.6051079528291256e9 finalizationPeriodEMA=Just 2.25521081645827e-2 finalizationPeriodEMSD=Just 1.8394874416224512e-2
+2020-11-11T15:19:12.836536918Z: INFO: Skov: Block 05a61811065e93acf117b68f75575e43b5e6bee289c08f4fc1f9e2811595f0f3 (716) arrived
+2020-11-11T15:19:12.836631041Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=71 blockLastArrive=1.6051079528365104e9 blockArriveLatencyEMA=115.15312391530239 blockArriveLatencyEMSD=116.88160168008251 blockArrivePeriodEMA=Just 2.1824977238072335e-2 blockArrivePeriodEMSD=Just 1.7612958667659266e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.836658508Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.837941856Z: INFO: Skov: Receive statistics: blocksReceivedCount=72 blockLastReceived=1.605107952836672e9 blockReceiveLatencyEMA=103.82867250720759 blockReceiveLatencyEMSD=115.95393355875575 blockReceivePeriodEMA=Just 2.1652898772253324e-2 blockReceivePeriodEMSD=Just 1.5427100662614579e-2
+2020-11-11T15:19:12.845475181Z: INFO: Skov: Block 05a61811065e93acf117b68f75575e43b5e6bee289c08f4fc1f9e2811595f0f3 is finalized at height 298145 with finalization delta=0
+2020-11-11T15:19:12.845571522Z: INFO: Skov: Finalization statistics: finalizationCount=65 lastFinalizedTime=1.6051079528455012e9 finalizationPeriodEMA=Just 2.1934455648124428e-2 finalizationPeriodEMSD=Just 1.7549008974571446e-2
+2020-11-11T15:19:12.853549185Z: INFO: Skov: Block 982079c3eb7e1e55004e3719cc25ff35c3ddc00d8bb12503ae8bd35751d23dc0 (9) arrived
+2020-11-11T15:19:12.853669776Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=72 blockLastArrive=1.6051079528535013e9 blockArriveLatencyEMA=103.84816166167215 blockArriveLatencyEMSD=115.95429045177829 blockArrivePeriodEMA=Just 2.13415680142651e-2 blockArrivePeriodEMSD=Just 1.67719361441893e-2 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:12.853702108Z: INFO: Processed a block from 0e4d417a460054b1
+2020-11-11T15:19:12.861911936Z: INFO: Skov: Block 982079c3eb7e1e55004e3719cc25ff35c3ddc00d8bb12503ae8bd35751d23dc0 is finalized at height 298146 with finalization delta=0
+2020-11-11T15:19:12.861994906Z: INFO: Skov: Finalization statistics: finalizationCount=66 lastFinalizedTime=1.6051079528619401e9 finalizationPeriodEMA=Just 2.1384887283311983e-2 finalizationPeriodEMSD=Just 1.6729888609284097e-2
+2020-11-11T15:19:12.867582508Z: INFO: Processed a finalization record from 0e4d417a460054b1
+2020-11-11T15:19:12.867656226Z: INFO: Processed a catch-up status message from 0e4d417a460054b1
+2020-11-11T15:19:12.921719115Z: INFO: Sent a direct message to peer 2a0a1713b90b4e8b containing a catch-up status message
+2020-11-11T15:19:13.029262217Z: INFO: Processed a catch-up status message from 2a0a1713b90b4e8b
+2020-11-11T15:19:13.129468668Z: INFO: Sent a direct message to peer 4586a5d424628679 containing a catch-up status message
+2020-11-11T15:19:13.240742468Z: INFO: Processed a catch-up status message from 4586a5d424628679
+2020-11-11T15:19:13.282984686Z: INFO: Sent a direct message to peer 650db77f1f563701 containing a catch-up status message
+2020-11-11T15:19:13.397277954Z: INFO: Processed a catch-up status message from 650db77f1f563701
+2020-11-11T15:19:13.497526756Z: INFO: Sent a direct message to peer dc5f678b2ee8db4d containing a catch-up status message
+2020-11-11T15:19:13.607148629Z: INFO: Processed a catch-up status message from dc5f678b2ee8db4d
+2020-11-11T15:19:13.707239354Z: INFO: Sent a direct message to peer 8573b77357f92db6 containing a catch-up status message
+2020-11-11T15:19:13.816800660Z: INFO: Processed a catch-up status message from 8573b77357f92db6
+2020-11-11T15:19:13.916929476Z: INFO: Sent a direct message to peer 80d7a773ba43c848 containing a catch-up status message
+2020-11-11T15:19:14.057878970Z: INFO: Processed a catch-up status message from 80d7a773ba43c848
+2020-11-11T15:19:14.157939506Z: INFO: Sent a direct message to peer 4d79a833040f7d61 containing a catch-up status message
+2020-11-11T15:19:14.286438281Z: INFO: Processed a catch-up status message from 4d79a833040f7d61
+2020-11-11T15:19:14.386552551Z: INFO: Sent a direct message to peer 7c92e161c766bf87 containing a catch-up status message
+2020-11-11T15:19:14.471565113Z: INFO: Processed a catch-up status message from 7c92e161c766bf87
+2020-11-11T15:19:14.571625116Z: INFO: Sent a direct message to peer c113cb305442e551 containing a catch-up status message
+2020-11-11T15:19:14.700448265Z: INFO: Processed a catch-up status message from c113cb305442e551
+2020-11-11T15:19:14.800521430Z: INFO: Sent a direct message to peer 176c12b2563a1084 containing a catch-up status message
+2020-11-11T15:19:14.976594781Z: INFO: Processed a finalization message from 7c92e161c766bf87
+2020-11-11T15:19:14.976635585Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:15.012851638Z: INFO: Processed a catch-up status message from 176c12b2563a1084
+2020-11-11T15:19:15.017456502Z: INFO: Sent a direct message to peer 23e4a0a328185a6a containing a catch-up status message
+2020-11-11T15:19:15.231560611Z: INFO: Processed a catch-up status message from 23e4a0a328185a6a
+2020-11-11T15:19:15.331785680Z: INFO: Sent a direct message to peer 881651fcdfdfc927 containing a catch-up status message
+2020-11-11T15:19:15.335482060Z: INFO: Processed a catch-up status message from 881651fcdfdfc927
+2020-11-11T15:19:32.381461101Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.381552343Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.381806135Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.381830276Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.382992299Z: INFO: Skov: Receive statistics: blocksReceivedCount=73 blockLastReceived=1.6051079723819108e9 blockReceiveLatencyEMA=93.45899633748682 blockReceiveLatencyEMSD=114.3177802957938 blockReceivePeriodEMA=Just 1.9740114773950281 blockReceivePeriodEMSD=Just 5.857094021064443
+2020-11-11T15:19:32.389206452Z: INFO: Skov: Block 6f5d4b048d109f1c25c80bb64aba943c6f27c398cf9ca91636726c3e128a5278 (17) arrived
+2020-11-11T15:19:32.389658712Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=73 blockLastArrive=1.6051079723891551e9 blockArriveLatencyEMA=93.47726102080493 blockArriveLatencyEMSD=114.31910578587677 blockArrivePeriodEMA=Just 1.9727727986128387 blockArrivePeriodEMSD=Just 5.85431531418124 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-11-11T15:19:32.390087428Z: INFO: Processed a block from 4d79a833040f7d61
+2020-11-11T15:19:32.390277722Z: INFO: Sent a broadcast containing a block
+2020-11-11T15:19:32.396545757Z: INFO: Processed a finalization message from 0e4d417a460054b1
+2020-11-11T15:19:32.396577790Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.402909739Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.402943317Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.412626464Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.412667805Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.413300100Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.413364354Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.413721370Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.413735898Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.418543936Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.418573369Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.418705997Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.418725818Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.419802361Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.419824894Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.420250269Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.420273231Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.420596747Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.420619637Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.422194435Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:32.422217079Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.426977043Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.427011249Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.427815517Z: ERROR: [sending to peer 7c92e161c766bf87] Broken pipe (os error 32)
+2020-11-11T15:19:32.431479354Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.431506443Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.431592692Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.431597972Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.432174950Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.432200869Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.432303946Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.432353523Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.432441302Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.432446321Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.432522766Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.432526654Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.436215565Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.436244264Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.436334460Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.436339541Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.436710116Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.436723961Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.436891467Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.436901070Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.439413599Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.439444228Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.445216017Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.445256790Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.445414791Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.445427275Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.445613826Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.447349923Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.447757007Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.447789899Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.449012333Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.449037971Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.449180910Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.449190914Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.449554214Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.449682291Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.450079546Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.450094853Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.450912119Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.453565882Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.454131583Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.454163431Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.455055356Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.455085879Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.456014874Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.456034653Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.456626125Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.456650339Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.458151863Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.458184153Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.459620262Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.459646922Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.460461850Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.460489508Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.461591813Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.461613595Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.462495894Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.462519989Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.462889797Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.462945496Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.466741535Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.466787421Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.474569970Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.474614950Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.474709753Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.474715820Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.478139164Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:32.478194028Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.482245706Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.482333996Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.483532367Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.483552619Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.483640017Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.483644831Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.483726293Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.483731369Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.484532168Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.484550433Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.489985659Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.490113988Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.490990787Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.491014326Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.491147212Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.491156442Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.491619462Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.491633086Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.491752530Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.491770882Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.491927524Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.491936287Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.492021630Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.492026842Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.492105729Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.492110576Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.492195105Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.492199934Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.493982305Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.494000095Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.494326351Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.494343872Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.495559940Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.495580465Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.495904872Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.495919296Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.496401429Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.496438970Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.497491981Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.497514619Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.497874954Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.497901002Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.498035660Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.498043214Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.498128235Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.498358187Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.499496058Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.499519854Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.499937071Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.499951641Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.502136413Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.502204097Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.502333078Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.502345278Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.503041215Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.503064725Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.503205833Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.503214617Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.503360009Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.503382804Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.506837245Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.506950489Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.510445502Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.510471126Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.511006334Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.511019962Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.512069254Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.512091152Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.515702455Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.515729608Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.516156888Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.516171035Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.516392896Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.516404307Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.516510385Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.516515928Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.520053029Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.520720001Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.521954046Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.521982216Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.522367555Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.522388792Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.522749362Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.522888475Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.534191723Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.534259742Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.534357096Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.534363026Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.534499642Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.534509017Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.536744577Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.537079532Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.537289687Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.537668551Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.545631051Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.545658960Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.545759967Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.545824767Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.546290009Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.546308982Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.546462291Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.546474736Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.554739684Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.554812940Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.555853777Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:32.555886793Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.558301952Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.558328352Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.558426782Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.558431769Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.563233454Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.563273880Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.567139658Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.567475760Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.567619304Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.567629810Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.567720575Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.567725638Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.567894204Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.567906608Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.568897090Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.569559390Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.572296465Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.572326769Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.572425428Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.572434149Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.572535109Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.572542217Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.582590444Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.582836080Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.582984981Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.582996308Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.583330656Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.583368166Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.590713948Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.590740358Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.590864101Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.590872359Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.599454718Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.600056223Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.602042305Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.602101547Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.602653073Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.602948211Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.603397124Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.603414981Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.603571866Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.603580628Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.607928525Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.607969651Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.613986707Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.614050426Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.617247166Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.617293481Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.617991347Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.618340856Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.623096047Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.623177769Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.632454019Z: INFO: Processed a finalization message from 650db77f1f563701
+2020-11-11T15:19:32.632544792Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.633257539Z: INFO: Processed a finalization message from 650db77f1f563701
+2020-11-11T15:19:32.633286602Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.678278718Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.678478338Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.680045440Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.680117161Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.680808990Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.680832909Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.681302472Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.681322702Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.681701880Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.681728271Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.684410459Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.684899937Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.685335705Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.686061471Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.686536212Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.686554830Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.686958932Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.686980734Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.688213599Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.688231446Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.692061850Z: INFO: Processed a finalization message from 650db77f1f563701
+2020-11-11T15:19:32.692141635Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.706323715Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.706363250Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.714663838Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.715317665Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.716225214Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.716946837Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.719748415Z: INFO: Processed a finalization message from 650db77f1f563701
+2020-11-11T15:19:32.720520815Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.721318816Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.721722903Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.723920477Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.723971316Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.731236871Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.731288201Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.731670556Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.732149264Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.732505061Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.732518415Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.733140537Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.733558615Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.733728731Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.734102515Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.747355689Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.747417248Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.757962212Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.758002426Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.758126234Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.758132942Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.760634637Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.760671264Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.761803369Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.762476711Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.763358228Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.763960660Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.764126458Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.764141193Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.764276895Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.764286384Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.764396249Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.764402407Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.764523028Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.764533244Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.764681106Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.764691575Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.765483310Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.765988389Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.766117044Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.766129887Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.766238124Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.766247981Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.766381514Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.766389704Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.766483947Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.766489271Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.768739768Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.769169243Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.769358568Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.769864410Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.770294096Z: INFO: Processed a finalization message from 650db77f1f563701
+2020-11-11T15:19:32.770596540Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.770965878Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.770981062Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.771106657Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.771114491Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.771210208Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.771215357Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.771349475Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.771357511Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.771480921Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.771486221Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.771654942Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.771660531Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.771747965Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.771752635Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.774368865Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.775349009Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.775574522Z: INFO: Processed a finalization message from 4586a5d424628679
+2020-11-11T15:19:32.776139431Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.777086022Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.777581550Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.777969550Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.777997883Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.778325536Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.778344294Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.778609785Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.778990229Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.779351428Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.779370507Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.779707686Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.779728053Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.784508491Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.784569088Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.784701351Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.784783907Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.785440543Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.785505890Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.785837952Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.785853319Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.786016034Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.786051094Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.788673298Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.788712817Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.793483343Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.793522153Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.796485450Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.796530012Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.797198697Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.797240389Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.797873076Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.797897929Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.798367625Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.798386260Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.798486645Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.798493798Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.802278177Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.802894728Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.803047963Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.803805849Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.804209211Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.805265790Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.805650497Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.805674114Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.806585218Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.806601628Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.806714004Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.807043604Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.807510847Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.807523703Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.808037509Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.808218097Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.808320944Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.808327007Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.808411213Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.808416011Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.808826041Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.808837752Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.808931258Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.808937429Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.809018782Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.809023235Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.809678431Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.809724987Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.809863616Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.809881753Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.810105359Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.810116137Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.812041525Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.812062469Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.812154852Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.812378871Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.812810647Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.813070945Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.813420731Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.813450705Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.813551090Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.814088072Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.814210875Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.814307354Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.814409830Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.814494333Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.815161138Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.815193570Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.815447852Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.815461986Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.815644611Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.815655686Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.816227308Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.816403826Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.816618841Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.816630220Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.816792102Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.816801869Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.816960723Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.816969412Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.817116120Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.817124485Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.817279057Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.817286369Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.817455342Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.817465588Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.817590642Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.817597652Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.818435386Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.818576645Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.819167093Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.819233144Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.819540482Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.819555970Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.819843762Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.819889455Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.820093048Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.820104488Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.820343961Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.820357039Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.821485317Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.821496354Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.821685342Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.821696241Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.823132138Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.823144374Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.823351105Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.823360653Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.823660557Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.823669949Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.823854263Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.823881210Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.825968716Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.825986538Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.828656210Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.830108529Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.830873339Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.830896471Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.831515201Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.831530416Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.832266515Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.832338583Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.832700476Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.832712306Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.834334031Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.834348252Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.834652897Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.834687110Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.835904003Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.835919677Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.838085852Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.838119999Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.838249616Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.838280397Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.840136158Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.840159849Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.841563839Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.841586206Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.842861973Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.842889663Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.843158033Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.843273326Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.843746266Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.843770409Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.847094297Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.847137285Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.849621655Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.849664972Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.851284497Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.851339011Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.852804546Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.852830899Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.853445797Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.853460787Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.855175325Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.855200002Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.856739793Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.856779433Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.859118714Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.859153721Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.861394051Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.861429713Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.861546256Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.861552546Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.862034963Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.862049347Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.862390364Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:32.862416789Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.862525146Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.862532242Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.862635410Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.862672318Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.865027014Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.865178193Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.865868690Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.865891895Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.866745197Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.866757136Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.867725075Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.867737832Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.868089648Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.868219249Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.870176721Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.870191042Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.879527926Z: INFO: Skov: Block 6f5d4b048d109f1c25c80bb64aba943c6f27c398cf9ca91636726c3e128a5278 is finalized at height 298147 with finalization delta=0
+2020-11-11T15:19:32.879605070Z: INFO: Skov: Finalization statistics: finalizationCount=67 lastFinalizedTime=1.6051079728795555e9 finalizationPeriodEMA=Just 2.021007926454981 finalizationPeriodEMSD=Just 5.9988901131235
+2020-11-11T15:19:32.888230768Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.888261465Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.890050938Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.890078580Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.890842547Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.890856446Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.892067682Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.892083570Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.893227383Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.893240347Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.894120094Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.894151498Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.895531951Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.895543714Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.896207650Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.896238035Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.897963059Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.898010795Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.899115244Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.899127790Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.900145658Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.900158991Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.900262982Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:32.901521310Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.901540204Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.902700501Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.903455654Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.903469752Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.904907722Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.904921582Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.905756317Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.905776827Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.905800017Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.905807360Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.914114443Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.918106046Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.918145977Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.922979782Z: INFO: Processed a finalization message from c113cb305442e551
+2020-11-11T15:19:32.923050836Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.924359746Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.925589215Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.925982077Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.926140642Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.926166464Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.931944297Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.941443141Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.941486943Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.967860856Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.967938402Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.967971445Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.967982704Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.975773597Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.976444362Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.977063505Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:32.978088323Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:32.979168092Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.979194591Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.989624769Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.989674844Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.990649789Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.990683102Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.991566698Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.991596689Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.996579609Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:32.997185515Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.998028417Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.998048905Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.998868704Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.998883002Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.999654351Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:32.999666052Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:32.999696855Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:32.999706829Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:33.021942366Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:33.021982531Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:33.025239433Z: INFO: Processed a finalization message from 176c12b2563a1084
+2020-11-11T15:19:33.029735993Z: INFO: Processed a finalization message from 2a0a1713b90b4e8b
+2020-11-11T15:19:33.029813885Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:33.034989444Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:33.035033764Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:33.048812480Z: INFO: Processed a finalization message from 4d79a833040f7d61
+2020-11-11T15:19:33.048896788Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:33.130168783Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:33.130254068Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:33.178238773Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:33.178348999Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:33.188478266Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:33.239073547Z: INFO: Processed a finalization message from dc5f678b2ee8db4d
+2020-11-11T15:19:33.239160432Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:33.303556289Z: INFO: Processed a finalization message from 881651fcdfdfc927
+2020-11-11T15:19:33.303677940Z: INFO: Sent a broadcast containing a finalization message
+2020-11-11T15:19:33.324884309Z: INFO: Processed a finalization message from 650db77f1f563701
+2020-11-11T15:19:33.324953548Z: INFO: Sent a broadcast containing a finalization message
+^C2020-11-11 15:19:35,328 WARN received SIGINT indicating exit request
+2020-11-11 15:19:35,329 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-11-11T15:19:35.330219007Z: INFO: Signal received attempting to shutdown node cleanly
+2020-11-11 15:19:38,335 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-11-11T15:19:40.650992042Z: INFO: Shutting down
+2020-11-11T15:19:40.651257392Z: INFO: Stopping baking
+2020-11-11T15:19:40.652045323Z: ERROR: Runner: Message loop exited with exception: thread killed
+2020-11-11T15:19:40.652080858Z: INFO: Runner: Exiting baker thread
+2020-11-11T15:19:40.701949208Z: INFO: P2PNode gracefully closed.
+2020-11-11 15:19:40,716 INFO stopped: p2p-client (exit status 0)
+2020-11-11 15:19:40,729 INFO stopped: nginx (exit status 0)
+2020-11-11 15:19:40,732 INFO stopped: middleware (terminated by SIGTERM)
+2020-11-11 15:19:40,734 INFO stopped: collector (terminated by SIGTERM)
+concordium-node exiting
+]0;goku_vul@gokuserver: ~/concordium/concordium-software[01;32mgoku_vul@gokuserver[00m:[01;34m~/concordium/concordium-software[00m$ ^C
+]0;goku_vul@gokuserver: ~/concordium/concordium-software[01;32mgoku_vul@gokuserver[00m:[01;34m~/concordium/concordium-software[00m$ 
+]0;goku_vul@gokuserver: ~/concordium/concordium-software[01;32mgoku_vul@gokuserver[00m:[01;34m~/concordium/concordium-software[00m$ exit
+exit
+
+Script done on 2020-11-11 15:22:05+00:00 [COMMAND_EXIT_CODE="130"]
