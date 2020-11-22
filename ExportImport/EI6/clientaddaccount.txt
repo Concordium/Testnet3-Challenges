@@ -1,0 +1,173 @@
+Using username "root".
+root@157.230.90.39's password:
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-122-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Nov 14 10:58:44 UTC 2020
+
+  System load:  0.01               Users logged in:        0
+  Usage of /:   85.9% of 24.06GB   IP address for eth0:    157.230.90.39
+  Memory usage: 58%                IP address for eth1:    10.116.0.2
+  Swap usage:   0%                 IP address for docker0: 172.17.0.1
+  Processes:    105
+
+  => / is using 85.9% of 24.06GB
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+22 packages can be updated.
+0 updates are security updates.
+
+New release '20.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Fri Nov  6 11:32:30 2020 from 213.74.207.135
+root@ubuntu-s-1vcpu-1gb-nyc1-01:~# su concordium
+$ cd $HOME/Documents/concordium-software
+$ ./concordium-client -v config account import export.concordiumwallet
+Base configuration:
+- Verbose:            yes
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    T1 -> 4XgbW1qRxFiUtcZW2B9G8q9k2ThJpn5yn1ibrEjC5qbyDhEmVf
+    T2 -> 3AXrqVzeFibTJsKGFTonjCjTrM7Vv342W498REQ59L563afZc8
+
+Enter encryption password:
+Loaded account(s):
+- 3UYPS3Zbm8bTBXLcob7f9Y8TjamndqqMjbCRs45hSFpBJUX3oA ("Dona").
+All signing keys have been encrypted with the password used for this import.
+Adding account 3UYPS3Zbm8bTBXLcob7f9Y8TjamndqqMjbCRs45hSFpBJUX3oA with name 'Dona'.
+Creating directory '/var/lib/concordium/config/accounts/3UYPS3Zbm8bTBXLcob7f9Y8TjamndqqMjbCRs45hSFpBJUX3oA'.
+Created key directory.
+Writing file '/var/lib/concordium/config/accounts/names.map'.
+Added name mapping.
+Writing file '/var/lib/concordium/config/accounts/3UYPS3Zbm8bTBXLcob7f9Y8TjamndqqMjbCRs45hSFpBJUX3oA/keypair0.json'.
+Writing file '/var/lib/concordium/config/accounts/3UYPS3Zbm8bTBXLcob7f9Y8TjamndqqMjbCRs45hSFpBJUX3oA/encSecretKey.json'.
+Writing file '/var/lib/concordium/config/accounts/3UYPS3Zbm8bTBXLcob7f9Y8TjamndqqMjbCRs45hSFpBJUX3oA.threshold'.
+The keys were successfully written to disk.
+$ ./concordium-client config show
+Base configuration:
+- Verbose:            no
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    Dona -> 3UYPS3Zbm8bTBXLcob7f9Y8TjamndqqMjbCRs45hSFpBJUX3oA
+    T1 -> 4XgbW1qRxFiUtcZW2B9G8q9k2ThJpn5yn1ibrEjC5qbyDhEmVf
+    T2 -> 3AXrqVzeFibTJsKGFTonjCjTrM7Vv342W498REQ59L563afZc8
+
+Account keys:
+- '4XgbW1qRxFiUtcZW2B9G8q9k2ThJpn5yn1ibrEjC5qbyDhEmVf' (T1):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "NkD9RGJMJaViSFZs4RKhsw==",
+                "initializationVector": "Hza4/pHJgo7/sjjCFiz+HQ==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "ILvA5VoMOe/jYDkD8WV1vR7swA/3LcJ93o5D4+D5yVK+kfdSneG2WQ22AQoAHzNKTSJusHBNxbvg1AGd1WusgO6cczigNVoHRWnpdCBlDGE="
+        },
+        "verifyKey": "2ca36b8843803501d1682eba316b3647def1ef8c615af4f0fa1861525eb0cebf",
+        "schemeId": "Ed25519"
+    }
+}
+- '3AXrqVzeFibTJsKGFTonjCjTrM7Vv342W498REQ59L563afZc8' (T2):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "nTiUPmyAT/u8/QNuR7AXCg==",
+                "initializationVector": "P+meLa6YyGV3vumcOPxrTg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "fZKojV3GIY8RUqG3Avixc4KgtO0Ou4bu5veCSMgIZZlnCNfvPrbocXatrYFIVxe6hdZnBw0tv5iwYr9swo7XtUpgwctJCVSg3UQ3d54HZLE="
+        },
+        "verifyKey": "dc3f9798325ae95864dabf1f127aa8c611c0957adcdce4fe162b2f8359b471f0",
+        "schemeId": "Ed25519"
+    }
+}
+- '4Pp9DmRESCN9Z74GYRuKDdqVTyxxmeYhUDo5jocf3jWv2XBu3Y':
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "hJGygu0ejmwzM569n2GHtA==",
+                "initializationVector": "EV0KIfI4IGh4JafSbJOBYA==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "ikdQGS8C4gDtax6ulxajBh8ZF2hh1nH5yTXAGk9xQuRNeupk7/CZwdFvK0pyNhsfkDQ73V8aiaQnQEdInbHpOCPdN3xxBLxxJWAA/P9Rhp0="
+        },
+        "verifyKey": "c9691001f3d93fc2971283da8f9a9485a3252a33882a614ba7418335c428a712",
+        "schemeId": "Ed25519"
+    }
+}
+- '3UYPS3Zbm8bTBXLcob7f9Y8TjamndqqMjbCRs45hSFpBJUX3oA' (Dona):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "2qdJGEIJxYygNgwie1PGlA==",
+                "initializationVector": "xzosdyRhuGuU+of7ki4FEQ==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "O1WW6897kbRVsMpn9OqYTw8rClmdtK6eD5HJa2EbRrxxvKAluFQqECuNYs6P7y0C383IxDgtb+kQb6GAXhn2BE/V4D/VlNPe3tmIv/XSah0="
+        },
+        "verifyKey": "a50f054f7a251ab5b7bf99a1ece76a5b719269c7b3829abdeb4d3df37c03b892",
+        "schemeId": "Ed25519"
+    }
+}
+Encryption secret keys:
+- '4XgbW1qRxFiUtcZW2B9G8q9k2ThJpn5yn1ibrEjC5qbyDhEmVf' (T1): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "j/4Zyf6cQbQzvLQrJMoAow==",
+        "initializationVector": "j/+f8TSiEb+JLhSXN7GTmA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "SJKrYZXEuXeZ09nu/HkePqkWEVI6A6B8fM2X+nDh+tSVaNEYwnOolKFmzd2iJZ6hhryUjkaxz7NKz/Kum0+dKu5B8dlnDsfBXJ15pFlQP2tsJ7KABZRrjT/5wvtqoJZc"
+}
+- '3AXrqVzeFibTJsKGFTonjCjTrM7Vv342W498REQ59L563afZc8' (T2): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "xKHJnwUsbrUhdLB4LnLAWw==",
+        "initializationVector": "4aau6/18Fs3PIupueXDHvQ==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "+ebQf0bOCUOqxRQEDkoLFeO8jjPJG1m1QxEA0siqWcchRnvUcQFO/Yr++/Wavx4yByRsl2c2enZXah7drZFEEoCdJvWZj/EwLhGrfmtsJBEh/i8d+UeMtSzscY1D8daW"
+}
+- '4Pp9DmRESCN9Z74GYRuKDdqVTyxxmeYhUDo5jocf3jWv2XBu3Y': {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "Koh0zOi2nXVoW1z8OhBehg==",
+        "initializationVector": "UwSI1HvvXspbCnx5Zmt5eA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "yKIrkCtbuyoisMLKw24GMwAJiLUHfQM977Ex8mZa9f5B/WKIhsx6Kcaodzx8jqpAiyeQp42/LMLgG7uRaTYjIYtQh2JJjz/Vb4a5zGG/6N6vP2Aev5PPc2zP5HOFl9qk"
+}
+- '3UYPS3Zbm8bTBXLcob7f9Y8TjamndqqMjbCRs45hSFpBJUX3oA' (Dona): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "mVdN4XgfgxlX3FRTgotZ4g==",
+        "initializationVector": "Rmc9nth3JW0R9UUOxu5MkA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "3M4yKJstSyZ5kAYu/a0eBSyu1lo91++uvvFMVY888AJqKfB9tDGS06zLpKDpMFmkN8yf8bG2t1wMllXvuLLVjyC1cLn3Bf1Hm+QpXWo/igjbdZ0bV2MjTdL/y9A8ucHS"
+}
