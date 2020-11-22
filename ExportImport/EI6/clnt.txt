@@ -1,0 +1,257 @@
+login as: root
+root@138.197.177.195's password:
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-121-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Nov 14 11:29:56 UTC 2020
+
+  System load:  0.14               Users logged in:        0
+  Usage of /:   77.0% of 24.06GB   IP address for eth0:    138.197.177.195
+  Memory usage: 83%                IP address for eth1:    10.114.0.2
+  Swap usage:   0%                 IP address for docker0: 172.17.0.1
+  Processes:    104
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+12 packages can be updated.
+0 updates are security updates.
+
+
+*** System restart required ***
+Last login: Fri Nov  6 16:40:35 2020 from 213.74.207.135
+root@ubuntu-s-1vcpu-1gb-fra1-01:~# su concordium
+$ cd $HOME/Documents/concordium-software
+$ ./concordium-client -v config account import export.concordiumwallet
+Base configuration:
+- Verbose:            yes
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    Alevo -> 4dkfgtpj7vQMqNMrYF2NTyJb4YPUe5BnBptWeJH3jUTnJizb53
+    T1A -> 3rkeA1Q1ar86Ni51gzpRvioG18Cw5Z1i6557i7nBBZkRA1tq2Y
+    T1B -> 3JpK8kyXTuffM16VPZzixVJkdvWYMyptjR5thzckt8nKW4bpYe
+    T2B -> 3xeYXf51VAupeNyP9y75ZnjViTqcyTKj1Ej7QA4VZTqWodA9q9
+    T3B -> 3o1JLuuLbko3VkkpwFJVvfMgwygQ5SX3t5feYXFLqdDmnLSNns
+    T4A -> 2zwWZHotdMpq8HiotRpNyZkYaB3f75DwmMGSU8FVnctYGmptej
+
+Enter encryption password:
+Loaded account(s):
+- 3DNPvbD8vp6cAEySjizxexm8efEcF5Zmi6QKcC9BPbfrzeUr7Y ("Demo1").
+All signing keys have been encrypted with the password used for this import.
+Adding account 3DNPvbD8vp6cAEySjizxexm8efEcF5Zmi6QKcC9BPbfrzeUr7Y with name 'Demo1'.
+Creating directory '/var/lib/concordium/config/accounts/3DNPvbD8vp6cAEySjizxexm8efEcF5Zmi6QKcC9BPbfrzeUr7Y'.
+Created key directory.
+Writing file '/var/lib/concordium/config/accounts/names.map'.
+Added name mapping.
+Writing file '/var/lib/concordium/config/accounts/3DNPvbD8vp6cAEySjizxexm8efEcF5Zmi6QKcC9BPbfrzeUr7Y/keypair0.json'.
+Writing file '/var/lib/concordium/config/accounts/3DNPvbD8vp6cAEySjizxexm8efEcF5Zmi6QKcC9BPbfrzeUr7Y/encSecretKey.json'.
+Writing file '/var/lib/concordium/config/accounts/3DNPvbD8vp6cAEySjizxexm8efEcF5Zmi6QKcC9BPbfrzeUr7Y.threshold'.
+The keys were successfully written to disk.
+$ ./concordium-client config show
+Base configuration:
+- Verbose:            no
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    Alevo -> 4dkfgtpj7vQMqNMrYF2NTyJb4YPUe5BnBptWeJH3jUTnJizb53
+    Demo1 -> 3DNPvbD8vp6cAEySjizxexm8efEcF5Zmi6QKcC9BPbfrzeUr7Y
+    T1A -> 3rkeA1Q1ar86Ni51gzpRvioG18Cw5Z1i6557i7nBBZkRA1tq2Y
+    T1B -> 3JpK8kyXTuffM16VPZzixVJkdvWYMyptjR5thzckt8nKW4bpYe
+    T2B -> 3xeYXf51VAupeNyP9y75ZnjViTqcyTKj1Ej7QA4VZTqWodA9q9
+    T3B -> 3o1JLuuLbko3VkkpwFJVvfMgwygQ5SX3t5feYXFLqdDmnLSNns
+    T4A -> 2zwWZHotdMpq8HiotRpNyZkYaB3f75DwmMGSU8FVnctYGmptej
+
+Account keys:
+- '3o1JLuuLbko3VkkpwFJVvfMgwygQ5SX3t5feYXFLqdDmnLSNns' (T3B):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "Bf/UthsPHzGdfnPKG3jECg==",
+                "initializationVector": "v6zNiZbA7G7MDmy9jgmpPg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "LAiCKhz/9LkW2e53DujJneZ6hDKFT/liakKX4xpAb9SSPqO8lZUt6KAvCYSHMIPs5jZ+aM44vXkFe6ZtAdU1SGxVkNIHQrGzZqfbHnpt/uc="
+        },
+        "verifyKey": "91f1b862344abebd8857c0b8750cb0d189a72c8ebd735cde1d5be2517746cffa",
+        "schemeId": "Ed25519"
+    }
+}
+- '2zwWZHotdMpq8HiotRpNyZkYaB3f75DwmMGSU8FVnctYGmptej' (T4A):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "npHWEq2MzEEeHkgRJADWrw==",
+                "initializationVector": "nPMhA4lMwslIZ5vcEdO3Fg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "Z8uc5sTAfe9ljZb9m5V5Fbh0VhyJ3BV03SksRnT3Ay5dD714hG7wrV9bOYZBI7wMPuNwyFHsaQRt8U4BjUUrliLF5tOOCPOQxi80gh62E7U="
+        },
+        "verifyKey": "39b39ae338a33a36ccf051bdfa64d4cd8f3624d9ee4b45c8813d415e41121dad",
+        "schemeId": "Ed25519"
+    }
+}
+- '3JpK8kyXTuffM16VPZzixVJkdvWYMyptjR5thzckt8nKW4bpYe' (T1B):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "3M1IWM6Mtd+SUYoEkvTs6g==",
+                "initializationVector": "hHnjRagZjCw9CrfzVwvIag==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "dp+VDKdbRuwAYpRm/kEfEaQlUgPEIjCAhXLqvZVN/Qn/+suFalcb5K28PGkGmCHgLsED89mr9jm3Mf9hJsHorkx2O/HwjQr9ZR9mpFTU+UM="
+        },
+        "verifyKey": "8eb89c87ebb76d2d6557ac276d6bc97cdda0682e741813d03f7631a33c429736",
+        "schemeId": "Ed25519"
+    }
+}
+- '3rkeA1Q1ar86Ni51gzpRvioG18Cw5Z1i6557i7nBBZkRA1tq2Y' (T1A):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "tcYWqeVeLppSlxKpAmYdwg==",
+                "initializationVector": "Byqi1iDTRuFFj9Ff0FMYgg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "JQ6tOsRP83X567jMTGc/Dj03vaoJqSKX45LLCystDJUAozXABX50Sd/z3R8a7YweHJZsfQBvnESE0HVz7n3YbG08R1zsqF/fZx+2pgL2Q0g="
+        },
+        "verifyKey": "9cfcb7994abe70b6a8ad8aafc62584561e0aa1c6e8c50dbfbb0749501ca602a7",
+        "schemeId": "Ed25519"
+    }
+}
+- '3DNPvbD8vp6cAEySjizxexm8efEcF5Zmi6QKcC9BPbfrzeUr7Y' (Demo1):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "fxm+VdJQoghg/hhc8is/ew==",
+                "initializationVector": "dP2PGNnEMKok74wjZyEJ2Q==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "AFmKVH0xhbmhjAYKu6XGdS8rxs+5W7aI1tSyGeBk0Yh2JRcEfT+A9CiuSheOwQD7IyEuZA3m6yYAXb8AoK8csYlQpT4P8rgGT/BSPlgH+8M="
+        },
+        "verifyKey": "480fdd4df43bd43b4a0f65d2316f7b748b580532bc71758d02c529e4926dad9f",
+        "schemeId": "Ed25519"
+    }
+}
+- '3xeYXf51VAupeNyP9y75ZnjViTqcyTKj1Ej7QA4VZTqWodA9q9' (T2B):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "W6bfRv+AJNE/lZTprDzprA==",
+                "initializationVector": "C7yXTAW2/D/K3hu0QkcSAg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "/EONUTeBgY261zSA1onQheP0VKtNiXJM3679Lbw+bHuWB0uUNZaEcy0uLnEzKz9tBZ9zLe8afuqlebezyaTm7Tx88pptIOGOCFhv6qyRRA8="
+        },
+        "verifyKey": "25155704e025c0ab5d18cf46c3fcbb19afa8aecb8b0b17ff840273fb5d417fe2",
+        "schemeId": "Ed25519"
+    }
+}
+- '4dkfgtpj7vQMqNMrYF2NTyJb4YPUe5BnBptWeJH3jUTnJizb53' (Alevo):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "N18SXBazW+PgIfxxVJKKUg==",
+                "initializationVector": "92L0dThWhbKVDFBcIPTxgA==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "hcL7OHvAFL0XBZVb+7Yelk62l8FEmnUfWlFRiQX8Fn6piYdP4ZVwexONQYmGLNBQ455Oi5riRLQNNXchXpWbRBZ8E5dgYGpvRgLhXVh07nE="
+        },
+        "verifyKey": "1ede93f0b3286c3b6148e2739a758373a434e9f43e3ddf60fb11c04109148b70",
+        "schemeId": "Ed25519"
+    }
+}
+Encryption secret keys:
+- '3o1JLuuLbko3VkkpwFJVvfMgwygQ5SX3t5feYXFLqdDmnLSNns' (T3B): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "uGqUZXf0CW60JLHGGJtFvw==",
+        "initializationVector": "CUxEZhuQDQzfqVTCy6MGWA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "a2GdM55LcUkwhoBT1P95gy+vz8EqmIPUXvzrOw3QUgDatSGHELMWr6zLflH8gDGhb+uWjrXp8RIM/UzgM6hnBDqwrNp715S9TxuqLP+smt+UFxHj9D0DG37PTylsqCbq"
+}
+- '2zwWZHotdMpq8HiotRpNyZkYaB3f75DwmMGSU8FVnctYGmptej' (T4A): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "i7bWLan1DMIxTEDrqwCNsA==",
+        "initializationVector": "p9uUkABx9ln55OXaNF9ngg==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "6wPy3zHe9bwVgNFaJS1JSCKrIGp4Pt/8s0WMZlk0x/l1sCb1LFtLtdQG50xrdjWGuv3LO3Ho+HxrzfogcgjnGw5YO9a4G99b0FF/NdEjY0b/wcjCK3+Qd5L08SvFyS9l"
+}
+- '3JpK8kyXTuffM16VPZzixVJkdvWYMyptjR5thzckt8nKW4bpYe' (T1B): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "2cFJ0ELJVTRccRK7NrxffA==",
+        "initializationVector": "SfUVRtxEZLnnKlQCqq2Whg==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "cpNNnbtoYPu9Qfp0lWixKdKuDz4104ml1jAZz3GQ+/tS+/IvxGmoR1VEUEncAslkYuZv2d+Q/mt66CdA2nJuxDgqPhtIil5IdweRz6kSEUYHOUJPPt0ik+47gzbW4Z0h"
+}
+- '3rkeA1Q1ar86Ni51gzpRvioG18Cw5Z1i6557i7nBBZkRA1tq2Y' (T1A): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "6y8+0PUxGfkPk6pE9+/a+w==",
+        "initializationVector": "X+5XHeKhHga2/fvO3k21/A==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "UgDYFZO3uIkvAV9RRMR1ga1P4Z61R5S4D9d5H8h/+8Hh95O8oNNZg71jiSuUKhMqUt8FUhwa8TI5ITUbdQar+TruUh/9/0DmanAzCarKnbEMoAZTuqUauiRH3OJjQzsT"
+}
+- '3DNPvbD8vp6cAEySjizxexm8efEcF5Zmi6QKcC9BPbfrzeUr7Y' (Demo1): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "lGsLKW048F8a0ZxhOPHQoQ==",
+        "initializationVector": "dYIp5lbtqiYzruAvnXfepA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "4eQCbJpMNwQ1vKv/hcHXvCrHIDQHbX9x6V+0kONHbQTWvk0RN9pdDPFzzGue9ob2SazoeuLdzS+uDuF8iejdMFyxiPTfnpIUFqWJdvnrnLsEJQD32vpB6QNpCLl0+0Ji"
+}
+- '3xeYXf51VAupeNyP9y75ZnjViTqcyTKj1Ej7QA4VZTqWodA9q9' (T2B): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "CwjQQIu5orXNlwpavbkSQA==",
+        "initializationVector": "ts8GU1Qt1tN+0tI+xuXDWQ==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "FO6XkeEdT0onMaws2u6Kptwdl921GVSdPuACRj0pRTyh12zoxahdQ3y5bjMh+MzR4H6YeigUnJ16BH4oOSnFoNnmpW34m2jDOhP8IQrGf7dRUx5Z5HlpP8Q9QtM3hCGR"
+}
+- '4dkfgtpj7vQMqNMrYF2NTyJb4YPUe5BnBptWeJH3jUTnJizb53' (Alevo): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "y/YlXg713MoLvMFPdwS1JQ==",
+        "initializationVector": "yr8g/rXGDRnV1y58l9XJ8A==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "xZbf3pnPSG2W9zMJkYxzmEC9UqEF7PhrvgKjl9SoQE6aeZuY+uL+vUyKO7SZiT2OW+B33GCkTmgZuaX5QRrwyrnYQGM+LplntFmr71Y3Cf8ySoPCwdCbWRCAFtYDEl11"
+}
