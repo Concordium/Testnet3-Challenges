@@ -1,0 +1,164 @@
+    description: Computer
+    product: Google Compute Engine
+    vendor: Google
+    serial: GoogleCloud-21AC06027029BB5257F4D6FBB44674CD
+    width: 64 bits
+    capabilities: smbios-2.4 dmi-2.4 smp vsyscall32
+    configuration: boot=normal uuid=21AC0602-7029-BB52-57F4-D6FBB44674CD
+  *-core
+       description: Motherboard
+       product: Google Compute Engine
+       vendor: Google
+       physical id: 0
+       serial: Board-GoogleCloud-21AC06027029BB5257F4D6FBB44674CD
+     *-firmware
+          description: BIOS
+          vendor: Google
+          physical id: 0
+          version: Google
+          date: 01/01/2011
+          size: 96KiB
+     *-cpu:0
+          description: CPU
+          product: Intel(R) Xeon(R) CPU @ 2.00GHz
+          vendor: Intel Corp.
+          physical id: 1001
+          bus info: cpu@0
+          slot: CPU 1
+          size: 2GHz
+          capacity: 2GHz
+          width: 64 bits
+    *-cpu:1
+          description: CPU
+          vendor: Google
+          physical id: 1002
+          bus info: cpu@1
+          slot: CPU 2
+          size: 2GHz
+          capacity: 2GHz
+     *-memory
+          description: System Memory
+          physical id: 200
+          size: 4GiB
+          capabilities: ecc
+          configuration: errordetection=multi-bit-ecc
+        *-bank
+             description: DIMM RAM Synchronous
+             physical id: 0
+             slot: DIMM 0
+             size: 4GiB
+             width: 64 bits
+     *-pci
+          description: Host bridge
+          product: 440FX - 82441FX PMC [Natoma]
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 02
+          width: 32 bits
+          clock: 33MHz
+        *-isa
+             description: ISA bridge
+             product: 82371AB/EB/MB PIIX4 ISA
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+        *-bridge UNCLAIMED
+             description: Bridge
+             product: 82371AB/EB/MB PIIX4 ACPI
+             vendor: Intel Corporation
+             physical id: 1.3
+             bus info: pci@0000:00:01.3
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bridge bus_master
+             configuration: latency=0
+        *-generic:0
+             description: Non-VGA unclassified device
+             product: Virtio SCSI
+             vendor: Red Hat, Inc.
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: msix bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:11 ioport:c040(size=64) memory:c0001000-c000107f
+           *-virtio0 UNCLAIMED
+                description: Virtual I/O device
+                physical id: 0
+                bus info: virtio@0
+                configuration: driver=virtio_scsi
+        *-network
+             description: Ethernet controller
+             product: Virtio network device
+             vendor: Red Hat, Inc.
+             physical id: 4
+             bus info: pci@0000:00:04.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: msix bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:10 ioport:c000(size=64) memory:c0000000-c000007f
+           *-virtio1
+                description: Ethernet interface
+                physical id: 0
+                bus info: virtio@1
+                logical name: ens4
+                serial: 42:01:0a:a6:00:02
+                capabilities: ethernet physical
+                configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 ip=10.166.0.2 link=yes multicast=yes
+        *-generic:1
+             description: Unclassified device
+             product: Virtio memory balloon
+             vendor: Red Hat, Inc.
+             physical id: 5
+             bus info: pci@0000:00:05.0
+            version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master
+             configuration: driver=virtio-pci latency=0
+             resources: irq:10 ioport:c0a0(size=32)
+           *-virtio2 UNCLAIMED
+                description: Virtual I/O device
+                physical id: 0
+                bus info: virtio@2
+                configuration: driver=virtio_balloon
+        *-generic:2
+             description: Unclassified device
+             product: Virtio RNG
+             vendor: Red Hat, Inc.
+             physical id: 6
+             bus info: pci@0000:00:06.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: msix bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:11 ioport:c080(size=32) memory:c0002000-c000203f
+           *-virtio3 UNCLAIMED
+                description: Virtual I/O device
+                physical id: 0
+                bus info: virtio@3
+                configuration: driver=virtio_rng
+     *-scsi
+          physical id: 1
+          logical name: scsi0
+        *-disk
+             description: SCSI Disk
+            product: PersistentDisk
+             vendor: Google
+             physical id: 0.1.0
+             bus info: scsi@0:0.1.0
+             logical name: /dev/sda
+             version: 1
+             size: 25GiB (26GB)
