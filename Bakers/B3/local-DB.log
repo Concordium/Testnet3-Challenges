@@ -1,0 +1,115 @@
+﻿groupadd: group 'docker' already exists
+useradd: user 'docker' already exists
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+[92mConfiguration initialized.
+[0m2020-10-15 14:53:59,702 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-15 14:53:59,703 INFO Set uid to user 0 succeeded
+Unlinking stale socket /var/run/supervisor.sock
+2020-10-15 14:54:00,013 INFO RPC interface 'supervisor' initialized
+2020-10-15 14:54:00,014 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-15 14:54:00,015 INFO supervisord started with pid 13
+2020-10-15 14:54:01,019 INFO spawned: 'collector' with pid 15
+2020-10-15 14:54:01,026 INFO spawned: 'middleware' with pid 16
+2020-10-15 14:54:01,029 INFO spawned: 'nginx' with pid 17
+2020-10-15 14:54:01,040 INFO spawned: 'p2p-client' with pid 18
+2020-10-15T14:54:01.119205800Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-15T14:54:01.120324771Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-15T14:54:01.122659978Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-15T14:54:01.123781739Z: INFO: Network: enabled
+2020-10-15T14:54:01.124051654Z: INFO: Log level: info
+2020-10-15T14:54:01.125439387Z: INFO: My Node ID is a732af5551c6dabd
+2020-10-15T14:54:01.127747742Z: INFO: Starting consensus layer
+2020-10-15T14:54:01.128452262Z: INFO: Starting up the consensus thread
+2020-10-15T14:54:01.130224606Z: INFO: Starting up the consensus layer
+2020-10-15 14:54:02,131 INFO success: collector entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-15 14:54:02,132 INFO success: middleware entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-15 14:54:02,133 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-15 14:54:02,133 INFO success: p2p-client entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-15T14:54:19.131919183Z: INFO: Consensus layer started
+2020-10-15T14:54:19.135879615Z: INFO: RPC server started
+2020-10-15T14:54:19.136580304Z: INFO: Starting out of band catch-up
+2020-10-15T14:54:19.139179512Z: ERROR: External: Error importing block: OtherError ResultDuplicate
+2020-10-15T14:54:19.139948481Z: INFO: Completed out of band catch-up
+2020-10-15T14:54:19.141584220Z: INFO: Starting the P2P layer
+2020-10-15T14:54:19.142410839Z: INFO: Attempting to bootstrap
+2020-10-15T14:54:19.179080076Z: INFO: Using bootstrapper 54.77.133.220:8888
+2020-10-15T14:54:19.180151807Z: INFO: Using bootstrapper 52.17.42.154:8888
+2020-10-15T14:54:19.180979718Z: INFO: Commencing baking
+2020-10-15T14:54:19.183942516Z: INFO: Runner: Starting baker thread
+2020-10-15T14:54:19.783330712Z: INFO: Sent a direct message to peer ba05a858d0d99468 containing a catch-up status message
+2020-10-15T14:54:19.814911057Z: INFO: Processed a catch-up status message from ba05a858d0d99468
+2020-10-15T14:54:19.816096033Z: INFO: Sent a direct message to peer ba05a858d0d99468 containing a catch-up status message
+2020-10-15T14:54:19.838843929Z: INFO: Processed a catch-up status message from 33158cb3c633a1d9
+2020-10-15T14:54:19.840196232Z: INFO: Sent a direct message to peer 33158cb3c633a1d9 containing a catch-up status message
+2020-10-15T14:54:19.859891501Z: INFO: Skov: Receive statistics: blocksReceivedCount=1 blockLastReceived=1.6027736598583906e9 blockReceiveLatencyEMA=7.6608390653 blockReceiveLatencyEMSD=22.9825171959 blockReceivePeriodEMA=Nothing blockReceivePeriodEMSD=Nothing
+2020-10-15T14:54:19.896516456Z: INFO: Skov: Block 03f96795ed404e9e1057cdb94d3ca1ee18b6d5a38951397d4a677ecdaa03f047 (2) arrived
+2020-10-15T14:54:19.897709964Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=1 blockLastArrive=1.6027736598961024e9 blockArriveLatencyEMA=7.6646102449 blockArriveLatencyEMSD=22.9938307347 blockArrivePeriodEMA=Nothing blockArrivePeriodEMSD=Nothing transactionsPerBlockEMA=0.1 transactionsPerBlockEMSD=0.30000000000000004
+2020-10-15T14:54:19.898515662Z: INFO: Processed a block from ba05a858d0d99468
+2020-10-15T14:54:19.900181966Z: INFO: Skov: Receive statistics: blocksReceivedCount=2 blockLastReceived=1.6027736598992584e9 blockReceiveLatencyEMA=11.409680988369999 blockReceiveLatencyEMSD=24.532852032965103 blockReceivePeriodEMA=Just 4.0867643e-2 blockReceivePeriodEMSD=Just 0.0
+2020-10-15T14:54:19.910387540Z: INFO: Skov: Block 03f96795ed404e9e1057cdb94d3ca1ee18b6d5a38951397d4a677ecdaa03f047 is finalized at height 73254 with finalization delta=0
+2020-10-15T14:54:19.911179351Z: INFO: Skov: Finalization statistics: finalizationCount=1 lastFinalizedTime=1.6027736599111493e9 finalizationPeriodEMA=Nothing finalizationPeriodEMSD=Nothing
+2020-10-15T14:54:19.924718157Z: INFO: Skov: Block d5e108c2c2a3088d8eeff6e17336126bee4a58795210b0c7308dd15f7651b9ee (9) arrived
+2020-10-15T14:54:19.926200854Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=2 blockLastArrive=1.6027736599245932e9 blockArriveLatencyEMA=11.415608535410001 blockArriveLatencyEMSD=24.545356388716613 blockArrivePeriodEMA=Just 2.8490701e-2 blockArrivePeriodEMSD=Just 0.0 transactionsPerBlockEMA=0.29000000000000004 transactionsPerBlockEMSD=0.637102817447859
+2020-10-15T14:54:19.927149668Z: INFO: Processed a block from ba05a858d0d99468
+2020-10-15T14:54:19.929404978Z: INFO: Skov: Receive statistics: blocksReceivedCount=3 blockLastReceived=1.602773659928199e9 blockReceiveLatencyEMA=14.536532791232998 blockReceiveLatencyEMSD=25.09321752501724 blockReceivePeriodEMA=Just 3.9674950800000004e-2 blockReceivePeriodEMSD=Just 3.578076600000001e-3
+2020-10-15T14:54:19.937775932Z: INFO: Skov: Block d5e108c2c2a3088d8eeff6e17336126bee4a58795210b0c7308dd15f7651b9ee is finalized at height 73255 with finalization delta=0
+2020-10-15T14:54:19.938771629Z: INFO: Skov: Finalization statistics: finalizationCount=2 lastFinalizedTime=1.6027736599387257e9 finalizationPeriodEMA=Just 2.7576405e-2 finalizationPeriodEMSD=Just 0.0
+2020-10-15T14:54:19.957590698Z: INFO: Skov: Block 1524649398eeb2346b03c8a33da1c98616a18cf9712ec88769ae2236efa72968 (15) arrived
+2020-10-15T14:54:19.958851690Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=3 blockLastArrive=1.6027736599575627e9 blockArriveLatencyEMA=14.544803955169002 blockArriveLatencyEMSD=25.106848547748214 blockArrivePeriodEMA=Just 2.89385892e-2 blockArrivePeriodEMSD=Just 1.343664599999999e-3 transactionsPerBlockEMA=0.261 transactionsPerBlockEMSD=0.6106381907480075
+2020-10-15T14:54:19.959598463Z: INFO: Processed a block from ba05a858d0d99468
+2020-10-15T14:54:19.967834543Z: INFO: Skov: Block 1524649398eeb2346b03c8a33da1c98616a18cf9712ec88769ae2236efa72968 is finalized at height 73256 with finalization delta=0
+2020-10-15T14:54:19.968851851Z: INFO: Skov: Finalization statistics: finalizationCount=3 lastFinalizedTime=1.6027736599687934e9 finalizationPeriodEMA=Just 2.78255439e-2 finalizationPeriodEMSD=Just 7.474167e-4
+2020-10-15T14:54:19.973969922Z: INFO: Processed a finalization record from ba05a858d0d99468
+2020-10-15T14:54:19.975128256Z: INFO: Processed a catch-up status message from ba05a858d0d99468
+2020-10-15T14:54:19.987551253Z: INFO: Sent a direct message to peer 33158cb3c633a1d9 containing a catch-up status message
+2020-10-15T14:54:19.990011017Z: INFO: Sent a direct message to peer 051dd1b98e765fdb containing a catch-up status message
+2020-10-15T14:54:19.991331219Z: INFO: Processed a catch-up status message from 051dd1b98e765fdb
+2020-10-15T14:54:19.992050583Z: INFO: Sent a direct message to peer 897f4de2a9088a5b containing a catch-up status message
+2020-10-15T14:54:19.992802282Z: INFO: Processed a catch-up status message from 897f4de2a9088a5b
+2020-10-15T14:54:20.035128856Z: INFO: Sent a direct message to peer 3864651b1dedf61a containing a catch-up status message
+2020-10-15T14:54:20.036699924Z: INFO: Processed a catch-up status message from 3864651b1dedf61a
+2020-10-15T14:54:20.040175114Z: INFO: Sent a direct message to peer 84da7da6a8ab71e9 containing a catch-up status message
+2020-10-15T14:54:20.041259657Z: INFO: Processed a catch-up status message from 84da7da6a8ab71e9
+2020-10-15T14:54:20.071560560Z: INFO: Sent a direct message to peer 1feb7d3719a8a4b3 containing a catch-up status message
+2020-10-15T14:54:20.072620356Z: INFO: Processed a catch-up status message from 1feb7d3719a8a4b3
+2020-10-15T14:54:20.087157261Z: INFO: Sent a direct message to peer 4d79a833040f7d61 containing a catch-up status message
+2020-10-15T14:54:20.088238550Z: INFO: Processed a catch-up status message from 4d79a833040f7d61
+2020-10-15T14:54:20.089343625Z: INFO: Sent a direct message to peer 31e7c56c49370691 containing a catch-up status message
+2020-10-15T14:54:20.089998069Z: INFO: Processed a catch-up status message from 31e7c56c49370691
+2020-10-15T14:54:20.093763659Z: INFO: Sent a direct message to peer 56bcf10aaec2224c containing a catch-up status message
+2020-10-15T14:54:20.094500896Z: INFO: Processed a catch-up status message from 56bcf10aaec2224c
+2020-10-15T14:54:20.116305833Z: INFO: Processed a catch-up status message from 33158cb3c633a1d9
+2020-10-15T14:54:20.216295388Z: INFO: Sent a direct message to peer 6061fba8e4ac03c8 containing a catch-up status message
+2020-10-15T14:54:20.272426118Z: INFO: Sent a direct message to peer 6061fba8e4ac03c8 containing a catch-up status message
+2020-10-15T14:54:20.273525704Z: INFO: Processed a catch-up status message from 6061fba8e4ac03c8
+2020-10-15T14:54:20.466214691Z: INFO: Processed a catch-up status message from 6061fba8e4ac03c8
+2020-10-15T14:54:33.006680224Z: INFO: Processed a transaction from 4d79a833040f7d61
+2020-10-15T14:54:33.010190934Z: INFO: Sent a broadcast containing a transaction
+2020-10-15T14:54:52.993488911Z: INFO: Processed a transaction from 4d79a833040f7d61
+2020-10-15T14:54:52.993564661Z: INFO: Sent a broadcast containing a transaction
+2020-10-15T14:54:53.006852742Z: ERROR: [sending to peer 31e7c56c49370691] Broken pipe (os error 32)
+2020-10-15T14:54:53.611532765Z: INFO: Processed a transaction from 4d79a833040f7d61
+2020-10-15T14:54:53.612703242Z: INFO: Sent a broadcast containing a transaction
+^C2020-10-15 14:55:02,625 WARN received SIGINT indicating exit request
+2020-10-15 14:55:02,628 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15T14:55:02.628212846Z: INFO: Signal received attempting to shutdown node cleanly
+2020-10-15 14:55:05,634 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 14:55:08,638 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 14:55:11,644 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 14:55:14,649 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 14:55:17,660 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15T14:55:19.170416627Z: INFO: Shutting down
+2020-10-15T14:55:19.170681821Z: INFO: Stopping baking
+2020-10-15T14:55:19.172420083Z: ERROR: Runner: Message loop exited with exception: thread killed
+2020-10-15T14:55:19.172440936Z: INFO: Runner: Exiting baker thread
+2020-10-15T14:55:19.227582861Z: INFO: P2PNode gracefully closed.
+2020-10-15 14:55:19,237 INFO stopped: p2p-client (exit status 0)
+2020-10-15 14:55:20,248 INFO stopped: nginx (exit status 0)
+2020-10-15 14:55:21,252 INFO stopped: middleware (terminated by SIGTERM)
+2020-10-15 14:55:21,253 INFO waiting for collector to die
+2020-10-15 14:55:21,256 INFO stopped: collector (terminated by SIGTERM)
