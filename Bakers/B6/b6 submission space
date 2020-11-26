@@ -1,1 +1,33 @@
-
+Id: b26daea70a587b43
+OS name: Microsoft Windows 10 Home
+OS version: 10.0.19041 N/A building 19041
+System manufacturer: ASUSTeK Computer Inc.
+System model: N53SV
+Type of system: x64-based PC
+The processor(s): the Number of processors - 1. i7-2670QM CPU @2.20 Ghz
+[01]: Intel64 Family 6 Model 42 Stepping 7 GenuineIntel ~2000 MHz
+SDD KINGSTON SUV300S37a240G 240GB
+The full amount of physical memory: 16 289 MB
+Available physical memory: 8,358 MB
+Virtual memory: Max. size: 16,789 MB
+Virtual memory: Available: 7 343 MB
+Virtual memory: used: 9,446 MB
+Network adapter: The number of network adapters is 4.
+[01]: Phantom TAP-Windows Adapter V9
+Connection name: Ethernet 2
+Condition: Media is disabled
+[02]: Intel(R) Dual Band Wireless-AC 7260
+Connection name: wireless network 3
+Condition: Media is disabled
+[03]: Realtek PCIe GbE Family Controller
+Connection name: Ethernet
+DHCP is enabled: Yes
+DHCP server: 192.168.1.1
+IP address
+[01]: 192.168.1.3
+[04]: Hyper-V Virtual Ethernet Adapter
+Connection name: vEthernet (WSL)
+videocard: Intel(R) HD Graphics 3000
+my observations: the hard disk of the node does not use at all, but the wsl2 virtual machine through which Docker works - very much loads RAM.
+When you restart the node, the memory load starts at 1.5 gb and after a day it reaches 7.8 gb. this is a problem..
+my observations 25.10.2020: process concordium-node.exe - 0.1% memory, 0% disk, 0% CPU. process VMMem - 29.5%
