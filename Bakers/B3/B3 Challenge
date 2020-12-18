@@ -1,0 +1,69 @@
+Challenge B3 
+I have set up the node ‘TOBO’ on my laptop computer, Windows 10 Pro, 8 GB RAM, >30 GB free hard disk space in C partition in the first day of the testnet.
+After finishing the B2 challenge I have stoped and restarted the node with flashing the database option. It took 18 hours to catche up the currently validated blocks. The chain lenght was 125840 while the node catched up the live block.  
+Then I have stoped the node and restarted the node in about an hour from the database. The chain lenght was about 130188 and the node catched up the blockchain at 132288 in 14 minutes.
+My node ID is 0ce45240afed83c4.
+Node name TOBO. 
+I have copied the startup moment from the screen below for the second start from the database. I have got the logs with ‘retrieve logs exe’ program provided by Concordium. It took very long time (2472 MB). 
+During these challenges the computer used all the RAM and strated to use HDD. 
+Thank you 
+
+_________                                      .___.__
+\_   ___ \  ____   ____   ____  ___________  __| _/|__|__ __  _____
+/    \  \/ /  _ \ /    \_/ ___\/  _ \_  __ \/ __ | |  |  |  \/     \
+\     \___(  <_> )   |  \  \__(  <_> )  | \/ /_/ | |  |  |  /  Y Y  \
+ \______  /\____/|___|  /\___  >____/|__|  \____ | |__|____/|__|_|  /
+        \/            \/     \/                 \/                \/
+
+Welcome to the Concordium node (testnet). Let's get you started!
+
+This software requires you to have Docker installed, running and configured for access from this user
+
+Checking whether docker is accessible on your PATH
+OK
+Checking whether Docker is running
+OK
+Checking whether we can access docker
+OK
+Validating system credentials
+OK
+Currently your node name is set to TOBO. Press enter to keep it or enter a new one:
+OK
+Latest version of the concordium client is 0.3.2
+Using your local image
+
+Do you want to flush the local node database before starting? (y/N): N
+Now going to boot up node with name TOBO running v0.3.2 (testnet)
+Trying to download upstream block state...
+groupadd: group 'docker' already exists
+useradd: user 'docker' already exists
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+Configuration initialized.
+2020-10-22 16:20:09,103 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-22 16:20:09,138 INFO Set uid to user 0 succeeded
+Unlinking stale socket /var/run/supervisor.sock
+2020-10-22 16:20:09,505 INFO RPC interface 'supervisor' initialized
+2020-10-22 16:20:09,505 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-22 16:20:09,507 INFO supervisord started with pid 14
+2020-10-22 16:20:10,514 INFO spawned: 'collector' with pid 16
+2020-10-22 16:20:10,526 INFO spawned: 'middleware' with pid 17
+2020-10-22 16:20:10,535 INFO spawned: 'nginx' with pid 18
+2020-10-22 16:20:10,547 INFO spawned: 'p2p-client' with pid 19
+2020-10-22 16:20:11,550 INFO success: collector entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-22 16:20:11,551 INFO success: middleware entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-22 16:20:11,551 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-22 16:20:11,551 INFO success: p2p-client entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-22T16:20:15.879461500Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-22T16:20:15.879502200Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-22T16:20:15.879511000Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-22T16:20:15.879515000Z: INFO: Network: enabled
+2020-10-22T16:20:15.879517000Z: INFO: Log level: info
+2020-10-22T16:20:15.912701600Z: INFO: My Node ID is 0ce45240afed83c4
+2020-10-22T16:20:16.567703900Z: INFO: Starting consensus layer
+2020-10-22T16:20:16.567750400Z: INFO: Starting up the consensus thread
+2020-10-22T16:20:16.667092900Z: INFO: Starting up the consensus layer
