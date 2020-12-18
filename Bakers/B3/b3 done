@@ -1,0 +1,41 @@
+Node ID: 0e1bacee0d551372
+----log----
+useradd: warning: the home directory /home/docker already exists.
+useradd: Not copying any file from skel directory into it.
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+[92mConfiguration initialized.
+[0m[92mKeys written to file '/var/lib/concordium/data/baker-credentials.json'.
+DO NOT LOSE THIS FILE.
+To add a baker to the chain using these keys, use 'baker add /var/lib/concordium/data/baker-credentials.json'.
+[0m2020-10-15 00:19:16,816 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-15 00:19:16,816 INFO Set uid to user 0 succeeded
+2020-10-15 00:19:16,822 INFO RPC interface 'supervisor' initialized
+2020-10-15 00:19:16,822 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-15 00:19:16,822 INFO supervisord started with pid 26
+2020-10-15 00:19:17,824 INFO spawned: 'collector' with pid 28
+2020-10-15 00:19:17,825 INFO spawned: 'middleware' with pid 29
+2020-10-15 00:19:17,826 INFO spawned: 'nginx' with pid 30
+2020-10-15 00:19:17,827 INFO spawned: 'p2p-client' with pid 31
+2020-10-15T00:19:18.130253949Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-15T00:19:18.130262459Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-15T00:19:18.130265779Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-15T00:19:18.130267649Z: INFO: Network: enabled
+2020-10-15T00:19:18.130268349Z: INFO: Log level: info
+2020-10-15T00:19:18.135017881Z: INFO: My Node ID is 0e1bacee0d551372
+2020-10-15T00:19:18.162000921Z: INFO: Starting consensus layer
+2020-10-15T00:19:18.162008661Z: INFO: Starting up the consensus thread
+2020-10-15T00:19:18.181366629Z: INFO: Starting up the consensus layer
+2020-10-15T00:19:18.784917904Z: INFO: Consensus layer started
+2020-10-15T00:19:18.784936794Z: INFO: RPC server started
+2020-10-15T00:19:18.784938244Z: INFO: Starting out of band catch-up
+2020-10-15T00:19:18.785633984Z: INFO: Skov: Receive statistics: blocksReceivedCount=1 blockLastReceived=1.6027211587849839e9 blockReceiveLatencyEMA=73915.2534983904 blockReceiveLatencyEMSD=221745.76049517118 blockReceivePeriodEMA=Nothing blockReceivePeriodEMSD=Nothing
+----syncning----
+2020-10-15T00:36:34.910444932Z: INFO: Skov: Receive statistics: blocksReceivedCount=68234 blockLastReceived=1.6027221949098346e9 blockReceiveLatencyEMA=131.5898852974767 blockReceiveLatencyEMSD=112.28782465609224 blockReceivePeriodEMA=Just 1.294847923511111 blockReceivePeriodEMSD=Just 3.8362775497039
+2020-10-15T00:36:34.912235107Z: INFO: Skov: Block 898ffb16681cac96e8d8797d33c88a8008f73a220474a3cc459bf7b21575f58b (50) arrived
+2020-10-15T00:36:34.912332887Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=68234 blockLastArrive=1.602722194912218e9 blockArriveLatencyEMA=131.60444357893573 blockArriveLatencyEMSD=112.28840400531499 blockArrivePeriodEMA=Just 1.2934951485712192 blockArrivePeriodEMSD=Just 3.830763541827367 transactionsPerBlockEMA=0.22225942948670727 transactionsPerBlockEMSD=0.41576456738273243
+2020-10-15T00:36:34.912360407Z: INFO: Processed a block from c98bf032e6eb46c7
+2020-10-15T00:36:34.912371167Z: INFO: Sent a broadcast containing a block
+// the end of synchronization, it takes about 17 minutes for full sync at block height 68234
