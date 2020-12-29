@@ -1,0 +1,102 @@
+login as: kara01
+kara01@95.179.133.86's password:
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-48-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat 14 Nov 2020 12:23:09 PM UTC
+
+  System load:  0.11               Processes:                119
+  Usage of /:   23.8% of 23.41GB   Users logged in:          0
+  Memory usage: 59%                IPv4 address for docker0: 172.17.0.1
+  Swap usage:   0%                 IPv4 address for ens3:    95.179.133.86
+
+ * Introducing self-healing high availability clustering for MicroK8s!
+   Super simple, hardened and opinionated Kubernetes for production.
+
+     https://microk8s.io/high-availability
+
+76 updates can be installed immediately.
+38 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+Last login: Sat Nov 14 12:18:58 2020 from 195.142.69.78
+$ ./concordium-client -v config account import export.concordiumwallet
+-sh: 1: ./concordium-client: not found
+$ cd
+$ ./concordium-client -v config account import export.concordiumwallet
+-sh: 3: ./concordium-client: not found
+$ cd $HOME/Documents/concordium-software
+$ ./concordium-client -v config account import export.concordiumwallet
+Base configuration:
+- Verbose:            yes
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:   none
+
+Error: The given file 'export.concordiumwallet' does not exist.
+$ ./concordium-client -v config account import export.concordiumwallet
+Base configuration:
+- Verbose:            yes
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:   none
+
+Enter encryption password:
+Error: Cannot import accounts: cannot decrypt wallet export: decryption failure:                                                                                                              wrong password.
+$ ./concordium-client -v config account import export.concordiumwallet
+Base configuration:
+- Verbose:            yes
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:   none
+
+Enter encryption password:
+Loaded account(s):
+- 4BU6tcghQBcdg8AgxQF773G1U5bWQ8cCEDN7hMWMvfmPreYhya ("Kara").
+All signing keys have been encrypted with the password used for this import.
+Adding account 4BU6tcghQBcdg8AgxQF773G1U5bWQ8cCEDN7hMWMvfmPreYhya with name 'Kar                                                                                                             a'.
+Creating directory '/var/lib/concordium/config/accounts/4BU6tcghQBcdg8AgxQF773G1                                                                                                             U5bWQ8cCEDN7hMWMvfmPreYhya'.
+Created key directory.
+Writing file '/var/lib/concordium/config/accounts/names.map'.
+Added name mapping.
+Writing file '/var/lib/concordium/config/accounts/4BU6tcghQBcdg8AgxQF773G1U5bWQ8                                                                                                             cCEDN7hMWMvfmPreYhya/keypair0.json'.
+Writing file '/var/lib/concordium/config/accounts/4BU6tcghQBcdg8AgxQF773G1U5bWQ8                                                                                                             cCEDN7hMWMvfmPreYhya/encSecretKey.json'.
+Writing file '/var/lib/concordium/config/accounts/4BU6tcghQBcdg8AgxQF773G1U5bWQ8                                                                                                             cCEDN7hMWMvfmPreYhya.threshold'.
+The keys were successfully written to disk.
+$ ./concordium-client config show
+Base configuration:
+- Verbose:            no
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    Kara -> 4BU6tcghQBcdg8AgxQF773G1U5bWQ8cCEDN7hMWMvfmPreYhya
+
+Account keys:
+- '4BU6tcghQBcdg8AgxQF773G1U5bWQ8cCEDN7hMWMvfmPreYhya' (Kara):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "halj+RcnkCkVcOz7oaATyg==",
+                "initializationVector": "P6y0cIvj2u3TA3d7eh1ccg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "Bj/VDbfvdcfFgRCxzLwjFUiKNl8s02bTBJDJSuKb3FwzQeVZmDpLJ                                                                                                             CCX7MxpG/jgie6Od46Xu2fpSz1JJk6aGva1AZKaOHGaIXpm6tleONU="
+        },
+        "verifyKey": "cf85f7c6c57cdff8304e622da08e44c6c21ca3fda5c659f058ceddd89f                                                                                                             696889",
+        "schemeId": "Ed25519"
+    }
+}
+Encryption secret keys:
+- '4BU6tcghQBcdg8AgxQF773G1U5bWQ8cCEDN7hMWMvfmPreYhya' (Kara): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "/fjOZwOD7aTjgvJweFAxoA==",
+        "initializationVector": "qnNWOwGXExoXvCdlYvbMdA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "XbqyemRJdmnebF82WdD1+7wJta0RDUcJ2ZhzO+hi56vg0KmKH0WyprV7TEnLo                                                                                                             1pGHuzkI7frPaiSHDbYutHUSCpt2uVwm7XhJx8xbE+pLfYqHeWDRmorncIECqU4y+3L"
+}
