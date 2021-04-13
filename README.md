@@ -1,5 +1,7 @@
 # TESTNET 3 CHALLENGES
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](https://github.com/Concordium/.github/blob/main/.github/CODE_OF_CONDUCT.md)
+
 After two successful testnets in 2020 and our mainnet launch within sight, we are happy to announce the launch of Concordium Testnet 3 and to invite testers, developers, and users all over the world to compete to earn up to 10 million GTU.
 
 ## Status
