@@ -1,0 +1,41 @@
+
+Node name
+XOR
+Node ID
+50720eadd06a71c2
+
+
+
+restart a node using local DB
+
+Restarted and catching latest block around 1min. 
+
+restart a node with --no-block-state-import
+
+Restarted and catching latest block around 1min. 
+
+restart a node with --listen-grpc-port set to 9999 and start Concordium Client connecting to port 9999
+
+That parameter is not working as expected. i have had to concordium-node-reset-data for cleaning configs and next run docker has started to listen 9999
+
+ss -patn | grep 9999
+LISTEN     0      4096                                    *:9999                        *:*     users:(("docker-proxy",pid=238225,fd=4))  
+
+
+[emre@Mule concordium-software]$ docker ps
+CONTAINER ID        IMAGE                                 COMMAND                  CREATED             STATUS              PORTS                                                                                           NAMES
+922089aeed04        concordium/opentestnet-client:0.3.2   "/opentestnet-client…"   7 minutes ago       Up 7 minutes        0.0.0.0:8888->8888/tcp, 0.0.0.0:8099->80/tcp, 0.0.0.0:8082->8081/tcp, 0.0.0.0:9999->10000/tcp   concordium-client
+
+
+New node ID after concordium-node-reset-data
+Node name
+XOR
+Node ID
+372f297276894623
+
+
+
+[emre@Mule concordium-software]$ ./concordium-client
+Could not canonicalize directory due to No such file or directory (os error
+
+

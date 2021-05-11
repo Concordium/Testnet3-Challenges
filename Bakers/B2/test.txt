@@ -1,0 +1,69 @@
+
+Node name
+Purple
+Node ID
+61c08c181fa7e386
+
+
+Due to log file size problem (https://github.com/Concordium/Testnet3-Challenges/issues/955)
+ive got my logs directly from docker day by day. 
+
+
+  184  docker container logs 49815d8caf87 --since 2020-10-14T00:00:00 --until 2020-15-00T00:00:00 > 14.log
+  185  docker container logs 49815d8caf87 --since 2020-10-14T00:00:00 --until 2020-10-15T00:00:00 > 14.log
+  186  docker container logs 49815d8caf87 --since 2020-10-15T00:00:00 --until 2020-10-16T00:00:00 > 15.log
+  187  docker container logs 49815d8caf87 --since 2020-10-16T00:00:00 --until 2020-10-17T00:00:00 > 16.log
+  188  docker container logs 49815d8caf87 --since 2020-10-17T00:00:00 --until 2020-10-18T00:00:00 > 17.log
+  189  docker container logs 49815d8caf87 --since 2020-10-18T00:00:00 --until 2020-10-19T00:00:00 > 18.log
+  190  docker container logs 49815d8caf87 --since 2020-10-19T00:00:00 --until 2020-10-20T00:00:00 > 19.log
+  191  docker container logs 49815d8caf87 --since 2020-10-20T00:00:00 --until 2020-10-21T00:00:00 > 20.log
+  192  docker container logs 49815d8caf87 --since 2020-10-21T00:00:00 --until 2020-10-22T00:00:00 > 21.log
+  193  docker container logs 49815d8caf87 --since 2020-10-22T00:00:00 --until 2020-10-23T00:00:00 > 22.log
+  225  docker container logs 49815d8caf87 --since 2020-10-23T00:00:00 --until 2020-10-24T00:00:00 > 23.log
+
+
+But due to giyhub file upload limitation, i've cleaned repeated logs from file. and bzip2. 
+
+
+  230  cat 14.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 14c.log
+  231  cat 1c.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 15c.log
+  232  cat 15.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 15c.log
+  233  cat 16.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 16c.log
+  234  cat 17.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 17c.log
+  235  cat 18.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 18c.log
+  236  cat 19.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 19c.log
+  237  cat 20.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 20c.log
+  238  cat 21.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 21c.log
+  239  cat 22.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 22c.log
+  240  cat 23.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > 23c.log
+  242  cat concordium-testnet-node.log  | grep -vi skov | grep -v finalization | grep -v Processed | grep -v containing > concordium-testnet-node.log-c.log
+
+
+I guess, i missed one day double restart thats why ive run my node one more day. :/
+
+xx@xx:~/Documents/concordium-software$ cat 14.log | grep "Consensus layer started"
+2020-10-14T19:46:06.038473951Z: INFO: Consensus layer started
+xx@xx:~/Documents/concordium-software$ cat 15.log | grep "Consensus layer started"
+xx@xx:~/Documents/concordium-software$ cat 16.log | grep "Consensus layer started"
+2020-10-16T08:45:01.627768980Z: INFO: Consensus layer started
+2020-10-16T16:39:52.995671261Z: INFO: Consensus layer started
+xx@xx:~/Documents/concordium-software$ cat 17.log | grep "Consensus layer started"
+2020-10-17T09:46:21.915731601Z: INFO: Consensus layer started
+2020-10-17T16:06:42.717900907Z: INFO: Consensus layer started
+xx@xx:~/Documents/concordium-software$ cat 18.log | grep "Consensus layer started"
+2020-10-18T16:44:12.223313810Z: INFO: Consensus layer started
+xx@xx:~/Documents/concordium-software$ cat 19.log | grep "Consensus layer started"
+2020-10-19T09:43:11.622628250Z: INFO: Consensus layer started
+2020-10-19T16:49:47.926726104Z: INFO: Consensus layer started
+xx@xx:~/Documents/concordium-software$ cat 20.log | grep "Consensus layer started"
+2020-10-20T07:58:13.377478326Z: INFO: Consensus layer started
+2020-10-20T19:25:55.419950605Z: INFO: Consensus layer started
+xx@xx:~/Documents/concordium-software$ cat 21.log | grep "Consensus layer started"
+2020-10-21T09:38:57.821702249Z: INFO: Consensus layer started
+2020-10-21T16:24:17.101517849Z: INFO: Consensus layer started
+xx@xx:~/Documents/concordium-software$ cat 22.log | grep "Consensus layer started"
+2020-10-22T09:08:05.716988975Z: INFO: Consensus layer started
+2020-10-22T17:11:49.271294889Z: INFO: Consensus layer started
+xx@xx:~/Documents/concordium-software$ cat 23.log | grep "Consensus layer started"
+2020-10-23T09:47:27.606271120Z: INFO: Consensus layer started
+
