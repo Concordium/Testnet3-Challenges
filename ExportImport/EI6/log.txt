@@ -1,0 +1,176 @@
+login as: aokannn2
+aokannn2@45.76.33.39's password:
+Access denied
+aokannn2@45.76.33.39's password:
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-48-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat 14 Nov 2020 05:27:39 PM UTC
+
+  System load:  0.19               Processes:                113
+  Usage of /:   85.6% of 23.41GB   Users logged in:          0
+  Memory usage: 70%                IPv4 address for docker0: 172.17.0.1
+  Swap usage:   0%                 IPv4 address for ens3:    45.76.33.39
+
+  => / is using 85.6% of 23.41GB
+
+ * Introducing self-healing high availability clustering for MicroK8s!
+   Super simple, hardened and opinionated Kubernetes for production.
+
+     https://microk8s.io/high-availability
+
+35 updates can be installed immediately.
+21 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Fri Nov 13 21:43:58 2020 from 195.142.69.78
+$ cd $HOME/Documents/concordium-software
+$ ./concordium-client -v config account import export.concordiumwallet
+Base configuration:
+- Verbose:            yes
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    Test1 -> 3St82JqdGdtNgykDJMgkR7tBnHMhqZGU1JXnHDMoTCDL9D7v81
+    Test2 -> 33BHt7wbVN4DVLGzAvHMp4QY5JZi9KtiUBgAfx1y5qUtyQQwFu
+    okan -> 3W4EbUdvmDFizYeRFCDQ2gdCN2WdKzh5dzdgHtHJpeeEwpCxDw
+
+Enter encryption password:
+Loaded account(s):
+- 4PMi4JnR1633DJMtYnex9xQKj72vXB7HVL28hzfmBHUPW3UVWM ("Okann2").
+All signing keys have been encrypted with the password used for this import.
+Adding account 4PMi4JnR1633DJMtYnex9xQKj72vXB7HVL28hzfmBHUPW3UVWM with name 'Okann2'.
+Creating directory '/var/lib/concordium/config/accounts/4PMi4JnR1633DJMtYnex9xQKj72vXB7HVL28hzfmBHUPW3UVWM'.
+Created key directory.
+Writing file '/var/lib/concordium/config/accounts/names.map'.
+Added name mapping.
+Writing file '/var/lib/concordium/config/accounts/4PMi4JnR1633DJMtYnex9xQKj72vXB7HVL28hzfmBHUPW3UVWM/keypair0.json'.
+Writing file '/var/lib/concordium/config/accounts/4PMi4JnR1633DJMtYnex9xQKj72vXB7HVL28hzfmBHUPW3UVWM/encSecretKey.json'.
+Writing file '/var/lib/concordium/config/accounts/4PMi4JnR1633DJMtYnex9xQKj72vXB7HVL28hzfmBHUPW3UVWM.threshold'.
+The keys were successfully written to disk.
+$ ./concordium-client config show
+Base configuration:
+- Verbose:            no
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    Okann2 -> 4PMi4JnR1633DJMtYnex9xQKj72vXB7HVL28hzfmBHUPW3UVWM
+    Test1 -> 3St82JqdGdtNgykDJMgkR7tBnHMhqZGU1JXnHDMoTCDL9D7v81
+    Test2 -> 33BHt7wbVN4DVLGzAvHMp4QY5JZi9KtiUBgAfx1y5qUtyQQwFu
+    okan -> 3W4EbUdvmDFizYeRFCDQ2gdCN2WdKzh5dzdgHtHJpeeEwpCxDw
+
+Account keys:
+- '4PMi4JnR1633DJMtYnex9xQKj72vXB7HVL28hzfmBHUPW3UVWM' (Okann2):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "fYbR/ezczGMuX/QL+i4qnA==",
+                "initializationVector": "tDQn3yBY7SnIsf7qvsgCJg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "YocyZR9jlv/ns5MlbUiv5f1Xzm1b/L3sUAvuwAyTWv8sl4Lvp5CFyK6baZcp8IGOaHLHrMMN400dDXc5KkXLR8RnEfOOUGkIWP3rsVr3slk="
+        },
+        "verifyKey": "038e12557bad5c38ced317a6bb9d62abbbbd9b95ce6fa16b73261d37251723bd",
+        "schemeId": "Ed25519"
+    }
+}
+- '3St82JqdGdtNgykDJMgkR7tBnHMhqZGU1JXnHDMoTCDL9D7v81' (Test1):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "6G/xiv8ydL5QLU7NFA/RJQ==",
+                "initializationVector": "m6CMlYUiTnmdnMbdxkxgQg==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "6Jw4wb5nlXjkGOF2+7K3sb2+q3ATjfam00rq/00TViqd7PlBVpuPzeYrmegGA2Aczg+AYHU44/SOJelKPYEEF03ACLaMKg2N55w4DQhX2QM="
+        },
+        "verifyKey": "dec51b85cb475451d4f7d03839739cfbcdcaa5a235ea1a49b985214524514f59",
+        "schemeId": "Ed25519"
+    }
+}
+- '33BHt7wbVN4DVLGzAvHMp4QY5JZi9KtiUBgAfx1y5qUtyQQwFu' (Test2):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "B9s3sU23cte1X4oRtjScUA==",
+                "initializationVector": "3MtaJeBsWVvJWeqInHL9tA==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "PqmfqZOCK7O1bufBh7xHa1BL6QCpYSH4QmntkY3o0/g2jsHb6IqS/t59ax3a74V1DwN3fgteVUYcsVN/jQ7DQGXON8D291ElfqQ2HddYOIU="
+        },
+        "verifyKey": "a47752a3a6564bebb98155bec746c39dedd39964eea2f226072eb67287276959",
+        "schemeId": "Ed25519"
+    }
+}
+- '3W4EbUdvmDFizYeRFCDQ2gdCN2WdKzh5dzdgHtHJpeeEwpCxDw' (okan):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "A0Tm/uClY5eUjgXPd4dEcA==",
+                "initializationVector": "7Udmun4+KonQPGjKWNFfvw==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "SYbxSe3mGODnDqASHMRdaCcUqJ3gePxG142lMYFPoa9TspRXsmtSgQSDtQvMmjovCZ4/DMtPRtpI3tWP3ujpNSwTqt/0i7VZV3DEp1JAnOA="
+        },
+        "verifyKey": "8599b572725f793f019e3d44d7729ca03d610c71376e29e7358c469f2347d713",
+        "schemeId": "Ed25519"
+    }
+}
+Encryption secret keys:
+- '4PMi4JnR1633DJMtYnex9xQKj72vXB7HVL28hzfmBHUPW3UVWM' (Okann2): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "KxYCBUazr3f/Do50hztQWQ==",
+        "initializationVector": "wcgHBH4vTTRHHw6x1fURew==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "F6m4t9q3VJfBlj7FlG+/kh+QJ8ua/AmHJ9In4j2cs8hxYn77NcoCl8YQYDoTxsD2blXkQUP6UVYqBJLTBO4lQnS1oKHEKO8fI9YBK7Q4N6cEsYTTEI0cXULlF/hJ7u0o"
+}
+- '3St82JqdGdtNgykDJMgkR7tBnHMhqZGU1JXnHDMoTCDL9D7v81' (Test1): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "79tLFvci5SxLNmUTVa310A==",
+        "initializationVector": "IEUMMh44lXTkCq1fr7rpJQ==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "T7SLkiCQSSn0FLlBph2269rV3IIsOWc/skFyNygoaa8ibEqXcwUcejKAVGhe2wyiXHMs3li/1L2htlnyaxpi1QR7MBdjtb1/Lct2bRmlYmHekmvxYMqlr78MqDejiQ4q"
+}
+- '33BHt7wbVN4DVLGzAvHMp4QY5JZi9KtiUBgAfx1y5qUtyQQwFu' (Test2): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "zcnNiORt+I0bPO9DnHrGEQ==",
+        "initializationVector": "2wDd8iF7vYUJ0A2Rq/LF0w==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "tPgHeZ+96PS4c6SO5i3Pmc2ivl6uVNR/yBE8d68X5gSfSRi+P501locTittNjQr8/ffN0GLYgqwuYxXR+RkBo6gBOBh/KxK4pPW1r+C2HqcMB/gqO6D3wH2/IREL2vlU"
+}
+- '3W4EbUdvmDFizYeRFCDQ2gdCN2WdKzh5dzdgHtHJpeeEwpCxDw' (okan): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "UPc5lAl5yEZFylHG6dmWMw==",
+        "initializationVector": "+wM+eFyAdy9q4saLEs2Jdw==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "SfISWI1tJ7sylY2IjbfASknFr6VvwQVpEZY7KaLuOUn3N/ROo4YS+BJh87wIVsUiw8FqdJfbB94qr+zDXoNNcbTK94BWV61/Irg/Njwi4xxB+kU8NW7NbXZQPiMIea+l"
+}
