@@ -1,1 +1,389 @@
+===============================================================================
+node id: fdbefaadf14a6181
+===============================================================================
+machine specs:
+H/W path      Device       Class      Description
+===============================================================================
+                           system     Google Compute Engine
+/0                         bus        Google Compute Engine
+/0/0                       memory     96KiB BIOS
+/0/1001                    processor  Intel(R) Xeon(R) CPU @ 2.30GHz
+/0/1002                    processor  CPU
+/0/200                     memory     4GiB System Memory
+/0/200/0                   memory     4GiB DIMM RAM Synchronous
+/0/100                     bridge     440FX - 82441FX PMC [Natoma]
+/0/100/1                   bridge     82371AB/EB/MB PIIX4 ISA
+/0/100/1.3                 bridge     82371AB/EB/MB PIIX4 ACPI
+/0/100/3                   generic    Virtio SCSI
+/0/100/3/0                 generic    Virtual I/O device
+/0/100/4                   network    Virtio network device
+/0/100/4/0    ens4         network    Ethernet interface
+/0/100/5                   generic    Virtio memory balloon
+/0/100/5/0                 generic    Virtual I/O device
+/0/100/6                   generic    Virtio RNG
+/0/100/6/0                 generic    Virtual I/O device
+/0/1          scsi0        storage
+/0/1/0.1.0    /dev/sda     disk       26GB PersistentDisk
+/0/1/0.1.0/1  /dev/sda1    volume     24GiB EXT4 volume
+/0/1/0.1.0/e  /dev/sda14   volume     4095KiB BIOS Boot partition
+/0/1/0.1.0/f  /dev/sda15   volume     105MiB Windows FAT volume
+/1            veth333fc10  network    Ethernet interface
+/2            docker0      network    Ethernet interface
 
+===============================================================================
+Mon Nov 16 09:25:32 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M 1000K  393M   1% /run
+/dev/sda1        25G  4.6G   20G  20% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        483M        571M        1.0M        2.8G        3.1G
+===============================================================================
+===============================================================================
+Mon Nov 16 17:00:40 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  4.8G   20G  20% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        552M        519M        1.0M        2.8G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Tue Nov 17 08:01:50 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  920K  393M   1% /run
+/dev/sda1        25G  5.0G   20G  21% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        585M        513M        1.0M        2.8G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Tue Nov 17 09:59:10 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  5.1G   20G  21% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        588M        519M        1.0M        2.8G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Tue Nov 17 21:33:47 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  5.4G   19G  23% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        622M        382M        1.0M        2.9G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Wed Nov 18 08:18:13 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  5.6G   19G  24% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        625M        412M        1.0M        2.8G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Wed Nov 18 14:02:12 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  5.7G   19G  24% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        610M        481M        1.0M        2.8G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Wed Nov 18 17:10:54 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  5.8G   19G  24% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        616M        508M        1.0M        2.7G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Thu Nov 19 10:25:51 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  6.1G   19G  26% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        632M        616M        1.0M        2.6G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Thu Nov 19 15:50:23 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  6.2G   18G  26% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        601M        499M        1.0M        2.8G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Thu Nov 19 22:40:19 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M 1000K  393M   1% /run
+/dev/sda1        25G  6.3G   18G  27% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        616M        494M        1.0M        2.8G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Fri Nov 20 09:54:10 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M 1000K  393M   1% /run
+/dev/sda1        25G  6.5G   18G  27% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        628M        574M        1.0M        2.7G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Fri Nov 20 13:48:24 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  6.6G   18G  28% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        609M        490M        1.0M        2.8G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Fri Nov 20 21:49:12 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  6.7G   18G  28% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        596M        591M        1.0M        2.7G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Sat Nov 21 09:32:41 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  6.9G   18G  29% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        619M        594M        1.0M        2.7G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Sat Nov 21 21:35:57 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  7.2G   17G  30% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        606M        503M        1.0M        2.8G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Sun Nov 22 12:01:07 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  7.4G   17G  31% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        635M        542M        1.0M        2.7G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
+Mon Nov 23 10:35:42 UTC 2020
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           394M  992K  393M   1% /run
+/dev/sda1        25G  7.8G   17G  33% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.6M  101M   4% /boot/efi
+/dev/loop0       31M   31M     0 100% /snap/snapd/9721
+/dev/loop1       56M   56M     0 100% /snap/core18/1932
+/dev/loop2      129M  129M     0 100% /snap/google-cloud-sdk/159
+tmpfs           394M     0  394M   0% /run/user/1001
+/dev/loop3      129M  129M     0 100% /snap/google-cloud-sdk/160
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           3.8G        632M        174M        1.0M        3.1G        3.0G
+Swap:            0B          0B          0B
+===============================================================================
