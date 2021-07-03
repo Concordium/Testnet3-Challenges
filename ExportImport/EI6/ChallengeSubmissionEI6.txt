@@ -1,0 +1,156 @@
+Step #1: From the initial Concordium mobile app page, three dots on the right bottom side labeled as "More" was selected. 
+Link: https://user-images.githubusercontent.com/25385401/98703916-1b480e00-238d-11eb-955f-801b1d3d0403.png
+
+Step #2: From the more page, the second option that is "Export" was selected.
+Link: https://user-images.githubusercontent.com/25385401/98703945-2307b280-238d-11eb-8c02-b9f915be89ee.png
+
+Step #3: Exporting details is shown to the user, "Export" option was selected.
+Link: https://user-images.githubusercontent.com/25385401/98703953-2602a300-238d-11eb-93c1-8bcc822fa4d1.png
+
+Step #4: Authentication is needed therefore app passcode was entered.
+Link: https://user-images.githubusercontent.com/25385401/98703964-27cc6680-238d-11eb-8756-2652a93fe39e.png
+
+Step #5: An export password was selected.
+Link: https://user-images.githubusercontent.com/25385401/98703979-2ac75700-238d-11eb-8a2c-b0d5ac358d1e.png
+
+Step #6: Export password was re-entered.
+Link: https://user-images.githubusercontent.com/25385401/98703989-2e5ade00-238d-11eb-9c5b-140969f08f45.png
+
+Step #7: The concordiumwallet file has been copied to the concordium-software directory.
+
+Step #8: Concordium client was started as "./concordium-client config account import FILENAME", therefore importing the accounts from the concordiumwallet file.
+Output Log (8): Logs can be found at the end of the document.
+
+Step #9: From the concordium client the importing process of the accounts were verified.
+Output Log (9): Logs can be found at the end of the document.
+
+
+
+----Logs----
+
+----Output Log (8):----
+
+Enter encryption password:
+Loaded account(s):
+- 3FBb7UXwhvJCvA4WP8ktexuppBJzKLhJFZKVCvveNxwxy4Thtt ("FakeyOne").
+- 3oY3mwdUvMa8b5Ka2jXfNixckL2uPjEfRXzKeDz6g75SaJwR7S ("FakeySecond").
+- 4AGpzPL14Dq7ME3fSrYweuGahCmYWA8kAuGQxCg19Q1qjh5QBy ("FakeTwo").
+All signing keys have been encrypted with the password used for this import.
+Adding account 3FBb7UXwhvJCvA4WP8ktexuppBJzKLhJFZKVCvveNxwxy4Thtt with name 'FakeyOne'.
+Creating directory '/var/lib/concordium/config/accounts/3FBb7UXwhvJCvA4WP8ktexuppBJzKLhJFZKVCvveNxwxy4Thtt'.
+^[[92mCreated key directory.
+^[[0mWriting file '/var/lib/concordium/config/accounts/names.map'.
+^[[92mAdded name mapping.
+^[[0m^[[92mThe keys were successfully written to disk.
+^[[0mAdding account 3oY3mwdUvMa8b5Ka2jXfNixckL2uPjEfRXzKeDz6g75SaJwR7S with name 'FakeySecond'.
+Creating directory '/var/lib/concordium/config/accounts/3oY3mwdUvMa8b5Ka2jXfNixckL2uPjEfRXzKeDz6g75SaJwR7S'.
+^[[92mCreated key directory.
+^[[0mWriting file '/var/lib/concordium/config/accounts/names.map'.
+^[[92mAdded name mapping.
+^[[0m^[[92mThe keys were successfully written to disk.
+^[[0mAdding account 4AGpzPL14Dq7ME3fSrYweuGahCmYWA8kAuGQxCg19Q1qjh5QBy with name 'FakeTwo'.
+Creating directory '/var/lib/concordium/config/accounts/4AGpzPL14Dq7ME3fSrYweuGahCmYWA8kAuGQxCg19Q1qjh5QBy'.
+^[[92mCreated key directory.
+^[[0mWriting file '/var/lib/concordium/config/accounts/names.map'.
+^[[92mAdded name mapping.
+^[[0m^[[92mThe keys were successfully written to disk.
+^[[0m
+
+----End of Output Log (8)----
+
+
+----Output Log (9)----
+
+Base configuration:
+- Verbose:            no
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    FakeTwo -> 4AGpzPL14Dq7ME3fSrYweuGahCmYWA8kAuGQxCg19Q1qjh5QBy
+    FakeyOne -> 3FBb7UXwhvJCvA4WP8ktexuppBJzKLhJFZKVCvveNxwxy4Thtt
+    FakeySecond -> 3oY3mwdUvMa8b5Ka2jXfNixckL2uPjEfRXzKeDz6g75SaJwR7S
+
+Account keys:
+- '3FBb7UXwhvJCvA4WP8ktexuppBJzKLhJFZKVCvveNxwxy4Thtt' (FakeyOne):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "m2KBGZML3qOF1R9PAhG+JA==",
+                "initializationVector": "hT4NS3JKSMCvcha7OyeSWw==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "Q4V8OW+CENvdX6oXjm/cOnq0ndgOCGYIQhOlQZPEyd4/RjJYJTSmL6>
+        },
+        "verifyKey": "073eabbcb5c9042634db113f5d2ada048fc3d2fee38b340cc2886c13486>
+        "schemeId": "Ed25519"
+    }
+}
+- '3oY3mwdUvMa8b5Ka2jXfNixckL2uPjEfRXzKeDz6g75SaJwR7S' (FakeySecond):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "O72ecC7z41XMG9YpNwipiA==",
+                "initializationVector": "PXbIhowUDQp01twCN3Du9A==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "V1HggvueyyIBh+Urx7Dkpyb3WgkyRaFvPktux3QmurjoqIbpTMy4zr>
+        },
+         "verifyKey": "270033eea5064a6daa57d544d2ef54fbad8f4e987a71cefe11e9c081abb>
+        "schemeId": "Ed25519"
+    }
+}
+- '4AGpzPL14Dq7ME3fSrYweuGahCmYWA8kAuGQxCg19Q1qjh5QBy' (FakeTwo):
+{
+    "0": {
+        "encryptedSignKey": {
+            "metadata": {
+                "encryptionMethod": "AES-256",
+                "iterations": 100000,
+                "salt": "zVyzhvCjW5IuO1RzDVML+w==",
+                "initializationVector": "GMmi3tMyivW/FS680fjzvw==",
+                "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+            },
+            "cipherText": "PnWt6+fyak9l70naT/3FvinUR9DrGo85GKmcSBFUO1/abMliyhQB9t>
+        },
+        "verifyKey": "d2e015b4ed782136c02327c7a22f3056a31f3de663f8005bdebe714cfbe>
+        "schemeId": "Ed25519"
+    }
+}
+Encryption secret keys:
+- '3FBb7UXwhvJCvA4WP8ktexuppBJzKLhJFZKVCvveNxwxy4Thtt' (FakeyOne): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "/2Fy7HATVByIOBm3A2f2ZA==",
+        "initializationVector": "FmF8qX4GPH+9QGvjJ5GSug==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "sV3zsIuE9PLeQ2UK2pV19c/6qs4kZvIHbXVqJshf7ujDtc+GxCZfW5vcWDIdD5>
+}
+- '3oY3mwdUvMa8b5Ka2jXfNixckL2uPjEfRXzKeDz6g75SaJwR7S' (FakeySecond): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "RMHRojDyeMUpXxLrBSv4oQ==",
+        "initializationVector": "K1zfDRGiFYpLUnW79EEZOw==",
+         "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "lgpdtcA8DNecd1NX7SQ3qS392RRQs3xYDV0TS167j51HicGbkSZq9w6q/hR2zq>
+}
+- '4AGpzPL14Dq7ME3fSrYweuGahCmYWA8kAuGQxCg19Q1qjh5QBy' (FakeTwo): {
+    "metadata": {
+        "encryptionMethod": "AES-256",
+        "iterations": 100000,
+        "salt": "XwlP7YxdSfPWCNlGMx3l8g==",
+        "initializationVector": "oL7DXRKSpW7PBREJhQ0SQA==",
+        "keyDerivationMethod": "PBKDF2WithHmacSHA256"
+    },
+    "cipherText": "k5Uf5Ka+LBJysIAN0rkUSw6u1I9WN2INstmMu1r+fpUjjFSI+H/KbuT619zpZV>
+}
+
+---End of Output Log (9)----
