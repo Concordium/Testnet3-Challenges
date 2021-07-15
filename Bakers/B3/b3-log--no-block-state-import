@@ -1,0 +1,87 @@
+abukatov@k8s-etcd1:~/Документы/concordium-software$ ./concordium-node --no-block-state-import
+
+_________                                      .___.__
+\_   ___ \  ____   ____   ____  ___________  __| _/|__|__ __  _____
+/    \  \/ /  _ \ /    \_/ ___\/  _ \_  __ \/ __ | |  |  |  \/     \
+\     \___(  <_> )   |  \  \__(  <_> )  | \/ /_/ | |  |  |  /  Y Y  \
+ \______  /\____/|___|  /\___  >____/|__|  \____ | |__|____/|__|_|  /
+        \/            \/     \/                 \/                \/
+
+Welcome to the Concordium node (testnet). Let's get you started!
+
+This software requires you to have Docker installed, running and configured for access from this user
+
+
+Checking whether docker is accessible on your PATH
+OK
+
+Checking whether Docker is running
+OK
+
+Checking whether we can access docker
+OK
+
+
+Validating system credentials
+OK
+
+Currently your node name is set to abukatov-node1. Press enter to keep it or enter a new one:
+OK
+
+Latest version of the concordium client is 0.3.2
+Using your local image
+
+Do you want to flush the local node database before starting? (y/N): n
+Now going to boot up node with name abukatov-node1 running v0.3.2 (testnet)
+groupadd: group 'docker' already exists
+useradd: user 'docker' already exists
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+Configuration initialized.
+2020-10-16 06:46:51,999 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-16 06:46:51,999 INFO Set uid to user 0 succeeded
+2020-10-16 06:46:52,013 INFO RPC interface 'supervisor' initialized
+2020-10-16 06:46:52,014 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-16 06:46:52,015 INFO supervisord started with pid 14
+2020-10-16 06:46:53,020 INFO spawned: 'collector' with pid 16
+2020-10-16 06:46:53,027 INFO spawned: 'middleware' with pid 17
+2020-10-16 06:46:53,034 INFO spawned: 'nginx' with pid 18
+2020-10-16 06:46:53,057 INFO spawned: 'p2p-client' with pid 21
+2020-10-16T06:46:53.146028445Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-16T06:46:53.146103746Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-16T06:46:53.146129246Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-16T06:46:53.146144646Z: INFO: Network: enabled
+2020-10-16T06:46:53.146155046Z: INFO: Log level: info
+2020-10-16T06:46:53.146579148Z: INFO: My Node ID is 6819ba2edd879c49
+2020-10-16T06:46:53.163406617Z: INFO: Starting consensus layer
+2020-10-16T06:46:53.163468317Z: INFO: Starting up the consensus thread
+2020-10-16T06:46:53.164920223Z: INFO: Starting up the consensus layer
+2020-10-16 06:46:54,166 INFO success: collector entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16 06:46:54,167 INFO success: middleware entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16 06:46:54,167 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16 06:46:54,168 INFO success: p2p-client entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16T06:47:39.219618193Z: INFO: Consensus layer started
+2020-10-16T06:47:39.219701893Z: INFO: RPC server started
+2020-10-16T06:47:39.223066684Z: INFO: Starting the P2P layer
+2020-10-16T06:47:39.223115284Z: INFO: Attempting to bootstrap
+2020-10-16T06:47:39.453208235Z: INFO: Using bootstrapper 52.17.42.154:8888
+2020-10-16T06:47:39.453263035Z: INFO: Using bootstrapper 54.77.133.220:8888
+2020-10-16T06:47:39.453274135Z: INFO: Commencing baking
+2020-10-16T06:47:39.453529334Z: INFO: Runner: Starting baker thread
+2020-10-16T06:47:39.955651718Z: ERROR: [sending to 31.145.3.253:8888] Connection refused (os error 111)
+2020-10-16T06:47:40.009208767Z: INFO: Sent a direct message to peer 3864651b1dedf61a containing a catch-up status message
+2020-10-16T06:47:40.052832144Z: INFO: Processed a catch-up status message from 3864651b1dedf61a
+2020-10-16T06:47:40.053658942Z: INFO: Sent a direct message to peer 3864651b1dedf61a containing a catch-up status message
+2020-10-16T06:47:40.114395171Z: INFO: Skov: Receive statistics: blocksReceivedCount=1 blockLastReceived=1.602830860112099e9 blockReceiveLatencyEMA=9.086209887699999 blockReceiveLatencyEMSD=27.258629663099995 blockReceivePeriodEMA=Nothing blockReceivePeriodEMSD=Nothing
+2020-10-16T06:47:40.187742765Z: INFO: Skov: Block 90e5dd9560570d459487ad88b9111da03fb9c0dea5389897c0b523521512353a (99) arrived
+2020-10-16T06:47:40.188191863Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=1 blockLastArrive=1.6028308601874733e9 blockArriveLatencyEMA=9.0937473365 blockArriveLatencyEMSD=27.281242009499998 blockArrivePeriodEMA=Nothing blockArrivePeriodEMSD=Nothing transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-10-16T06:47:40.189225260Z: INFO: Processed a block from 3864651b1dedf61a
+2020-10-16T06:47:40.193249649Z: INFO: Skov: Receive statistics: blocksReceivedCount=2 blockLastReceived=1.6028308601895256e9 blockReceiveLatencyEMA=16.49654145493 blockReceiveLatencyEMSD=34.102004742032406 blockReceivePeriodEMA=Just 7.7426683e-2 blockReceivePeriodEMSD=Just 0.0
+2020-10-16T06:47:40.211441098Z: INFO: Skov: Block 90e5dd9560570d459487ad88b9111da03fb9c0dea5389897c0b523521512353a is finalized at height 78446 with finalization delta=0
+2020-10-16T06:47:40.211603197Z: INFO: Skov: Finalization statistics: finalizationCount=1 lastFinalizedTime=1.602830860211522e9 finalizationPeriodEMA=Nothing finalizationPeriodEMSD=Nothing
+2020-10-16T06:47:40.283182096Z: INFO: Skov: Block ffc16fc0beb7d93c00eb0d296b3f2ed3957fbec11b4a48648874dd5a7c371867 (9) arrived
+2020-10-16T06:47:40.283545995Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=2 blockLastArrive=1.6028308602831085e9 blockArriveLatencyEMA=16.51268345245 blockArriveLatencyEMSD=34.13510021745567 blockArrivePeriodEMA=Just 9.5635131e-2 blockArrivePeriodEMSD=Just 0.0 transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0

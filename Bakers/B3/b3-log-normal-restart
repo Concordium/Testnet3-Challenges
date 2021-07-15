@@ -1,0 +1,81 @@
+Welcome to the Concordium node (testnet). Let's get you started!
+
+This software requires you to have Docker installed, running and configured for access from this user
+
+
+Checking whether docker is accessible on your PATH
+OK
+
+Checking whether Docker is running
+OK
+
+Checking whether we can access docker
+OK
+
+
+Validating system credentials
+OK
+
+Currently your node name is set to abukatov-node1. Press enter to keep it or enter a new one:
+OK
+
+Latest version of the concordium client is 0.3.2
+Using your local image
+
+Do you want to flush the local node database before starting? (y/N): n
+Now going to boot up node with name abukatov-node1 running v0.3.2 (testnet)
+Trying to download upstream block state...
+groupadd: group 'docker' already exists
+useradd: user 'docker' already exists
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+Configuration initialized.
+2020-10-16 06:42:25,631 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-16 06:42:25,632 INFO Set uid to user 0 succeeded
+2020-10-16 06:42:25,647 INFO RPC interface 'supervisor' initialized
+2020-10-16 06:42:25,648 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-16 06:42:25,650 INFO supervisord started with pid 13
+2020-10-16 06:42:26,656 INFO spawned: 'collector' with pid 15
+2020-10-16 06:42:26,664 INFO spawned: 'middleware' with pid 16
+2020-10-16 06:42:26,674 INFO spawned: 'nginx' with pid 17
+2020-10-16 06:42:26,681 INFO spawned: 'p2p-client' with pid 19
+2020-10-16T06:42:26.764444874Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-16T06:42:26.764490474Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-16T06:42:26.764504974Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-16T06:42:26.764515074Z: INFO: Network: enabled
+2020-10-16T06:42:26.764521574Z: INFO: Log level: info
+2020-10-16T06:42:26.764835274Z: INFO: My Node ID is 6819ba2edd879c49
+2020-10-16T06:42:26.820130395Z: INFO: Starting consensus layer
+2020-10-16T06:42:26.820190795Z: INFO: Starting up the consensus thread
+2020-10-16T06:42:26.822213496Z: INFO: Starting up the consensus layer
+2020-10-16 06:42:27,824 INFO success: collector entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16 06:42:27,825 INFO success: middleware entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16 06:42:27,825 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16 06:42:27,825 INFO success: p2p-client entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-16T06:43:17.959650842Z: INFO: Consensus layer started
+2020-10-16T06:43:17.960051842Z: INFO: RPC server started
+2020-10-16T06:43:17.960066842Z: INFO: Starting out of band catch-up
+2020-10-16T06:43:17.962271539Z: ERROR: External: Error importing block: OtherError ResultDuplicate
+2020-10-16T06:43:17.962348439Z: INFO: Completed out of band catch-up
+2020-10-16T06:43:17.964036937Z: INFO: Starting the P2P layer
+2020-10-16T06:43:17.964082436Z: INFO: Attempting to bootstrap
+2020-10-16T06:43:18.245325556Z: INFO: Using bootstrapper 52.17.42.154:8888
+2020-10-16T06:43:18.245367556Z: INFO: Using bootstrapper 54.77.133.220:8888
+2020-10-16T06:43:18.245385556Z: INFO: Commencing baking
+2020-10-16T06:43:18.245986055Z: INFO: Runner: Starting baker thread
+2020-10-16T06:43:18.738883289Z: INFO: Sent a direct message to peer c8726d0f4ffd64e1 containing a catch-up status message
+2020-10-16T06:43:18.839427953Z: INFO: Processed a catch-up status message from 60260d49946bce45
+2020-10-16T06:43:18.839471653Z: INFO: Sent a direct message to peer 60260d49946bce45 containing a catch-up status message
+2020-10-16T06:43:18.843602948Z: INFO: Processed a catch-up status message from c8726d0f4ffd64e1
+2020-10-16T06:43:18.843636648Z: INFO: Sent a direct message to peer c8726d0f4ffd64e1 containing a catch-up status message
+2020-10-16T06:43:18.860003425Z: INFO: Processed a catch-up status message from 16799266a7cf8b08
+2020-10-16T06:43:18.860850424Z: INFO: Sent a direct message to peer 16799266a7cf8b08 containing a catch-up status message
+2020-10-16T06:43:18.892159382Z: INFO: Skov: Receive statistics: blocksReceivedCount=1 blockLastReceived=1.6028305988897338e9 blockReceiveLatencyEMA=20.288973378500003 blockReceiveLatencyEMSD=60.8669201355 blockReceivePeriodEMA=Nothing blockReceivePeriodEMSD=Nothing
+2020-10-16T06:43:18.965674983Z: INFO: Skov: Block 4c8c184d250530a5c7e4756fe0991fc91375155d9542dd7e58c3a39df3cbf643 (7) arrived
+2020-10-16T06:43:18.965861882Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=1 blockLastArrive=1.6028305989651191e9 blockArriveLatencyEMA=20.296511918300002 blockArriveLatencyEMSD=60.8895357549 blockArrivePeriodEMA=Nothing blockArrivePeriodEMSD=Nothing transactionsPerBlockEMA=0.0 transactionsPerBlockEMSD=0.0
+2020-10-16T06:43:18.965952082Z: INFO: Processed a block from c8726d0f4ffd64e1
+2020-10-16T06:43:18.968807178Z: INFO: Skov: Receive statistics: blocksReceivedCount=2 blockLastReceived=1.6028305989661982e9 blockReceiveLatencyEMA=37.956695868850005 blockReceiveLatencyEMSD=78.38137235381487 blockReceivePeriodEMA=Just 7.6464497e-2 blockReceivePeriodEMSD=Just 0.0
