@@ -1,0 +1,51 @@
+groupadd: group 'docker' already exists
+useradd: user 'docker' already exists
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+Configuration initialized.
+2020-10-29 18:51:59,740 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-29 18:51:59,741 INFO Set uid to user 0 succeeded
+2020-10-29 18:51:59,746 INFO RPC interface 'supervisor' initialized
+2020-10-29 18:51:59,746 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-29 18:51:59,747 INFO supervisord started with pid 13
+2020-10-29 18:52:00,750 INFO spawned: 'collector' with pid 15
+2020-10-29 18:52:00,753 INFO spawned: 'middleware' with pid 16
+2020-10-29 18:52:00,756 INFO spawned: 'nginx' with pid 17
+2020-10-29 18:52:00,765 INFO spawned: 'p2p-client' with pid 19
+2020-10-29 18:52:00.808735116Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-29 18:52:00.809083887Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-29 18:52:00.809165560Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-29 18:52:00.809229188Z: INFO: Network: enabled
+2020-10-29 18:52:00.809329205Z: INFO: Log level: info
+2020-10-29 18:52:00.809507067Z: INFO: My Node ID is 50ff67b9b6d89248
+2020-10-29 18:52:00.811034397Z: INFO: Starting consensus layer
+2020-10-29 18:52:00.811039878Z: INFO: Starting up the consensus thread
+2020-10-29 18:52:00.811689471Z: INFO: Starting up the consensus layer
+2020-10-29 18:52:01,812 INFO success: collector entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-29 18:52:01,813 INFO success: middleware entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-29 18:52:01,813 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-29 18:52:01,813 INFO success: p2p-client entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-29 18:52:24.743394067Z: INFO: Consensus layer started
+2020-10-29 18:52:24.743563704Z: INFO: RPC server started
+2020-10-29 18:52:24.743877670Z: INFO: Starting the P2P layer
+2020-10-29 18:52:24.743880234Z: INFO: Attempting to bootstrap
+2020-10-29 18:52:24.761598163Z: INFO: Using bootstrapper 52.17.42.154:8888
+2020-10-29 18:52:24.761740319Z: INFO: Using bootstrapper 54.77.133.220:8888
+2020-10-29 18:52:24.761960229Z: INFO: Commencing baking
+2020-10-29 18:52:24.762394850Z: INFO: Runner: Starting baker thread
+2020-10-29 18:52:25.147960952Z: INFO: Sent a direct message to peer 7c92e161c766bf87 containing a catch-up status message
+2020-10-29 18:52:25.189875717Z: INFO: Processed a catch-up status message from 7c92e161c766bf87
+2020-10-29 18:52:25.190860055Z: INFO: Sent a direct message to peer 7c92e161c766bf87 containing a catch-up status message
+2020-10-29 18:52:25.219794756Z: INFO: Skov: Receive statistics: blocksReceivedCount=1 blockLastReceived=1.6039975452181451e9 blockReceiveLatencyEMA=11.0718145145 blockReceiveLatencyEMSD=33.2154435435 blockReceivePeriodEMA=Nothing blockReceivePeriodEMSD=Nothing
+2020-10-29 18:52:25.275900183Z: INFO: Skov: Block 9d79cf5d0218158d3e0198cea1b157e9ef808037ea18cae6b94eff37b14cd283 (11) arrived
+2020-10-29 18:52:25.277021707Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=1 blockLastArrive=1.6039975452755718e9 blockArriveLatencyEMA=11.0775571759 blockArriveLatencyEMSD=33.2326715277 blockArrivePeriodEMA=Nothing blockArrivePeriodEMSD=Nothing transactionsPerBlockEMA=0.5 transactionsPerBlockEMSD=1.5
+2020-10-29 18:52:25.278635519Z: INFO: Processed a block from 7c92e161c766bf87
+2020-10-29 18:52:25.280913864Z: INFO: Skov: Receive statistics: blocksReceivedCount=2 blockLastReceived=1.6039975452791445e9 blockReceiveLatencyEMA=20.24254751105 blockReceiveLatencyEMSD=41.83133053177236 blockReceivePeriodEMA=Just 6.0999335e-2 blockReceivePeriodEMSD=Just 0.0
+2020-10-29 18:52:25.294318820Z: INFO: Skov: Block 9d79cf5d0218158d3e0198cea1b157e9ef808037ea18cae6b94eff37b14cd283 is finalized at height 191622 with finalization delta=0
+2020-10-29 18:52:25.295071285Z: INFO: Skov: Finalization statistics: finalizationCount=1 lastFinalizedTime=1.603997545295024e9 finalizationPeriodEMA=Nothing finalizationPeriodEMSD=Nothing
+2020-10-29 18:52:25.334450325Z: INFO: Skov: Block 6f83b2a0736b3f225d3df01d2e090a200f3a4bf774601fff55810a2b2360a59e (0) arrived
+2020-10-29 18:52:25.335529390Z: INFO: Skov: Arrive statistics: blocksVerifiedCount=2 blockLastArrive=1.6039975453342786e9 blockArriveLatencyEMA=20.25322930871 blockArriveLatencyEMSD=41.85338747318592 blockArrivePeriodEMA=Just 5.8706745e-2 blockArrivePeriodEMSD=Just 0.0 transactionsPerBlockEMA=0.95 transactionsPerBlockEMSD=1.9615045245933032
