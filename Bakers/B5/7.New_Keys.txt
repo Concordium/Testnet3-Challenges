@@ -1,0 +1,29 @@
+Generate New Keys
+
+memre@vmi460551:~/Documents/concordium-software$ ./concordium-client baker generate-keys
+{
+    "signatureVerifyKey": "0946aefd44e9066fc6ea6f72e7a61e2617542095274e10f2b53d373394591417",
+    "aggregationSignKey": "3bf2f423b4fc3fb571961c1a06c5f47c9879f1aa0176c8772258bb9a1fecc4e7",
+    "electionPrivateKey": "ad8b63bac8ed6c307d09cda2f1c89803095446bef37f7d7cb06685beabebe89f",
+    "aggregationVerifyKey": "b0a347e5685e948be21706496e4fb66df16ceb022e6bd20b4ef81a723410217dbe322ebc5f760692b86ac3106e93ac6102bd5149f28735b97b8b023c800dbe8b50a9ea8c9282216719c918f69fbbdce7c03dd25b7556606bbc347623e63006e6",
+    "signatureSignKey": "3a6d798ad600bc74fd42400654533a90f1b323d82da9d372d2158e8bfc346f50",
+    "electionVerifyKey": "46588db3ea15d181ee557a737461b5d91951f76d147396922641d773f974db36"
+}
+
+
+memre@vmi460551:~/Documents/concordium-software$ ./concordium-client baker add baker-credentials.json --sender 3kvPnGZRfEj1VnnrpmGFQMXBDGtoveehsbRi8TQfinHaFKiNB3
+Using default energy amount of 3061 NRG.
+Enter password for signing key: 
+Submitting transaction to add baker using keys from file 'baker-credentials.json'.
+Allowing up to 3061 NRG to be spent as transaction fee.
+Confirm [yN]: y
+Transaction 'ae8d1bd48b46cf774f172037c2d7f69fa47013a064ac4feff9c76d31067e3676' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status ae8d1bd48b46cf774f172037c2d7f69fa47013a064ac4feff9c76d31067e3676'.
+[16:08:20] Waiting for the transaction to be committed......
+Transaction is finalized into block 75ebf8c760d9cc740b74810c665d4309aa6bc838f703b6e4fb5912ba88d4826b with status "success" and cost 0.306100 GTU (3061 NRG).
+baker added with ID 1094
+[16:08:26] Waiting for the transaction to be finalized...
+[16:08:26] Transaction finalized.
