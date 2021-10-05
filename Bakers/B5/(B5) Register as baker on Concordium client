@@ -1,0 +1,20 @@
+Node ID: 0dd055e3e5e7453a
+Baker ID: 1332
+
+Screenshot for client registration command: https://github.com/alkadeta/Testnet3-Challenges/blob/main/Bakers/B5/B5%20Challenge%20Screenshot.png?raw=true
+
+Account address: 417GAaRCE8NWNwKJFVC8gpnW2Q11TgqzUxsgZppLUgB2nT96nW
+
+Transaction ID of the transaction used to register as a baker: d62751a1c7bd372ff895102b4f4f8c7d9b6c14c00070acbc52082971e7d808
+
+Blockhash of at least one block you produced: e2ef71e7dd2be8b154f87b840e55a8e487d7b5e967d63185c5739b286da24e42
+
+Transaction ID of the transaction that changes the reward account: 45c0dd82dab6e0bd5b9bf0e45696a50cc97e682056f6808c1f3e015a1ecc035e
+
+Transaction ID of the transaction that updated baker's keys: 69c7aa92115c3e00242274db6395f70c3d05bf7807dc49c450cd2b02a5169ac3
+
+Observations: I've got one issue with the process, that is 
+concordium-client: /var/lib/concordium/config/accounts/names.map: hGetContents: invalid argument (invalid byte sequence)
+error when trying to add baker via concordium client. I found the solution, it was the turkish characters on my Account's name. 
+Because of the non english characters the client was giving me issues. 
+I solved it by removing the accounts that have Turkish characters. Other than that it was pretty smooth, and I'm impressed by it.
