@@ -1,0 +1,44 @@
+Node ID: c48315d39a6ff54f
+
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              1
+On-line CPU(s) list: 0,1
+Thread(s) per core:  2
+Core(s) per socket:  1
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               79
+Model name:          Intel(R) Xeon(R) CPU @ 2.20GHz
+Stepping:            0
+CPU MHz:             2200.196
+BogoMIPS:            4400.39
+Hypervisor vendor:   KVM
+Virtualization type: full
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            56320K
+----------------------------------------------------------------------------------
+root@instance-2:~# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            980         558          80           1         341         270
+Swap:             0           0           0
+---------------------------------------------------------------------------------
+node@instance-2:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        97G  4.8G   93G   5% /
+devtmpfs        487M     0  487M   0% /dev
+tmpfs           491M     0  491M   0% /dev/shm
+tmpfs            99M 1016K   98M   2% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           491M     0  491M   0% /sys/fs/cgroup
+/dev/sda15      105M  3.9M  101M   4% /boot/efi
+/dev/loop0       56M   56M     0 100% /snap/core18/1885
+/dev/loop1      128M  128M     0 100% /snap/google-cloud-sdk/155
+/dev/loop2       71M   71M     0 100% /snap/lxd/16922
+/dev/loop3       31M   31M     0 100% /snap/snapd/9607
+tmpfs            99M     0   99M   0% /run/user/1001
