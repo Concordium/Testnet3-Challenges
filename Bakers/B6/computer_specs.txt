@@ -1,0 +1,206 @@
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           797M  728K  796M   1% /run
+/dev/sda2       195G  9.8G  176G   6% /
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/sda1       922M   73M  786M   9% /boot
+tmpfs           797M     0  797M   0% /run/user/1000
+
+
+description: Computer
+    width: 64 bits
+    capabilities: smp vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 8GiB
+     *-cpu
+          product: Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz
+          vendor: Intel Corp.
+          physical id: 1
+          bus info: cpu@0
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp x86-64 constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm cpuid_fault invpcid_single pti ssbd ibrs ibpb fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat umip
+     *-pci
+          description: Host bridge
+          product: 440FX - 82441FX PMC [Natoma]
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 02
+          width: 32 bits
+          clock: 33MHz
+        *-isa
+             description: ISA bridge
+             product: 82371SB PIIX3 ISA [Natoma/Triton II]
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa
+             configuration: latency=0
+        *-ide
+             description: IDE interface
+             product: 82371SB PIIX3 IDE [Natoma/Triton II]
+             vendor: Intel Corporation
+             physical id: 1.1
+             bus info: pci@0000:00:01.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ide isa_compat_mode bus_master
+             configuration: driver=ata_piix latency=0
+             resources: irq:0 ioport:1f0(size=8) ioport:3f6 ioport:170(size=8) ioport:376 ioport:e0a0(size=16)
+        *-usb
+             description: USB controller
+             product: 82371SB PIIX3 USB [Natoma/Triton II]
+             vendor: Intel Corporation
+             physical id: 1.2
+             bus info: pci@0000:00:01.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:11 ioport:e040(size=32)
+        *-bridge
+             description: Bridge
+             product: 82371AB/EB/MB PIIX4 ACPI
+             vendor: Intel Corporation
+             physical id: 1.3
+             bus info: pci@0000:00:01.3
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bridge
+             configuration: driver=piix4_smbus latency=0
+             resources: irq:9
+        *-display UNCLAIMED
+             description: VGA compatible controller
+             product: SVGA II Adapter
+             vendor: VMware
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: vga_controller
+             configuration: latency=64
+             resources: ioport:e0b0(size=16) memory:fd000000-fdffffff memory:fe400000-fe40ffff memory:c0000-dffff
+        *-generic
+             description: Unclassified device
+             product: Virtio memory balloon
+             vendor: Red Hat, Inc.
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:10 ioport:e060(size=32) memory:fe410000-fe413fff
+           *-virtio0 UNCLAIMED
+                description: Virtual I/O device
+                physical id: 0
+                bus info: virtio@0
+                configuration: driver=virtio_balloon
+        *-scsi
+             description: SCSI storage controller
+             product: Virtio SCSI
+             vendor: Red Hat, Inc.
+             physical id: 5
+             bus info: pci@0000:00:05.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: scsi bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:10 ioport:e000(size=64) memory:fea50000-fea50fff memory:fe414000-fe417fff
+           *-virtio1 UNCLAIMED
+                description: Virtual I/O device
+                physical id: 0
+                bus info: virtio@1
+                configuration: driver=virtio_scsi
+        *-network
+             description: Ethernet controller
+             product: Virtio network device
+             vendor: Red Hat, Inc.
+             physical id: 12
+             bus info: pci@0000:00:12.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list rom
+             configuration: driver=virtio-pci latency=0
+             resources: irq:11 ioport:e080(size=32) memory:fea51000-fea51fff memory:fe418000-fe41bfff memory:fea00000-fea3ffff
+           *-virtio2
+                description: Ethernet interface
+                physical id: 0
+                bus info: virtio@2
+                logical name: eth0
+                serial: 00:50:56:40:be:e8
+                capabilities: ethernet physical logical
+                configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 ip=178.238.227.152 link=yes multicast=yes
+        *-pci:0
+             description: PCI bridge
+             product: QEMU PCI-PCI bridge
+             vendor: Red Hat, Inc.
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: 00
+             width: 64 bits
+             clock: 66MHz
+             capabilities: pci normal_decode cap_list
+             resources: memory:fea52000-fea520ff ioport:d000(size=4096) memory:fe800000-fe9fffff ioport:fe200000(size=2097152)
+        *-pci:1
+             description: PCI bridge
+             product: QEMU PCI-PCI bridge
+             vendor: Red Hat, Inc.
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 00
+             width: 64 bits
+             clock: 66MHz
+             capabilities: pci normal_decode cap_list
+             resources: memory:fea53000-fea530ff ioport:c000(size=4096) memory:fe600000-fe7fffff ioport:fe000000(size=2097152)
+     *-pnp00:00
+          product: PnP device PNP0b00
+          physical id: 2
+          capabilities: pnp
+          configuration: driver=rtc_cmos
+     *-pnp00:01
+          product: PnP device PNP0303
+          physical id: 3
+          capabilities: pnp
+          configuration: driver=i8042 kbd
+     *-pnp00:02
+          product: PnP device PNP0f13
+          physical id: 4
+          capabilities: pnp
+          configuration: driver=i8042 aux
+     *-pnp00:03
+          product: PnP device PNP0700
+          physical id: 5
+          capabilities: pnp
+  *-network:0
+       description: Ethernet interface
+       physical id: 1
+       logical name: docker0
+       serial: 02:42:07:ae:d7:db
+       capabilities: ethernet physical
+       configuration: broadcast=yes driver=bridge driverversion=2.3 firmware=N/A ip=172.17.0.1 link=yes multicast=yes
+  *-network:1
+       description: Ethernet interface
+       physical id: 2
+       logical name: vethff27c40
+       serial: 4e:10:e4:0a:bb:61
+       size: 10Gbit/s
+       capabilities: ethernet physical
+       configuration: autonegotiation=off broadcast=yes driver=veth driverversion=1.0 duplex=full link=yes multicast=yes port=twisted pair speed=10Gbit/s
