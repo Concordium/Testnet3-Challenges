@@ -1,0 +1,92 @@
+Account A: 4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr
+Account B: 4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV
+
+
+--transfer 3 GTU from account A to account B
+.././concordium-client transaction send-gtu --amount 3 --sender 4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr --receiver 4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV
+
+
+testnet@tvm:~/Documents/concordium-software$ .././concordium-client transaction send-gtu --amount 3 --sender 4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr --receiver 4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV
+Using default energy amount of 59 NRG.
+Sending 3.000000 GTU from '4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr' (Elf t2 a) to '4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV' (Elf t2 b).
+Allowing up to 59 NRG to be spent as transaction fee.
+Transaction expires at Wed,  4 Nov 2020 18:30:59 UTC.
+Confirm [yN]: y
+Enter password for signing key: 
+Transaction 'a5aa864c9cf275c7ca4cc0398d60c20284378cb2f8863f10d686c74a171567bb' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status a5aa864c9cf275c7ca4cc0398d60c20284378cb2f8863f10d686c74a171567bb'.
+[18:21:05] Waiting for the transaction to be committed....
+Transaction is finalized into block 784ab79dec8bc5c7c15a69c677aba94d576041031246503537a9d7119a88e895 with status "success" and cost 0.005900 GTU (59 NRG).
+[18:21:07] Waiting for the transaction to be finalized...
+[18:21:07] Transaction finalized.
+
+
+--shield 10 GTU of account A
+.././concordium-client account encrypt --amount 10 --sender 4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr
+
+
+testnet@tvm:~/Documents/concordium-software$ .././concordium-client account encrypt --amount 10 --sender 4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr
+Using default energy amount of 159 NRG.
+Transferring 10.000000 GTU from public to encrypted balance of account '4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr' (Elf t2 a).
+Allowing up to 159 NRG to be spent as transaction fee.
+Transaction expires at Wed,  4 Nov 2020 18:32:02 UTC.
+Confirm [yN]: y
+Enter password for signing key: 
+Transaction 'fceb52ac982628eda6eb60c722d71dbc90d7996aa7a48e4252663570cd3ed6c5' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status fceb52ac982628eda6eb60c722d71dbc90d7996aa7a48e4252663570cd3ed6c5'.
+[18:22:07] Waiting for the transaction to be committed............
+Transaction is committed into block ed58b54b49088a25640d1fb1d8c0dd46314cc35646943b6ee16354bcf9f2ccc2 with status "success" and cost 0.015900 GTU (159 NRG).
+[18:22:25] Waiting for the transaction to be finalized....
+[18:22:31] Transaction finalized.
+
+
+--transfer 7 GTU from the shielded balance on account A to B
+.././concordium-client transaction send-gtu-encrypted --sender 4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr --receiver 4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV --amount 7
+
+
+testnet@tvm:~/Documents/concordium-software$ .././concordium-client transaction send-gtu-encrypted --sender 4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr --receiver 4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV --amount 7
+Using default energy amount of 30070 NRG.
+Enter password for decrypting the secret encryption key: 
+Transferring 7.000000 GTU from encrypted balance of account '4mMjS5YRP3D9frspMzbRKE4KGmjMdrq6WaUM5JqW53tL9dKdTr' (Elf t2 a) to '4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV' (Elf t2 b).
+Allowing up to 30070 NRG to be spent as transaction fee.
+Transaction expires at Wed,  4 Nov 2020 18:33:18 UTC.
+Confirm [yN]: y     
+Enter password for signing key: 
+Transaction '5902d0169c5bfdfce55667918f67ad9d52b7321a09e01f8e0b43fdc1dc94567d' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status 5902d0169c5bfdfce55667918f67ad9d52b7321a09e01f8e0b43fdc1dc94567d'.
+[18:23:34] Waiting for the transaction to be committed..........
+Transaction is committed into block 79ca0c87d522833887bdcab8c87f1876cff68184264ceefbee3211d109081d3e with status "success" and cost 3.007000 GTU (30070 NRG).
+[18:23:48] Waiting for the transaction to be finalized....
+[18:23:53] Transaction finalized.
+
+
+--unshield shielded balance on account B
+.././concordium-client account decrypt --sender 4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV --amount 7
+
+
+testnet@tvm:~/Documents/concordium-software$ .././concordium-client account decrypt --sender 4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV --amount 7
+Using default energy amount of 16065 NRG.
+Enter password for decrypting the secret encryption key: 
+Transferring 7.000000 GTU from encrypted to public balance of account '4pqa6TVNHCGjJSfeBSDLVvoXfyf35ux2eGMB21fHWvtxZZXmsV' (Elf t2 b).
+Allowing up to 16065 NRG to be spent as transaction fee.
+Transaction expires at Wed,  4 Nov 2020 18:34:55 UTC.
+Confirm [yN]: y
+Enter password for signing key: 
+Transaction '61b570ec616a343760668d64df5e69ed6b7f18957f78ec385c39bf26ad9df965' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status 61b570ec616a343760668d64df5e69ed6b7f18957f78ec385c39bf26ad9df965'.
+[18:25:11] Waiting for the transaction to be committed..........
+Transaction is committed into block 245b575872b70389cc67970c29583f63bdce0a862461df1d6ed2649663b7d120 with status "success" and cost 1.606500 GTU (16065 NRG).
+[18:25:25] Waiting for the transaction to be finalized....
+[18:25:30] Transaction finalized.
