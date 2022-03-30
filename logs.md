@@ -15,7 +15,7 @@ We've created a small tool `retrieve_minified_logs` to sample your full set of l
 - [Download retrieve_minified_logs for Windows](https://client-distribution-testnet.concordium.com/retrieve_minified_logs-windows-v1.exe)
 
 
-Simply run the relevant binary on your system where the Concordium Node has been running. The tool will output two files in the folder it is run.
+Simply run the relevant binary on your system where the Concordium Node has been running. Don't forget to make a linux binary executable with `chmod +x retrieve_minified_logs-linux-v`. The tool will output two files in the folder it is run.
 
 **⚠️ These files must be submitted without modifications. Tampering with the summary log will be detected and result in disqualification from all challenges.**
 
