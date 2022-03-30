@@ -1,0 +1,113 @@
+Baker id - Id: 98a4e5ab907e00ea
+
+Day 1  (october 15th)
+------
+Stop node -
+^C2020-10-15 07:52:06,467 WARN received SIGINT indicating exit request
+2020-10-15 07:52:06,484 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15T07:52:06.498554672Z: INFO: Signal received attempting to shutdown node cleanly
+2020-10-15 07:52:09,503 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 07:52:12,507 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 07:52:15,511 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 07:52:18,515 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15T07:52:18.869658302Z: INFO: Shutting down
+2020-10-15T07:52:18.879066626Z: INFO: Stopping baking
+2020-10-15T07:52:18.881320087Z: ERROR: Runner: Message loop exited with exception: thread killed
+2020-10-15T07:52:18.881348928Z: INFO: Runner: Exiting baker thread
+2020-10-15T07:52:18.946117265Z: INFO: P2PNode gracefully closed.
+2020-10-15 07:52:19,140 INFO stopped: p2p-client (exit status 0)
+2020-10-15 07:52:19,299 INFO stopped: nginx (exit status 0)
+2020-10-15 07:52:19,303 INFO stopped: middleware (terminated by SIGTERM)
+2020-10-15 07:52:19,307 INFO stopped: collector (terminated by SIGTERM)
+concordium-node exiting
+
+Start Node
+-----------
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+Configuration initialized.
+2020-10-15 08:07:45,482 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-15 08:07:45,482 INFO Set uid to user 0 succeeded
+2020-10-15 08:07:45,494 INFO RPC interface 'supervisor' initialized
+2020-10-15 08:07:45,494 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-15 08:07:45,495 INFO supervisord started with pid 13
+2020-10-15 08:07:46,498 INFO spawned: 'collector' with pid 15
+2020-10-15 08:07:46,501 INFO spawned: 'middleware' with pid 16
+2020-10-15 08:07:46,504 INFO spawned: 'nginx' with pid 17
+2020-10-15 08:07:46,506 INFO spawned: 'p2p-client' with pid 19
+2020-10-15T08:07:46.807917256Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-15T08:07:46.807967348Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-15T08:07:46.808159803Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-15T08:07:46.808162503Z: INFO: Network: enabled
+2020-10-15T08:07:46.808163453Z: INFO: Log level: info
+2020-10-15T08:07:46.808597605Z: INFO: My Node ID is 98a4e5ab907e00ea
+2020-10-15T08:07:46.813145548Z: INFO: Starting consensus layer
+2020-10-15T08:07:46.813162299Z: INFO: Starting up the consensus thread
+2020-10-15T08:07:46.814905177Z: INFO: Starting up the consensus layer
+2020-10-15 08:07:47,816 INFO success: collector entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-15 08:07:47,816 INFO success: middleware entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-15 08:07:47,816 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-15 08:07:47,816 INFO success: p2p-client entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+Stop Node - 2nd time
+----------------------
+2020-10-15T09:17:47.055220651Z: INFO: Sent a broadcast containing a finalization message
+2020-10-15 09:17:47,055 WARN received SIGINT indicating exit request
+2020-10-15 09:17:47,058 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15T09:17:47.055337314Z: INFO: Processed a finalization message from 29d78338deaf79f7
+2020-10-15T09:17:47.055344794Z: INFO: Sent a broadcast containing a finalization message
+2020-10-15T09:17:47.057783238Z: INFO: Processed a finalization message from cc88ea7fe63dc2e3
+2020-10-15T09:17:47.057796939Z: INFO: Sent a broadcast containing a finalization message
+2020-10-15T09:17:47.057897481Z: INFO: Processed a finalization message from cc88ea7fe63dc2e3
+2020-10-15T09:17:47.057903921Z: INFO: Sent a broadcast containing a finalization message
+2020-10-15T09:17:47.059192005Z: INFO: Signal received attempting to shutdown node cleanly
+2020-10-15 09:17:50,063 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 09:17:53,066 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 09:17:56,070 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 09:17:59,088 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 09:18:02,091 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 09:18:05,095 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15 09:18:08,099 INFO waiting for collector, middleware, nginx, p2p-client to die
+2020-10-15T09:18:08.862028891Z: INFO: Shutting down
+2020-10-15T09:18:08.863147310Z: INFO: Stopping baking
+2020-10-15T09:18:08.864186477Z: ERROR: Runner: Message loop exited with exception: thread killed
+2020-10-15T09:18:08.864219117Z: INFO: Runner: Exiting baker thread
+2020-10-15T09:18:08.896556076Z: INFO: P2PNode gracefully closed.
+2020-10-15 09:18:08,920 INFO stopped: p2p-client (exit status 0)
+2020-10-15 09:18:08,951 INFO stopped: nginx (exit status 0)
+2020-10-15 09:18:08,955 INFO stopped: middleware (terminated by SIGTERM)
+2020-10-15 09:18:08,958 INFO stopped: collector (terminated by SIGTERM)
+concordium-node exiting
+
+Start Node
+-------------
+useradd: user 'docker' already exists
+Initializing configuration structure in directory '/var/lib/concordium/config'.
+Skipping '/var/lib/concordium/config': directory already exists.
+Creating directory '/var/lib/concordium/config/accounts'.
+Skipping '/var/lib/concordium/config/accounts': directory already exists.
+Creating file '/var/lib/concordium/config/accounts/names.map'.
+Skipping '/var/lib/concordium/config/accounts/names.map': file already exists.
+Configuration initialized.
+2020-10-15 09:26:28,804 INFO Included extra file "/etc/supervisor/conf.d/concordium.conf" during parsing
+2020-10-15 09:26:28,804 INFO Set uid to user 0 succeeded
+2020-10-15 09:26:28,811 INFO RPC interface 'supervisor' initialized
+2020-10-15 09:26:28,812 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-15 09:26:28,812 INFO supervisord started with pid 14
+2020-10-15 09:26:29,815 INFO spawned: 'collector' with pid 16
+2020-10-15 09:26:29,818 INFO spawned: 'middleware' with pid 17
+2020-10-15 09:26:29,820 INFO spawned: 'nginx' with pid 18
+2020-10-15 09:26:29,822 INFO spawned: 'p2p-client' with pid 20
+2020-10-15T09:26:29.929783359Z: INFO: Starting up p2p_client version 0.3.2!
+2020-10-15T09:26:29.929818290Z: INFO: Application data directory: "/var/lib/concordium/data"
+2020-10-15T09:26:29.929838030Z: INFO: Application config directory: "/var/lib/concordium/config"
+2020-10-15T09:26:29.929841100Z: INFO: Network: enabled
+2020-10-15T09:26:29.929842321Z: INFO: Log level: info
+2020-10-15T09:26:29.929980044Z: INFO: My Node ID is 98a4e5ab907e00ea
+2020-10-15T09:26:29.936392256Z: INFO: Starting consensus layer
+2020-10-15T09:26:29.936433107Z: INFO: Starting up the consensus thread
+2020-10-15T09:26:29.937847605Z: INFO: Starting up the consensus layer
