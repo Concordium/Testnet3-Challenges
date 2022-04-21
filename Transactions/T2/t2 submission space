@@ -1,1 +1,32 @@
 
+
+kaanpass1 account A : 3tp9PLKZ7B5dSCXeWUzD6nkeY6gDWJj1HvGUCs8MJyyPCSfWKm 
+
+kaanpass2 account B : 4myh1tAwCfBCZMJ8VdLQn2Ww1Ni2g6ANDN5hHsJ4TjoA6QCahW
+
+
+
+-- Transfer 3 GTU from account A to account B  ... screenshot T2-SS1.jpeg
+
+./concordium-client transaction send-gtu --receiver 4myh1tAwCfBCZMJ8VdLQn2Ww1Ni2g6ANDN5hHsJ4TjoA6QCahW --amount 3 --sender 3tp9PLKZ7B5dSCXeWUzD6nkeY6gDWJj1HvGUCs8MJyyPCSfWKm
+
+
+--Shield 10 GTU from Account A  ... screenshot T2-SS2.jpeg
+
+./concordium-client account encrypt --sender 3tp9PLKZ7B5dSCXeWUzD6nkeY6gDWJj1HvGUCs8MJyyPCSfWKm --amount 10
+
+
+-- transfer 7 GTU from the shielded balance on account A to B    ... screenshot T2-SS3.jpeg
+
+./concordium-client transaction send-gtu-encrypted --receiver 4myh1tAwCfBCZMJ8VdLQn2Ww1Ni2g6ANDN5hHsJ4TjoA6QCahW --amount 7 --sender 3tp9PLKZ7B5dSCXeWUzD6nkeY6gDWJj1HvGUCs8MJyyPCSfWKm
+
+
+-- unshield shielded balance on account B   ... ... screenshot T2-SS4.jpeg
+
+./concordium-client account decrypt --sender 4myh1tAwCfBCZMJ8VdLQn2Ww1Ni2g6ANDN5hHsJ4TjoA6QCahW --amount 7
+
+
+
+
+
+

@@ -1,1 +1,32 @@
+Test Scenario for "(EI6) Export from Android / Import to Concordium Client" challenge:
+
+1) A new account ("Imptestacc") was created in the mobile Concordium Wallet (screenshot IE6-1).
+2) Created account was checked in the mobile Concordium wallet (screenshot IE6-2).
+3) All the identities and accounts are exported and "export.concordiumwallet" file generated with the Export function of mobile Concordium wallet (screenshot IE6-3)
+4) "export.concordiumwallet" file was downloaded to my PC. 
+5) By using Winscp program "export.concordiumwallet" file was transferred to my linux (Ubuntu) node (screenshot IE6-4).
+6) In SSH (with Putty) jumped to "$HOME/Documents/concordium-software" folder (cd $HOME/Documents/concordium-software)
+7) "./concordium-client config account import export.concordiumwallet" command executed (screenshot IE6-5)
+8) During "./concordium-client config account import export.concordiumwallet" command execution, all the accounts (especially the last added account "Imptestacc") were checked and confirmed (screenshot IE6-5, IE6-6, IE6-7) 
+9) "./concordium-client config show" command was executed and all the accounts listed (especially newly added account "Imptestacc" checked) (screenshot IE6-8)
+"
+Base configuration:
+- Verbose:            no
+- Account config dir: /var/lib/concordium/config/accounts
+- Account name map:
+    Imptestacc -> 3Mz9ppjnksC53wGb9GJva4jKbUdyp3BRuTe9GqoeoQTpBHnTGB
+    Kaan -> 4Skma1Lh6cvrmuPCkfSDyWd8AxsZrhghCdxnEVYGet2JNfrThe
+    Kaanc -> 37KvPDuQeikH4fC2Gmu5ViBKHLDYddbP3JaGoqpTkQf4eV5Q73
+    Kaanc2 -> 3uCgNxcCU2Kbti37wcLAdCCdwzTso6VfAwaRqvTjVsvLy4o4Qz
+    Kaanc3 -> 3iRWCvUtUVgWoAHSbQcDbnLbBruUXcwsyYAjeKZj2QXxfNjWth
+    Kaanpass1 -> 3tp9PLKZ7B5dSCXeWUzD6nkeY6gDWJj1HvGUCs8MJyyPCSfWKm
+    Kaanpass2 -> 4myh1tAwCfBCZMJ8VdLQn2Ww1Ni2g6ANDN5hHsJ4TjoA6QCahW
+    jamesbond -> 4Y9ABfHw3oWe7no4WJkjNWw6cowTHHWS4wJ5mbZ3Gi8ZFyi32a
+    kaanc4 -> 4PaZ1sTy35qTh6L3HBo7nBm9vWJ8L7skbMgLySk6ij19arhXRX
+    kaanc5 -> 3zkEiVKWuoVfD4CCF1Aqr9G3SnKsT8RtgUA7L5cd3TV8ih3WNG
+    kaanc6 -> 4KZZf48ient6SspvD4vuocyfj7Ar6Dt1fcNUjmXL8NDWFBCViN
+    kaanc7 -> 3yYKDDr918TfYEZ9r3JyN4hz1oSQLdmwDTzHR2ue91D5c8a7qT
+    kaanpass3 -> 3WrKsNAj9URpCZCQrGjrxoQ1ek7zTLZ1AYQdS5FkhZGacc3gvX
+    phantom -> 33SqhjaK69AsEqAxgxtTCdjwHaLzvWptxSJTKcPPnYC7xkSoTH
+"
 
