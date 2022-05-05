@@ -1,0 +1,56 @@
+bunkee@Host:~/Documents/concordium-software$ ./concordium-client baker add baker                                                                                                                                                                             -credentials.json --sender Bunkee01
+Using default energy amount of 3061 NRG.
+Enter password for signing key:
+Submitting transaction to add baker using keys from file 'baker-credentials.json                                                                                                                                                                             '.
+Allowing up to 3061 NRG to be spent as transaction fee.
+Confirm [yN]: y
+Transaction 'dd864fe463c5e1c8bd64a8b61cc486c46ec9e741dfa28e89278e54c43164f105' s                                                                                                                                                                             ent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no                                                                                                                                                                             -wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status dd864fe463c5e1c8bd64a8b61cc486c46ec9e741dfa28e89278e54c431                                                                                                                                                                             64f105'.
+[20:32:19] Waiting for the transaction to be committed.......
+Transaction is finalized into block aa9bdf9fac95d0209eb81a979c63a23fcf421bcb4c63cfdb28f059ed825ed95a with status "success" and cost 0.306100 GTU (3061 NRG).
+baker added with ID 1423
+
+
+
+bunkee@Host:~/Documents/concordium-software$ ./concordium-client baker set-account 1423 Bunkee --sender Bunkee01
+Enter password for reward account signing key:
+Using default energy amount of 150 NRG.
+Setting reward account for baker 1423 to '49gksK4rM16uiCAJpyoJrh1wDHtyepE51MfccbJNcNRwuFr6v2'.
+Allowing up to 150 NRG to be spent as transaction fee.
+Transaction expires at Fri, 13 Nov 2020 13:55:08 UTC.
+Confirm [yN]: y
+Enter password for signing key:
+Transaction 'bcb2fe826b5ad27bdf2a2cbbe50681e600739652a9e1b09e76bfd70adc8420ee' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status bcb2fe826b5ad27bdf2a2cbbe50681e600739652a9e1b09e76bfd70adc8420ee'.
+[13:45:17] Waiting for the transaction to be committed.........
+Transaction is finalized into block 1a9dc02fdc20abe81ff1dc711e3ab348e59a86c9d728d033df96ed39cc8ac353 with status "success" and cost 0.014900 GTU (149 NRG).
+[13:45:29] Waiting for the transaction to be finalized...
+[13:45:29] Transaction finalized.
+bunkee@Host:~/Documents/concordium-software$
+
+
+
+bunkee@Host:~/Documents/concordium-software$ ./concordium-client baker set-key 1423 newkeys.json --sender Bunkee
+Using default energy amount of 149 NRG.
+Setting key pair KeyPair {signKey = 8eafdc380de793a4328a6c6110f5a5abaa988ba6551c1a3e1cf72b96a0c124d1, verifyKey = d95d02f65b48246dd472a6bb1518a85c2de56d2a9f2f6fa22433335b96dff587} for baker 1423.
+Allowing up to 149 NRG to be spent as transaction fee.
+Transaction expires at Fri, 13 Nov 2020 14:40:35 UTC.
+Confirm [yN]: y
+Enter password for signing key:
+Transaction '44058a5ea727e9324eb6a03fcd309bc24574a2e84a8f37c54bd5688db35ec7a3' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status 44058a5ea727e9324eb6a03fcd309bc24574a2e84a8f37c54bd5688db35ec7a3'.
+[14:30:50] Waiting for the transaction to be committed......
+Transaction is committed into block bcc6dc21e939dfa20b5f74a81637cedcb3b9888fe00a640d6f50e3616798fcc4 with status "success" and cost 0.014900 GTU (149 NRG).
+[14:30:56] Waiting for the transaction to be finalized....
+[14:31:02] Transaction finalized.
+bunkee@Host:~/Documents/concordium-software$
+
