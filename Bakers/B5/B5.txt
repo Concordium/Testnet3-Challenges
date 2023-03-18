@@ -1,0 +1,53 @@
+----submit baker ID
+BAKER id: 837
+
+----submit screenshot for client registration command 
+ss is attched
+command at commandprompt
+first generate keys
+
+concordium-software>concordium-client baker generate-keys
+
+then copied keys to baker.json
+
+concordium-client baker add baker.json --sender mahofp
+sent the add baker command
+Submitting transaction to add baker using keys from file 'baker.json'.
+Allowing up to 3061 NRG to be spent as transaction fee.
+Confirm [yN]: y
+Transaction 'c2fbc8661ec76e12b13bbbfe519b6729c51c6ac5ecce3022590e74f33579b046' sent to the baker.
+
+[10:54:13] Waiting for the transaction to be committed.........
+Transaction is finalized into block cb9b599569b9cdf16820b76e96358dbb6a12f347ea006853cf2b9e2d70f3e964 with status "success" and cost 0.306100 GTU (3061 NRG).
+baker added with ID 837
+[10:54:25] Waiting for the transaction to be finalized...
+[10:54:25] Transaction finalized.
+
+----submit account address
+address 3tsuetTKjhouDYgTgdZPdnWoYXWbzf1Xe2YhZa3Pi1WjakNbxy
+
+----submit transaction ID of the transaction used to register as a baker
+tx for add baker Transaction 'c2fbc8661ec76e12b13bbbfe519b6729c51c6ac5ecce3022590e74f33579b046'
+
+---submit transaction ID of the transaction that changes the reward account
+concordium-client baker set-account 837 11 --sender mahofp
+1528d406be15023af12da9ed554ccacccd500e9e46896ddf0bcd58761b74c070
+
+----submit transaction ID of the transaction that updated baker's keys
+command 
+C:\Users\tr\Documents\concordium-software>concordium-client baker set-key 837 baker1.json --sender 11
+Using default energy amount of 149 NRG.
+Setting key pair KeyPair {signKey = 1e9552d703ae8241a108cca7345b7e6b8604a25d3b099c4982ef6a30ef342d3d, verifyKey = f2340bb9e4309f440383d721d29c77631db7cca597e56db59cdd77e386f602af} for baker 837.
+Allowing up to 149 NRG to be spent as transaction fee.
+Transaction expires at Sat, 17 Oct 2020 14:48:49 UTC.
+Confirm [yN]: y
+Enter password for signing key:
+Transaction '279f472f8a354eaaaa6bffe96a16cb282cf8898f23a75b529444b70fc7d287f1' sent to the baker.
+Waiting for the transaction to be committed and finalized.
+You may skip this step by interrupting the command using Ctrl-C (pass flag '--no-wait' to do this by default).
+The transaction will still get processed and may be queried using
+  'transaction status 279f472f8a354eaaaa6bffe96a16cb282cf8898f23a75b529444b70fc7d287f1'.
+[14:38:57] Waiting for the transaction to be committed........
+Transaction is committed into block 27393df19572b46b4bf9add4b24392c4c4f032e6ed860e2a4136211f5a392b69 with status "success" and cost 0.014900 GTU (149 NRG).
+
+Transaction '279f472f8a354eaaaa6bffe96a16cb282cf8898f23a75b529444b70fc7d287f1'
